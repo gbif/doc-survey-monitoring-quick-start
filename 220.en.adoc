@@ -25,16 +25,16 @@ The following information about a survey event site should be shared for every e
 |`Trap_18`, `Trap_27`, `Trap_54`, `Trap_96`, `Annala`, `Kumpula`
 
 |term:dwc[habitat]
-|‘Ephemeral wetland’
+|`Ephemeral wetland`
 
 |term:eco[reportedWeather]
-|{"minimumTemperatureInDegreesFahrenheit": 18, "maximumTemperatureInDegreesFahrenheit": 32}
+|`minimumTemperatureInDegreesFahrenheit: 18`, `maximumTemperatureInDegreesFahrenheit: 32`
 
 |term:eco[reportedExtremeConditions]
-|‘Site flooded’
+|`Site flooded`
 
 |term:eco[verbatimSiteDescriptions]
-|‘Coastal sand dunes at dry oak forest edge. Vegetation: Ammophila arenaria, Betula pendula, Leymus arenarius, Pinus sylvestris’
+|`Coastal sand dunes at dry oak forest edge. Vegetation: Ammophila arenaria, Betula pendula, Leymus arenarius, Pinus sylvestris`
 
 |===
 
@@ -51,11 +51,11 @@ The Humboldt extension, however, includes additional terms that provide greater 
 
 ===== Survey site area terms
 
-Humboldt extension includes two sets of paired terms by which to report the area of an event or survey site: geospatial scope terms and total area sampled terms. Geospatial scope terms (eco:geospatialScopeAreaValue and eco:geospatialScopeAreaUnit) define the geospatial scope or extent of a survey or sampling event. Total area sampled terms (eco:totalAreaSampledValue and eco:totalAreaSampledUnit) report the total area sampled during an event.
+Humboldt extension includes two sets of paired terms by which to report the area of an event or survey site: geospatial scope terms and total area sampled terms. Geospatial scope terms (term:eco[geospatialScopeAreaValue] and term:eco[geospatialScopeAreaUnit] define the geospatial scope or extent of a survey or sampling event. Total area sampled terms (term:eco[totalAreaSampledValue] and term:eco[totalAreaSampledUnit]) report the total area sampled during an event.
 
-For non-nested event datasets, eco:geospatialScopeAreaValue and eco:geospatialScopeAreaUnit, and eco:totalAreaSampledValue and eco:totalAreaSampledUnit may contain the same values.
+For non-nested event datasets, term:eco[geospatialScopeAreaValue] and term:eco[geospatialScopeAreaUnit], term:eco[totalAreaSampledValue] and term:eco[totalAreaSampledUnit] may contain the same values.
 
-In nested datasets, eco:geospatialScopeAreaValue and eco:geospatialScopeAreaUnit should be used to report the full study extent at the parent event level (the total area surveyed in a series of survey Events) and eco:totalAreaSampledValue and eco:totalAreaSampledUnit should be used to relate the area of child event sites (e.g., individual survey sites). Geospatial scope value(s) should always be greater than or equal to that of total area sampled.
+In nested datasets, term:eco[geospatialScopeAreaValue] and term:eco[geospatialScopeAreaUnit] should be used to report the full study extent at the parent event level (the total area surveyed in a series of survey Events) and term:eco[totalAreaSampledValue] and term:eco[totalAreaSampledUnit] should be used to relate the area of child event sites (e.g., individual survey sites). Geospatial scope value(s) should always be greater than or equal to that of total area sampled.
 
 For example, consider the Biowide project which surveyed 130 40x40m plots across Denmark. Here, the project-level parent event would report the full geographic extent of Denmark: term:eco[geospatialScopeAreaValue] = `42934` and term:eco[geospatialScopeAreaUnit] = `km2`. The associated 130 child events representing each individual survey site would then report the area of the site as eco:totalAreaSampledValue = `40` and term:eco[totalAreaSampledUnit] = `m2`.
 
@@ -68,7 +68,7 @@ If the sampled unit is not an area (such as a filtered volume of water in a zoop
 
 [[table-03]]
 .Event site geographic locality and scope terms, their recommended usage (status), and example data entries
-[cols="20,35,45"]
+[cols="20,30,40"]
 |=== 
 |Status |Term |Example entry
 
@@ -126,4 +126,4 @@ Vegetation cover at a survey event site can be reported in three ways:
 * *Verbatim vegetation cover*: verbatim vegetation cover information can be captured in term:eco[verbatimSiteDescriptions]
 * *Vegetation plot survey*: vegetation plot survey information can be reported using the https://rs.gbif.org/extension/gbif/1.0/releve_2016-05-10.xml[Relevé extension^].
 
-If vegetation cover is reported: eco:isVegetationCoverReported = ‘TRUE’; otherwise, eco:isVegetationCoverReported = ‘FALSE’.
+If vegetation cover is reported: term:eco[isVegetationCoverReported] = ‘TRUE’; otherwise, term:eco[isVegetationCoverReported] = ‘FALSE’.
