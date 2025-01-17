@@ -135,7 +135,7 @@ Both fields can be applied to any event at any level.
 |term:eco[isLeastSpecificTargetCategoryQuantityInclusive]
 |‘TRUE’ or ‘FALSE’
 
-|Share if available
+.4+|Share if available
 |term:eco[materialSampleTypes]
 |`wholeOrganism`, `blood`
 
