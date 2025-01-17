@@ -69,7 +69,7 @@ As with taxonomic scope, providing organismal scope information when relevant en
 
 An explicitly stated target or excluded organismal scope, and clarification as to whether or not all target organisms observed were reported, should be indicated using the following terms:
 
-* life stage: term:eco[targetLifeStageScope], term:eco[excludedLifeStageScope], term:eco[isLifeStageScopeFullyReported]
+* *life stage*: term:eco[targetLifeStageScope], term:eco[excludedLifeStageScope], term:eco[isLifeStageScopeFullyReported]
 * *growth form*: term:eco[targetGrowthFormScope], term:eco[excludedGrowthFormScope], term:eco[isGrowthFormScopeFullyReported]
 * *degree of establishment*: term:eco[targetDegreeOfEstablishmentScope], term:eco[excludedDegreeOfEstablishmentScope], term:eco[isDegreeOfEstablishmentScopeFullyReported]
 
