@@ -31,4 +31,4 @@ Refer to https://techdocs.gbif.org/en/[GBIF’s technical documentation^] on htt
 |term:eco[eventDurationUnit]
 |`hour`
 
-|====
+|===
