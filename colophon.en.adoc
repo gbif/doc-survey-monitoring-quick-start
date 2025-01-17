@@ -7,36 +7,27 @@ endif::backend-html5[]
 
 === Suggested citation
 
-Author U, Autore D & Auteur T. The special guide to something. Third edition. GBIF Secretariat: Copenhagen. 
-// Uncomment once a DOI is assigned
-//https://doi.org/10.EXAMPLE/EXAMPLE
+Ingenloff K (2025) Survey and monitoring data quick start: A guide to updating a Darwin Core Event dataset with the Humboldt extension. GBIF Secretariat: Copenhagen. https://doi.org/10.35035/doc-7t3p-ve38
 
 === Authors
 
-Un Author, Due Autore & https://www.orcid.org/#[Troisième Auteur]
+https://orcid.org/0000-0001-5942-9053[Kate Ingenloff^]
 
 === Contributors
 
-James Joyce and Samuel Beckett of Trinity College, Dublin, contributed to this version of the document.
+https://orcid.org/0000-0002-9216-2917[Cecilie Svenningsen^]
 
 === Licence
 
-The document _The special guide to something_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
+The document _Survey and monitoring data quick start: A guide to updating a Darwin Core Event dataset with the Humboldt extension_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
 
 === Persistent URI
 
-#TODO: Assign a DOI before publication#
-// Uncomment once a DOI is assigned
-//https://doi.org/10.EXAMPLE/EXAMPLE
+https://doi.org/10.35035/doc-7t3p-ve38
 
 === Document control
 
-Third edition, April 2020
-
-// include reference to provenance if possible/relevant
-https://doi.org/10.EXAMPLE/2ND-EXAMPLE[Second edition], March 2015, by Due Autore and https://orcid.org/0000-0000-0000-0000[Troisième Auteur].
-
-Originally based on an earlier publication, _Towards establishing the special guide to something_.
+v1.0, January 2025
 
 === Cover image
 
