@@ -60,14 +60,20 @@ If taxonomic completeness is known, term:eco[taxonCompletenessReported] should b
 |`Based on sampling effort`
 
 ==== Organismal scope
-Why are organismal scope terms important?
+
+===== Why are organismal scope terms important?
+
 As with taxonomic scope, providing organismal scope information when relevant enables reliable, quantitative interpretation of survey and monitoring data and can be essential to interpreting local non-detection as local absences.
-Organismal scope terms
+
+===== Organismal scope terms
+
 An explicitly stated target or excluded organismal scope, and clarification as to whether or not all target organisms observed were reported, should be indicated using the following terms:
-life stage: eco:targetLifeStageScope, eco:excludedLifeStageScope, eco:isLifeStageScopeFullyReported
-growth form: eco:targetGrowthFormScope, eco:excludedGrowthFormScope, eco:isGrowthFormScopeFullyReported
-degree of establishment: eco:targetDegreeOfEstablishmentScope, eco:excludedDegreeOfEstablishmentScope, eco:isDegreeOfEstablishmentScopeFullyReported  
-Other organismal scopes should be reported using eco:verbatimTargetScope. 
+
+* life stage: term:eco[targetLifeStageScope], term:eco[excludedLifeStageScope], term:eco[isLifeStageScopeFullyReported]
+* *growth form*: term:eco[targetGrowthFormScope], term:eco[excludedGrowthFormScope], term:eco[isGrowthFormScopeFullyReported]
+* *degree of establishment*: term:eco[targetDegreeOfEstablishmentScope], term:eco[excludedDegreeOfEstablishmentScope], term:eco[isDegreeOfEstablishmentScopeFullyReported]
+
+Other organismal scopes should be reported using |term:eco[verbatimTargetScope].
 
 [[table-10]]
 .Organismal scope terms, their recommended usage (status), and example data entries.
