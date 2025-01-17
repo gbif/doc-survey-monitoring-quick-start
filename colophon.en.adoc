@@ -21,13 +21,17 @@ https://orcid.org/0000-0002-9216-2917[Cecilie Svenningsen^]
 
 The document _Survey and monitoring data quick start: A guide to updating a Darwin Core Event dataset with the Humboldt extension_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
 
+=== Acknowledgement
+
+_Survey and monitoring data quick start: A guide to updating a DwC Event data with the Humboldt extension_ was produced under https://biodt.eu[the BioDT project^], which received funding from the European Union’s Horizon Europe research and innovation programme under https://doi.org/10.3030/101057437[grant agreement No 101057437^].
+
 === Persistent URI
 
 https://doi.org/10.35035/doc-7t3p-ve38
 
 === Document control
 
-v1.0, January 2025
+v0.1, January 2025
 
 === Cover image
 
