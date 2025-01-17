@@ -6,7 +6,7 @@ Survey sampling design details the sampling strategy and how the survey event si
 
 *Sampling event hierarchy terms*
 
-Historically, only two (2) terms were available to explicitly structure and relate different levels of sampling event hierarchy in a dataset: term:dwc[eventID] and term:dwc[parentEventID]. One additional Darwin Core event term, term:dwc[fieldNumber], provided a means by which to relate a sampling event with a dataset- or project-specific field number. Humboldt extension provides an additional two terms—term:eco[siteCount] and term:eco[siteNestingDescription]— to better support complex or nested datasets (see below). 
+Historically, only two (2) terms were available to explicitly structure and relate different levels of sampling event hierarchy in a dataset: term:dwc[eventID] and term:dwc[parentEventID]. One additional Darwin Core event term, term:dwc[fieldNumber], provided a means by which to relate a sampling event with a dataset- or project-specific field number. Humboldt extension provides an additional two terms—term:eco[siteCount] and term:eco[siteNestingDescription]— to better support complex or nested datasets (`see below` NOTE: hyperlink to section number rather than using indexical text). 
 
 Review your DwC Event dataset to ensure that the survey design is accurately reflected in the use of the five (5) available sampling event hierarchy terms. Where additional events or event levels must be created, be sure to reference https://assets.ctfassets.net/uo17ejk9rkwj/8aIUAbLo0oycyMiM2IKUS/363edf7ab4558460cfe1ef140567450f/persistent_identifiers_guide_en_v1.pdf[A Beginner’s Guide to Persistent Identifiers^] for guidance in creating new persistent identifiers. 
 
