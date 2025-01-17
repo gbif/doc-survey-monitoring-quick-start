@@ -16,7 +16,6 @@ If term:eco[inventoryTypes] = `compilation`, the compilation type should be repo
 
 [[table-05]]
 .Event type terms, their recommended usage (status), and example data entries
-
 |===
 |Status |Term |Example entry
 |Recommended
