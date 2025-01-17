@@ -1,6 +1,7 @@
 = Survey and monitoring data quick start: A guide to updating a Darwin Core Event dataset with the Humboldt extension
 
-https://orcid.org/0000-0001-5942-9053[Kate Ingenloff^] 
+:authorcount: 1
+:author_1: https://orcid.org/0000-0001-5942-9053[Kate Ingenloff^] 
 :toc: left
 :toclevels: 3
 :numbered:
