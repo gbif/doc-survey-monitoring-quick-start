@@ -1,0 +1,91 @@
+Survey event site
+Why are site terms important?
+An event site is a location at which observations are made or samples and/or measurements are taken. Sharing thorough information about a sampling event site, including description, locality, and vegetative cover provides critical context to potential data users about conditions in which the survey was conducted.
+
+Site description
+The following information about a survey event site should be shared for every event level that the information is available:
+Site names: report individual sampling event site names using eco:verbatimSiteNames. A concatenated list of site names can be provided at higher event levels. 
+Habitat: reported habitat at a sampling event site should be recorded in dwc:habitat. A concatenated list of habitats can be provided at higher event levels.
+Weather: reported weather at a sampling event site should be recorded in eco:reportedWeather. 
+Extreme conditions: reported extreme conditions at a sampling event site at the time of the survey event should be recorded in eco:reportedExtremeConditions.
+Verbatim site description: verbatim comments (e.g., the original textual description) about a site or sites should be copied in eco:verbatimSiteDescriptions. 
+
+General event site terms, their recommended usage (status), and example data entries.
+Status
+Term
+Example entry
+Share if available
+eco:verbatimSiteNames
+‘Trap_18’ | ‘Trap_27’ | ‘Trap_54’ | ‘Trap_96’ | ‘Annala’ | ‘Kumpula’
+dwc:habitat
+‘Ephemeral wetland’
+eco:reportedWeather
+{"minimumTemperatureInDegreesFahrenheit": 18, "maximumTemperatureInDegreesFahrenheit": 32}
+eco:reportedExtremeConditions
+‘Site flooded’
+eco:verbatimSiteDescriptions
+‘Coastal sand dunes at dry oak forest edge. Vegetation: Ammophila arenaria, Betula pendula, Leymus arenarius, Pinus sylvestris’
+
+
+Site locality
+The geographic location and extent of each survey event site should be shared. Historically, five (5) terms were strongly recommended for event datasets in GBIF:
+Location ID: a unique identifier for each sampling event site should be shared in dwc:locationID.
+Country code: the two-letter code for the country in which the survey takes place should be provided in dwc:countryCode.
+Latitude-Longitude: The decimal latitude and longitude and geodetic datum location of the Event site should be provided in dwc:decimalLatitude, dwc:decimalLongitude, and dwc:geodeticDatum.
+If geographic coordinates are not in decimal lat-long, populate the following fields instead: dwc:verbatimLatitude, dwc:verbatimLongitude, and dwc:verbatimCoordinateSystem. 
+The Humboldt extension, however, includes additional terms that provide greater contextual information about the geospatial scope of a sampling event or series of events.
+
+Survey site area terms
+Humboldt extension includes two sets of paired terms by which to report the area of an event or survey site: geospatial scope terms and total area sampled terms. Geospatial scope terms (eco:geospatialScopeAreaValue and eco:geospatialScopeAreaUnit) define the geospatial scope or extent of a survey or sampling event. Total area sampled terms (eco:totalAreaSampledValue and eco:totalAreaSampledUnit) report the total area sampled during an event.
+For non-nested event datasets, eco:geospatialScopeAreaValue and eco:geospatialScopeAreaUnit, and eco:totalAreaSampledValue and eco:totalAreaSampledUnit may contain the same values.
+In nested datasets, eco:geospatialScopeAreaValue and eco:geospatialScopeAreaUnit should be used to report the full study extent at the parent event level (the total area surveyed in a series of survey Events) and eco:totalAreaSampledValue and eco:totalAreaSampledUnit should be used to relate the area of child event sites (e.g., individual survey sites). Geospatial scope value(s) should always be greater than or equal to that of total area sampled.
+For example, consider the Biowide project which surveyed 130 40x40m plots across Denmark. Here, the project-level parent event would report the full geographic extent of Denmark:  eco:geospatialScopeAreaValue = ‘42934’ and eco:geospatialScopeAreaUnit = ‘km2’. The associated 130 child events representing each individual survey site would then report the area of the site as eco:totalAreaSampledValue = ‘40’ and eco:totalAreaSampledUnit = ‘m2’.
+If the sampled unit is not an area (such as a filtered volume of water in a zooplankton haul conducted in marine surveys), the paired terms dwc:sampleSizeValue and dwc:sampleSizeUnit should be used.
+
+Additional survey site information
+Survey site geometry: If available, the geometry of a survey site area should be shared using dwc:footprintWKT and dwc:footprintSRS.  
+Verbatim site location information: A more general text description of the site location), if available, can be shared using dwc:locality.
+
+Event site geographic locality and scope terms, their recommended usage (status), and example data entries.
+Status
+Term
+Example entry
+
+Recommended
+dwc:locationID
+‘Trap_138’
+dwc:countryCode
+‘SE’
+dwc:decimalLatitude
+‘59.3168’
+dwc:decimalLongitude
+‘18.0627’
+dwc:geodeticDatum
+‘WGS84’
+eco:geospatialScopeAreaValue
+‘580000’
+eco:geospatialScopeAreaUnit
+‘km2’
+eco:totalAreaSampledValue
+‘40’
+eco:totalAreaSampledUnit
+‘m2’
+dwc:sampleSizeValue
+‘200’
+dwc:sampleSizeUnit
+‘m3’
+Share if available
+dwc:footprintWKT
+‘POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20))’
+dwc:footprintSRS
+‘epsg:4326’
+dwc:locality
+‘Agriculture site, Kongskilde Friluftsgård, Zealand’
+
+
+Vegetation cover
+Vegetation cover at a survey event site can be reported in three ways:
+Percent  vegetation cover: simple percent vegetation cover can be recorded as structured data using the extended measurements or facts extension, 
+Verbatim vegetation cover: verbatim vegetation cover information can be captured in eco:verbatimSiteDescriptions, and
+Vegetation plot survey: vegetation plot survey information can be reported using the Relevé extension. 
+If vegetation cover is reported: eco:isVegetationCoverReported = ‘TRUE’; otherwise, eco:isVegetationCoverReported = ‘FALSE’.
