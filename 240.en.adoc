@@ -71,22 +71,22 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 |`For each site, a total list of lichen species (lichenized fungi) was produced based on a careful examination of soil, wood, stone surfaces and bark of trees up to 2 m at three time periods: October-November 2014, February-December 2015 and March and May 2016. Specimens that were not possible to identify with certainty in the field were sampled and subsequently identified in the laboratory. For each species, the substrate, e.g. phorophyte (host) species was recorded. All records were registered in www.svampeatlas.dk, and the nomenclature used is in accordance with this database.`
 
 |term:eco[protocolReferences]
-|`See Appendix B of Brunbjerg, A.K., Bruun, H.H., Brøndum, L. et al. A systematic survey of regional multi-taxon biodiversity: evaluating strategies and coverage. BMC Ecol 19, 43 (2019). https://doi.org/10.1186/s12898-019-0260-x`
-+ `https://www.google.com/url?q=https://www.protocols.io/view/nanopore-minion-kxygx3jwkg8j/v1&sa=D&source=docs&ust=1736780486391914&usg=AOvVaw3oB8oSZiV-MKw0Qf1xFZe0`
+|`See Appendix B of Brunbjerg, A.K., Bruun, H.H., Brøndum, L. et al. A systematic survey of regional multi-taxon biodiversity: evaluating strategies and coverage. BMC Ecol 19, 43 (2019). https://doi.org/10.1186/s12898-019-0260-x`+
+`https://www.google.com/url?q=https://www.protocols.io/view/nanopore-minion-kxygx3jwkg8j/v1&sa=D&source=docs&ust=1736780486391914&usg=AOvVaw3oB8oSZiV-MKw0Qf1xFZe0`
 
 |===
 
 ==== Material samples
 
-What are material samples?
+*What are material samples?*
 
-A material sample (http://rs.tdwg.org/dwc/terms/MaterialSample) is an entity ‘... that represents an entity of interest in whole or in part.’ Essentially, material samples are specimens collected during the survey event. They may consist of an entire organism, part of an organism, or a genetic sample.
+A http://rs.tdwg.org/dwc/terms/MaterialSample[material sample^] is an entity ‘... that represents an entity of interest in whole or in part.’ Essentially, material samples are specimens collected during the survey event. They may consist of an entire organism, part of an organism, or a genetic sample.
 
-Reporting material samples 
+*Reporting material samples*
 
 If the dataset includes at least one material sample:
 
-* eco:hasMaterialSamples = ‘TRUE’ at the appropriate child event level and at any relevant parent event level, and
+* term:eco[hasMaterialSamples] = ‘TRUE’ at the appropriate child event level and at any relevant parent event level, and
 the type(s) of materials collected should be listed under eco:materialSampleTypes for each relevant event level. 
 If the dataset or sampling event does not include material samples:
 eco:hasMaterialSamples = ‘FALSE’ at all appropriate sampling event levels. 
