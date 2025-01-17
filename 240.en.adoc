@@ -55,7 +55,7 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 
 [[table-06]]
 .Survey event protocol terms, their recommended usage (status), and example data entries
-[cols="1,1,80"]
+[cols="10,10,80"]
 |====
 |Status |Term |Example entry
 |Required
@@ -72,6 +72,7 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 |term:eco[protocolReferences]
 |`See Appendix B of Brunbjerg AK, Bruun HH, Brøndum L et al. (2019) A systematic survey of regional multi-taxon biodiversity: evaluating strategies and coverage. BMC Ecol 19: 43. https://doi.org/10.1186/s12898-019-0260-x`, +
 `https://www.google.com/url?q=https://www.protocols.io/view/nanopore-minion-kxygx3jwkg8j/v1&sa=D&source=docs&ust=1736780486391914&usg=AOvVaw3oB8oSZiV-MKw0Qf1xFZe0`
+
 |===
 
 ==== Material samples
