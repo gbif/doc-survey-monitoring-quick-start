@@ -32,7 +32,7 @@ IMPORTANT: Do NOT change existing identifiers if it can be avoided!
 * Nested datasets should, at the parent event level, include the total number of sites sampled in term:eco[siteCount] and provide a textual description of the hierarchical sampling design using term:eco[siteNestingDescription]. 
 * If the survey data include a field number for each specific event, this should be shared using term:dwc[fieldNumber].
 
-\\Consider renumbering figures—will raise with Kate \\
+\\\ Consider renumbering figures—will raise with Kate \\\
 `FIGURE 2a`
 
 Figure 2a. Simplified example schematic of a nested event dataset structure representing a survey (Parent Event, dark red oval) with two survey sites (child-Events, medium red ovals) at each of which two protocols (child-child-Events, light red ovals) are implemented and occurrence information is collected and related to each sampling event using the occurrence extension.
