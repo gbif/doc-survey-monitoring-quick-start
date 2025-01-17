@@ -73,7 +73,7 @@ An explicitly stated target or excluded organismal scope, and clarification as t
 * *growth form*: term:eco[targetGrowthFormScope], term:eco[excludedGrowthFormScope], term:eco[isGrowthFormScopeFullyReported]
 * *degree of establishment*: term:eco[targetDegreeOfEstablishmentScope], term:eco[excludedDegreeOfEstablishmentScope], term:eco[isDegreeOfEstablishmentScopeFullyReported]
 
-Other organismal scopes should be reported using |term:eco[verbatimTargetScope].
+Other organismal scopes should be reported using term:eco[verbatimTargetScope].
 
 [[table-10]]
 .Organismal scope terms, their recommended usage (status), and example data entries.
