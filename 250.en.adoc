@@ -1,6 +1,6 @@
 === Scope and completeness
 
-What are survey scope and survey completeness?
+*What are survey scope and survey completeness?*
 
 Scope relates to the biodiversity targeted (or not targeted) during a survey. Completeness indicates the thoroughness of a survey relative to the stated scope. Structured reporting of explicitly stated survey scopes and completeness is necessary for evaluating and reporting completeness and is critical to understanding if the data can be used to assert absences (non-detections) of taxa.
 
@@ -8,47 +8,54 @@ Scope terms can be applied at any event level and recommended best practice is t
 
 ==== Verbatim scope
 
-The full verbatim scope explicitly identifying the full suite of stated parameters defining the breadth of a sampling event should be reported using eco:verbatimTargetScope. eco:verbatimTargetScope is particularly useful for capturing scope conditions not covered by existing taxonomic or organismal scope terms.
+The full verbatim scope explicitly identifying the full suite of stated parameters defining the breadth of a sampling event should be reported using term:eco[verbatimTargetScope]. term:eco[verbatimTargetScope] is particularly useful for capturing scope conditions not covered by existing taxonomic or organismal scope terms.
 
-General scope terms, their recommended usage (status), and example data entries.
-Status
-Term
-Example entry
-Recommended
-eco:verbatimTargetScope
-‘Adult flying insects’
+.General scope terms, their recommended usage (status), and example data entries.
+|===
+|Status |Term |Example entry
+|Recommended
+|term:eco[verbatimTargetScope]
+|`Adult flying insects`
+|===
 
 ==== Taxonomic scope
 
-Why is taxonomic scope important?
+*Why is taxonomic scope important?*
 
-Providing taxonomic scope enables reliable, quantitative, incl. statistical interpretation of survey and monitoring data. It is essential to interpret local non-detection as local absences.
+Providing taxonomic scope enables reliable, quantitative, including statistical interpretation of survey and monitoring data. It is essential to interpret local non-detection as local absences.
 
-Taxonomic scope terms
+*Taxonomic scope terms*
 
-An explicitly stated targeted or intentionally excluded taxonomic scope should be reported using eco:targetTaxonomicScope and eco:excludedTaxonomicScope. 
-If a specific person or persons is recorded as making the taxonomic identifications relevant to the stated survey scope(s), they should be acknowledged via dwc:identifiedBy. Best practice is to use a unique identifier (e.g., OrcID) if available.
-If every organism included in eco:targetTaxonomicScope that was observed during an event was reported, then eco:isTaxonomicScopeFullyReported = ‘TRUE’; if not, eco:isTaxonomicScopeFullyReported = ‘FALSE’. 
-If taxonomic completeness is known, eco:taxonCompletenessReported should be populated as either ‘reportedComplete’ or ‘reportedIncomplete’ and the method used to assess completeness reported in eco:taxonCompletenessProtocols. If taxonomic completeness is not reported, eco:taxonCompletenessReported = ‘notReported’.
+An explicitly stated targeted or intentionally excluded taxonomic scope should be reported using term:eco[targetTaxonomicScope] and term:eco[excludedTaxonomicScope].
 
-Taxonomic scope terms, their recommended usage (status), and example data entries.
-Status
-Term
-Example entry
-Recommended
-eco:targetTaxonomicScope
-‘Arthropods’
-eco:excludedTaxonomicScope
-‘Aves | Mammalia’
-Share if available
-dwc:identifiedBy
-‘https://orcid.org/0000-0002-9216-2917’ | ‘https://orcid.org/0000-0002-0786-4069’
-eco:isTaxonomicScopeFullyReported
-‘TRUE’ or ‘FALSE’
-eco:taxonCompletenessReported 
-‘reportedComplete’,  ‘reportedIncomplete’, or ‘notReported’ 
-eco:taxonCompletenessProtocols
-‘Based on sampling effort’
+* If a specific person or persons is recorded as making the taxonomic identifications relevant to the stated survey scope(s), they should be acknowledged via term:dwc[identifiedBy]. Best practice is to use a unique identifier (e.g. ORCiD), if available.
+* If every organism included in term:eco[targetTaxonomicScope] that was observed during an event was reported, then term:eco[isTaxonomicScopeFullyReported] = `TRUE`; if not, term:eco[isTaxonomicScopeFullyReported] = `FALSE`.
+
+If taxonomic completeness is known, term:eco[taxonCompletenessReported] should be populated as either `reportedComplete` or `reportedIncomplete` and the method used to assess completeness reported in term:eco[taxonCompletenessProtocols]. If taxonomic completeness is not reported, term:eco[:taxonCompletenessReported] = `notReported`.
+
+.Taxonomic scope terms, their recommended usage (status), and example data entries.
+|===
+|Status |Term |Example entry
+.2+|Recommended
+|term:eco[targetTaxonomicScope}
+|`Arthropods`
+
+|term:eco[excludedTaxonomicScope]
+|`Aves`, `Mammalia`
+|===
+
+.4+|Share if available
+|term:dwc[identifiedBy]
+|`https://orcid.org/0000-0002-9216-2917`, `https://orcid.org/0000-0002-0786-4069`
+
+|term:eco[isTaxonomicScopeFullyReported]
+|`TRUE` or `FALSE`
+
+|term:eco[taxonCompletenessReported]
+|`reportedComplete`, `reportedIncomplete`, or `notReported` 
+
+|term:eco[taxonCompletenessProtocols]
+|`Based on sampling effort`
 
 ==== Organismal scope
 Why are organismal scope terms important?
