@@ -108,7 +108,7 @@ Other organismal scopes should be reported using eco:verbatimTargetScope.
 
 Bycatch are organisms detected during a survey that were not explicitly targeted in the scope of a study.
 
-+==== Bycatch terms
+===== Bycatch terms
 
 Bycatch can be reported at the taxonomic and organismal levels. 
 
@@ -127,7 +127,7 @@ If the dataset does NOT include taxonomic or organismal bycatch:
 
 * Populate term:eco[hasNonTargetTaxa] and term:eco[hasNonTargetOrganisms] as `FALSE` at all relevant event levels. 
 
-[[table-11]
+[[table-11]]
 .Bycatch terms, their recommended usage (status), and example data entries
 |===
 |Status |Term |Example entry
@@ -139,7 +139,7 @@ If the dataset does NOT include taxonomic or organismal bycatch:
 |`TRUE` or `FALSE`
 
 |term:eco[nonTargetTaxa]
-`Parabuteo unicinctus`, `Geranoaetus melanoleucus; Cetoniinae`, `Aclopinae`, `Cyclocephala modesta`
+|`Parabuteo unicinctus`, `Geranoaetus melanoleucus; Cetoniinae`, `Aclopinae`, `Cyclocephala modesta`
 
 |term:eco[hasNonTargetOrganisms]
 |`TRUE` or `FALSE`
