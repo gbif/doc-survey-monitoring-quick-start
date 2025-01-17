@@ -123,26 +123,29 @@ Field notes can be copied, transcribed verbatim, or linked into dwc:fieldNotes.
 Additional comments about a particular Event that don’t fit in any other term can be shared using dwc:eventRemarks. 
 Both fields can be applied to any event at any level.
 
-Other survey protocol information and verbatim protocol terms, their recommended usage (status), and example data entries.
-Status
-Term
-Example entry
-Recommended
-eco:hasMaterialSamples
-‘TRUE’ or ‘FALSE’
-eco:hasVouchers
-‘TRUE’ or ‘FALSE’
-eco:isLeastSpecificTargetCategoryQuantityInclusive
-‘TRUE’ or ‘FALSE’
-Share if available
-eco:materialSampleTypes
-‘wholeOrganism’ | ‘blood’
-eco:voucherInstitutions
-‘AMNH’ | ‘KUNHM’
-dwc:fieldNotes
-‘Notes available in the Grinnell-Miller Library’
-dwc:eventRemarks
+.Other survey protocol information and verbatim protocol terms, their recommended usage (status), and example data entries.
+|===
+|Status |Term | Example entry
+.3+|Recommended
+|term:eco[hasMaterialSamples]
+|`TRUE` or `FALSE`
 
+|term:eco[hasVouchers]
+|‘TRUE’ or ‘FALSE’
 
+|term:eco[isLeastSpecificTargetCategoryQuantityInclusive]
+|‘TRUE’ or ‘FALSE’
 
+|Share if available
+|term:eco[materialSampleTypes]
+|`wholeOrganism`, `blood`
 
+|term:eco[voucherInstitutions]
+|`AMNH`, `KUNHM`
+
+|term:dwc[fieldNotes]
+|`Notes available in the Grinnell-Miller Library`
+
+|term:dwc[eventRemarks]
+|
+|===
