@@ -1,5 +1,4 @@
 = Survey and monitoring data quick start: A guide to updating a Darwin Core Event dataset with the Humboldt extension
-
 :authorcount: 1
 :author_1: https://orcid.org/0000-0001-5942-9053[Kate Ingenloff^] 
 :toc: left
@@ -9,6 +8,8 @@
 :revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
 :title-page-background-image: image::img/web/photo.jpg[position=top center]
 :license: https://creativecommons.org/licenses/by-sa/4.0/
+// CSS rule override
+:docinfo: shared-head
 
 ifdef::backend-html5[]
 languageLinks:combined[]
