@@ -1,10 +1,10 @@
-== Survey sampling design and event hierarchy 
+=== Survey sampling design and event hierarchy 
 
 What is survey design and sampling event hierarchy?
 
 Survey sampling design details the sampling strategy and how the survey event sites (e.g., stations, plots, transects) are laid out. The sampling event hierarchy is the translation of the survey sampling design into an event-based perspective using Darwin Core terms. 
 
-=== Sampling event hierarchy terms
+==== Sampling event hierarchy terms
 
 Historically, only two (2) terms were available to explicitly structure and relate different levels of sampling event hierarchy in a dataset: dwc:eventID and dwc:parentEventID. One additional Darwin Core event term, dwc:fieldNumber, provided a means by which to relate a sampling event with a dataset- or project-specific field number. Humboldt extension provides an additional two terms—eco:siteCount and eco:siteNestingDescription— to better support complex or nested datasets (see below). 
 
@@ -25,7 +25,7 @@ Non-nested datasets will not have a dwc:parentEventID.
 
 eco:siteNestingDescription does not need to be populated. 
 
-=== Nested datasets
+==== Nested datasets
 
 Nested datasets (multiple nested event levels) are established by relating a child event to a parent event through the child Event’s dwc:parentEventID. The structure of these datasets can take various forms, but often center either first around the study site second and secondarily on protocol (Figure 2a) or conversely, focusing on protocol at higher hierarchical levels and secondarily on locality (Figure 2b). Alternatively, time-series dataset are temporally nested datasets (Figure 2c). 
 
@@ -49,27 +49,27 @@ Figure 2c. Simplified example schematic of a nested event dataset structure repr
 
 [[table-01]]
 .Event hierarchy terms, their recommended usage (status), and example data entries
-[cols="20,~,~"]
+[cols="22,33,45"]
 |===
 |Status |Term |Example entry
 
 |Required
 |term:dwc[eventID}
-|‘survey2022_a-2’
+|`survey2022_a-2`
 
 |Required for nested datasets
 |term:dwc[parentEventID}
-|‘survey2022’
+|`survey2022`
 
 .2+|Recommended
-|eco:siteCount
-|‘75’
+|term:eco[siteCount]
+|`75`
 
-|eco:siteNestingDescription
-|‘25 survey sites each with 3 1m2 quadrats’’
+|term:eco[siteNestingDescription]
+|`25 survey sites each with 3 1m2 quadrats`
 
 |Share if available
 |term:dwc[fieldNumber]
-|‘RV Sol 87-03-08’
+|`RV Sol 87-03-08`
 
-
+|===
