@@ -25,7 +25,7 @@ If term:eco[inventoryTypes] = `compilation`, the compilation type should be repo
 
 .3+|Recommended if applicable
 |term:eco[inventoryTypes]
-`Open search`, `compilation`
+|`Open search`, `compilation`
 
 |term:eco[compilationTypes]
 |`compilationOfExistingSourcesAndSamplingEvents`
