@@ -160,7 +160,7 @@ An explicitly stated habitat scope should be reported using term:eco[targetHabit
 |`deciduous forest`
 
 |term:eco[excludedHabitatScope]
-|‘urban’  | ‘grassland’
+|`urban`, `grassland`
 |===
 
 
