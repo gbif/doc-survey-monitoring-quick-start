@@ -42,15 +42,12 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 * term:eco[protocolDescriptions]
 * term:eco[protocolReferences]
 
-****
-[discrete]
 ===== Updated recommended best practice 
 
 * Report the name of the sampling protocol with term:eco[protocolNames].
 * Capture details of the methods or protocols implemented using term:eco[protocolDescriptions].
 * Provide citation information for the protocol via term:eco[protocolReferences].
 * Retain term:dwc[samplingProtocol] as a verbatim field of term:eco[protocolNames].
-****
 
 [[table-06]]
 .Survey event protocol terms, their recommended usage (status), and example data entries
@@ -118,10 +115,13 @@ Refer to Guidelines for term:eco[isLeastSpecificTargetCategoryQuantityInclusive]
 ==== Verbatim fields
 
 Two verbatim fields are available to provide additional information about an event. 
-Field notes can be copied, transcribed verbatim, or linked into dwc:fieldNotes. 
-Additional comments about a particular Event that don’t fit in any other term can be shared using dwc:eventRemarks. 
+
+* Field notes can be copied, transcribed verbatim, or linked into temr:dwc[fieldNotes].
+* Additional comments about a particular Event that don’t fit in any other term can be shared using term:dwc[eventRemarks]. 
+
 Both fields can be applied to any event at any level.
 
+[[table-07]]
 .Other survey protocol information and verbatim protocol terms, their recommended usage (status), and example data entries.
 |===
 |Status |Term | Example entry
