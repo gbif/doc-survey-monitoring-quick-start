@@ -1,14 +1,15 @@
 [appendix]
-== Example
+== Additional guidance and seeking assistance
 
-An AsciiDoc appendix is just a document section with a 'specialsection' title.
+Need more information? Check out the following documentation: 
 
-Place non-essential information that supports your analysis, validates your conclusions or pursues a related point in an appendix. Examples could include: 
+- https://eco.tdwg.org/[Humboldt Extension for Ecological Inventories^] 
+- https://techdocs.gbif.org/en/[GBIF Technical Documents^] 
 
-* figures/tables/charts/graphs of results
-* statistics
-* questionnaires 
-* transcripts of interviews
-* survey results
-* maps
-* software installation instructions
+Or, reach out for assistance from:
+
+- https://discourse.gbif.org[Humboldt Extension GitHub repository^]: questions about usage, issues with the vocabulary, and recommendations for new terms should be reported as an Issue.
+- https://discourse.gbif.org[GBIF community forum on Discourse^]
+- GBIF help desk 
+    - https://techdocs.gbif.org/en/[create an issue on the GitHub tech-docs project^] 
+    - mailto:helpdesk@gbif.org[send an email^] 
