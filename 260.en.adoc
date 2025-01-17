@@ -1,0 +1,38 @@
+=== Sampling Effort
+
+What is sampling effort?
+
+Sampling effort communicates sampling intensity during a sampling event. Clear reporting of sampling effort is necessary to interpret measures of completeness and calculate abundance (relative or absolute) or biomass and is critical in assessing the ability to compare information and aggregate data across studies.
+
+Sampling effort terms
+dwc:samplingEffort is strongly recommended to publish dwc:Event datasets to GBIF, however, the Humboldt extension includes five (5) terms to more explicitly capture sampling effort information:
+eco:isSamplingEffortReported indicates (‘TRUE’ or ‘FALSE’) if sampling effort is reported.  
+eco:samplingEffortValue and eco:samplingEffortUnit reports sampling effort value and units (e.g., 4 trap nights). 
+eco:samplingEffortProtocol should contain a textual description of the sampling effort protocol (e.g., number and arrangement of people or sensors deployed, whether or not sensors were mobile or stationary, how frequently observation, measurements, or samples were taken) and/or provide a link to the protocol used. 
+eco:samplingPerformedBy should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries.
+
+Updated recommended best practice 
+Capture sampling effort information as structured data using the five (5) Humboldt extension terms:
+eco:isSamplingEffortReported   
+eco:samplingEffortValue and eco:samplingEffortUnit  
+eco:samplingEffortProtocol 
+eco:samplingPerformedBy
+
+
+Sampling effort terms, their recommended usage (status), and example data entries.
+Status
+Term
+Example entry
+Recommended
+eco:isSamplingEffortReported
+‘TRUE’ or ‘FALSE’
+eco:samplingEffortProtocol
+‘40 box traps deployed in the afternoon even spacings along 4 parallel 100m transects placed 50m apart and visited after sunrise the next day’
+eco:samplingEffortValue
+‘40’
+eco:samplingEffortUnit
+‘trap nights’
+dwc:samplingEffort
+‘40 trap nights’
+eco:samplingPerformedBy
+‘John Snow’
