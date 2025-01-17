@@ -54,7 +54,6 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 
 [[table-06]]
 .Survey event protocol terms, their recommended usage (status), and example data entries
-[cols="10,10,80"]
 |====
 |Status |Term |Example entry
 |Required
