@@ -1,0 +1,20 @@
+=== Survey date and time 
+
+
+Why are survey date and time terms important?
+Complete and accurate reporting of the temporal scope of a survey is crucial to asserting event structure and providing key contextual information about sampling conditions.
+
+Event date and time terms
+
+- Event date.–Each event should have a reported date or date range in dwc:eventDate regardless of its hierarchical level. Nested datasets should, at the parent event level, report a date range encompassing all survey dates. 
+- Event time and duration.–If reported, note the time and duration of each event using dwc:eventTime and the paired terms eco:eventDurationValue and eco:eventDurationUnit. 
+
+Refer to GBIF’s technical documentation on Date and time interpretation for more guidance on reporting event dates and times.
+
+.Event date and temporal scope terms, their recommended usage (status), and example data entries.
+
+|Status |Term |Example entry
+|Required |dwc:eventDate | ‘2018-08-29’, ‘2007-03-01/2008-05-11’
+|Recommended |dwc:eventTime |‘08:00Z’
+| |eco:eventDurationValue | ‘1’
+| |eco:eventDurationUnit | ‘hour’
