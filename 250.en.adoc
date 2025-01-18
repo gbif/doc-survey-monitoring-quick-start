@@ -21,11 +21,11 @@ The full verbatim scope explicitly identifying the full suite of stated paramete
 
 ==== Taxonomic scope
 
-*Why is taxonomic scope important?*
+===== Why is taxonomic scope important?
 
 Providing taxonomic scope enables reliable, quantitative, including statistical interpretation of survey and monitoring data. It is essential to interpret local non-detection as local absences.
 
-*Taxonomic scope terms*
+===== Taxonomic scope terms
 
 An explicitly stated targeted or intentionally excluded taxonomic scope should be reported using term:eco[targetTaxonomicScope] and term:eco[excludedTaxonomicScope].
 
@@ -110,7 +110,7 @@ Other organismal scopes should be reported using term:eco[verbatimTargetScope].
 
 ==== Bycatch
 
-*What is bycatch?*
+===== What is bycatch?
 
 Bycatch are organisms detected during a survey that were not explicitly targeted in the scope of a study.
 
@@ -122,8 +122,8 @@ If taxonomic bycatch are included in the datasets:
 
 * Populate term:eco[hasNonTargetTaxa] as `TRUE` at all relevant event levels.
 * If ALL taxonomic bycatch (eco:hasNonTargetTaxa = `TRUE`) captured/observed during an Event are reported in the dataset
-    * term:eco[areNonTargetTaxaFullyReported] = `TRUE` 
-    * and a list of taxonomic bycatch should be provided in eco:nonTargetTaxa. 
+** term:eco[areNonTargetTaxaFullyReported] = `TRUE` 
+** a list of taxonomic bycatch should be provided in eco:nonTargetTaxa
 
 If *organismal( bycatch are included in the dataset:
 
