@@ -26,24 +26,23 @@ image::img/web/Fig-01-v1.jpg[]
 
 ==== Nested datasets
 
-*Nested datasets* (multiple nested event levels) are established by relating a child event to a parent event through the child Event’s term:dwc[parentEventID]. The structure of these datasets can take various forms, but often center either first around the study site second and secondarily on protocol (Figure 2a) or conversely, focusing on protocol at higher hierarchical levels and secondarily on locality (Figure 2b). Alternatively, time-series dataset are temporally nested datasets (Figure 2c). 
+*Nested datasets* (multiple nested event levels) are established by relating a child event to a parent event through the child Event’s term:dwc[parentEventID]. The structure of these datasets can take various forms, but often center either first around the study site second and secondarily on protocol (<<fig-02,Figure 2>>) or conversely, focusing on protocol at higher hierarchical levels and secondarily on locality (<<fig-03,Figure 3>>). Alternatively, time-series dataset are temporally nested datasets (<<fig-04,Figure 4>>). 
 
 * Each event must have a unique term:dwc[eventID], and each parent event must have its own term:dwc[parentEventID]. 
 * Nested datasets should, at the parent event level, include the total number of sites sampled in term:eco[siteCount] and provide a textual description of the hierarchical sampling design using term:eco[siteNestingDescription]. 
 * If the survey data include a field number for each specific event, this should be shared using term:dwc[fieldNumber].
 
-\\\ Consider renumbering figures—will raise with Kate \\\
-`FIGURE 2a`
+[[fig-02]]
+image::img/web/Fig-02a-v1.jpg[]
+.Simplified example schematic of a nested event dataset structure representing a survey (Parent Event, dark red oval) with two survey sites (child-Events, medium red ovals) at each of which two protocols (child-child-Events, light red ovals) are implemented and occurrence information is collected and related to each sampling event using the occurrence extension.
 
-Figure 2a. Simplified example schematic of a nested event dataset structure representing a survey (Parent Event, dark red oval) with two survey sites (child-Events, medium red ovals) at each of which two protocols (child-child-Events, light red ovals) are implemented and occurrence information is collected and related to each sampling event using the occurrence extension.
+[[fig-03]]
+image::img/web/Fig-02b-v1.jpg[]
+.Simplified example schematic of a nested event dataset structure representing a survey (Parent Event, dark red oval) with two protocols (child-Events, medium red ovals) which are each implemented at two survey sites (four independently surveyed child-child-Events, light red ovals) wherein occurrence information is collected in four (likely quantitative) occurrences lists and related to each sampling event using the occurrence extension.
 
-`FIGURE 2b`
-
-Figure 2b. Simplified example schematic of a nested event dataset structure representing a survey (Parent Event, dark red oval) with two protocols (child-Events, medium red ovals) which are each implemented at two survey sites (four independently surveyed child-child-Events, light red ovals) wherein occurrence information is collected in four (likely quantitative) occurrences lists and related to each sampling event using the occurrence extension.
-
-`FIGURE 2c`
-
-Figure 2c. Simplified example schematic of a nested event dataset structure representing a time series survey (Parent Event, dark red oval) with two survey sites (child-Events, medium red ovals) which are each independently sampled at two different times (four independently surveyed child-child-Events, light red ovals) wherein occurrence information is collected in four (likely quantitative) occurrences lists and related to each sampling event using the occurrence extension.
+[[fig-04]]
+image::img/web/Fig-02c-v1.jpg[]
+.Simplified example schematic of a nested event dataset structure representing a time series survey (Parent Event, dark red oval) with two survey sites (child-Events, medium red ovals) which are each independently sampled at two different times (four independently surveyed child-child-Events, light red ovals) wherein occurrence information is collected in four (likely quantitative) occurrences lists and related to each sampling event using the occurrence extension.
 
 [[table-01]]
 .Event hierarchy terms, their recommended usage (status), and example data entries
