@@ -14,4 +14,5 @@
 ===== Populating terms
 
 Each term in this document is linked with its respective term IRI alias (ex., term:eco[protocolNames]). When populating a term in the ‘event’ or ‘humboldt’ table, be sure to refer to the definition, comments, and examples provided in the linked documentation to ensure that you are following recommended usage guidelines.
+
 ****
