@@ -42,12 +42,16 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 * term:eco[protocolDescriptions]
 * term:eco[protocolReferences]
 
+****
+
+[discrete]
 ===== Updated recommended best practice 
 
 * Report the name of the sampling protocol with term:eco[protocolNames].
 * Capture details of the methods or protocols implemented using term:eco[protocolDescriptions].
 * Provide citation information for the protocol via term:eco[protocolReferences].
 * Retain term:dwc[samplingProtocol] as a verbatim field of term:eco[protocolNames].
+****
 
 [[table-06]]
 .Survey event protocol terms, their recommended usage (status), and example data entries
@@ -55,7 +59,7 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 |Status |Term |Example entry
 |Required
 |term:dwc[samplingProtocol]
-|‘Visual survey’
+|`Visual survey`
 
 .3+|Recommended
 |term:eco[protocolNames]
@@ -71,11 +75,11 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 
 ==== Material samples
 
-*What are material samples?*
+===== What are material samples?
 
 A http://rs.tdwg.org/dwc/terms/MaterialSample[material sample^] is an entity "...that represents an entity of interest in whole or in part." Essentially, material samples are specimens collected during the survey event. They may consist of an entire organism, part of an organism, or a genetic sample.
 
-*Reporting material samples*
+===== Reporting material samples
 
 If the dataset includes at least one material sample:
 
@@ -88,11 +92,11 @@ If the dataset or sampling event does not include material samples:
 
 ==== Vouchers
 
-*What are vouchers?*
+===== What are vouchers?
 
 A voucher is a specimen or material sample collected and accessioned into a museum collection in support of a specific project or survey effort. 
 
-*Reporting vouchers*
+===== Reporting vouchers
 
 If the dataset has vouchers:
 
@@ -130,10 +134,10 @@ Both fields can be applied to any event at any level.
 |`TRUE` or `FALSE`
 
 |term:eco[hasVouchers]
-|‘TRUE’ or ‘FALSE’
+|`TRUE` or `FALSE`
 
 |term:eco[isLeastSpecificTargetCategoryQuantityInclusive]
-|‘TRUE’ or ‘FALSE’
+|`TRUE` or `FALSE`
 
 .3+|Share if available
 |term:eco[materialSampleTypes]
@@ -146,5 +150,5 @@ Both fields can be applied to any event at any level.
 |`Notes available in the Grinnell-Miller Library`
 
 |term:dwc[eventRemarks]
-|
+|sp 
 |===
