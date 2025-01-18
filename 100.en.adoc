@@ -1,7 +1,7 @@
 [[getting-started]]
 == Getting started
 
-The process of updating your Darwin Core Archive (DwC-A) Event dataset with the Humboldt extension will likely involve moving some information from the existing DwC-A metadata to a new ‘humboldt’ table; referring to existing documentation, publications, or associated weblinks related to the dataset; and, when possible, conference with the original data collectors or individuals involved in the design and oversight of the project or survey resulting in the dataset. Data republication efforts described here are expected to increase the value and usefulness of existing event datasets in GBIF, broaden their application and therefore data citation across science and policy reuse scenarios.
+The process of updating your Darwin Core Archive (DwC-A) Event dataset with the Humboldt extension will likely involve moving some information from the existing DwC-A metadata to a new `humboldt` table; referring to existing documentation, publications, or associated weblinks related to the dataset; and, when possible, conference with the original data collectors or individuals involved in the design and oversight of the project or survey resulting in the dataset. Data republication efforts described here are expected to increase the value and usefulness of existing event datasets in GBIF, broaden their application and therefore data citation across science and policy reuse scenarios.
 
 Before you get started, we recommend that you prepare by taking the following steps:
 
@@ -9,6 +9,6 @@ Before you get started, we recommend that you prepare by taking the following st
 . Check the range of existing data citations, including contributions of your dataset to the cited query. Which other reuse avenues are open for the data in question? This may help you to focus on particular data and information elements in the transition to HE.
 . Identify additional dataset resources that can be referred to including supplementary documentation, publications, websites, and dataset contacts and people involved in the data collection or oversight of the project or survey.
 . Review the reported data structure. Does the existing event hierarchy accurately reflect the data and the level of complexity desired? Make necessary changes.
-. Create a ‘humboldt’ table for the DwC-A.
+. Create a `humboldt` table for the DwC-A.
 
 Now, you’re ready to capture survey design data using the Humboldt extension following the recommendations below.
