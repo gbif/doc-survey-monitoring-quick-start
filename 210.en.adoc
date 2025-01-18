@@ -46,7 +46,7 @@ image::img/web/Fig-02c-v1.jpg[]
 
 [[table-01]]
 .Event hierarchy terms, their recommended usage (status), and example data entries
-[cols="22,22,~"]
+[cols="25,25,~"]
 |===
 |Status |Term |Example entry
 
