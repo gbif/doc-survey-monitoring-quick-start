@@ -15,7 +15,7 @@ IMPORTANT: Do NOT change existing identifiers if it can be avoided!
 ==== Non-nested datasets
 
 [[figure-01]]
-|image::img/web/fig-01-v1.jpg[]
+|image::img/web/Fig-01-v1.jpg[]
 .A simple schematic of a non-nested event dataset structure (a) consisting of a single event with associated occurrences related to the event via the occurrence extension and (b) a series of individual events with associated occurrences related to the appropriate event via the occurrence extension.
 
 *Non-nested datasets* may consist of a single sampling event with a single standardized sampling protocol that is not repeated (<<fig-01,Figure 1a>>) or a series of single sampling events that are not joined by a larger parent event (<<fig-01,Figure 1b>>). 
