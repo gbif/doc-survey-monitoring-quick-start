@@ -12,6 +12,7 @@ The full verbatim scope explicitly identifying the full suite of stated paramete
 
 [[table-08]]
 .General scope terms, their recommended usage (status), and example data entries.
+[cols="20,30,~"]
 |===
 |Status |Term |Example entry
 |Recommended
@@ -36,6 +37,7 @@ If taxonomic completeness is known, term:eco[taxonCompletenessReported] should b
 
 [[table-09]]
 .Taxonomic scope terms, their recommended usage (status), and example data entries.
+[cols="20,30,~"]
 |===
 |Status |Term |Example entry
 .2+|Recommended
@@ -77,6 +79,7 @@ Other organismal scopes should be reported using term:eco[verbatimTargetScope].
 
 [[table-10]]
 .Organismal scope terms, their recommended usage (status), and example data entries.
+[cols="20,30,~"]
 |===
 |Status |Term |Example entry
 .8+|Share if available
@@ -135,6 +138,7 @@ If the dataset does NOT include taxonomic or organismal bycatch:
 
 [[table-11]]
 .Bycatch terms, their recommended usage (status), and example data entries
+[cols="20,30,~"]
 |===
 |Status |Term |Example entry
 .4+|Share if available
@@ -159,6 +163,7 @@ An explicitly stated habitat scope should be reported using term:eco[targetHabit
 
 [[table-12]]
 .Habitat scope terms, their recommended usage (status), and example data entries
+[cols="20,30,~"]
 |===
 |Status |Term | Example entry
 .2+|Share if available
@@ -168,5 +173,3 @@ An explicitly stated habitat scope should be reported using term:eco[targetHabit
 |term:eco[excludedHabitatScope]
 |`urban`, `grassland`
 |===
-
-
