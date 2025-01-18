@@ -126,4 +126,4 @@ Vegetation cover at a survey event site can be reported in three ways:
 * *Verbatim vegetation cover*: verbatim vegetation cover information can be captured in term:eco[verbatimSiteDescriptions]
 * *Vegetation plot survey*: vegetation plot survey information can be reported using the https://rs.gbif.org/extension/gbif/1.0/releve_2016-05-10.xml[Relevé extension^].
 
-If vegetation cover is reported: term:eco[isVegetationCoverReported] = ‘TRUE’; otherwise, term:eco[isVegetationCoverReported] = ‘FALSE’.
+If vegetation cover is reported: term:eco[isVegetationCoverReported] = `TRUE`; otherwise, term:eco[isVegetationCoverReported] = `FALSE`.
