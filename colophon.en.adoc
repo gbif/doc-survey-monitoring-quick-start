@@ -23,7 +23,7 @@ The document _Survey and monitoring data quick start: A guide to updating a Darw
 
 === Acknowledgement
 
-_Survey and monitoring data quick start: A guide to updating a DwC Event data with the Humboldt extension_ was produced under https://biodt.eu[the BioDT project^], which received funding from the European Union’s Horizon Europe research and innovation programme under https://doi.org/10.3030/101057437[grant agreement No 101057437^].
+_Survey and monitoring data quick start: A guide to updating a DwC Event dataset with the Humboldt extension_ was produced under https://biodt.eu[the BioDT project^], which received funding from the European Union’s Horizon Europe research and innovation programme under https://doi.org/10.3030/101057437[grant agreement No 101057437^].
 
 === Persistent URI
 
