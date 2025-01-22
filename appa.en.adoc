@@ -3,13 +3,13 @@
 
 Need more information? Check out the following documentation: 
 
-- https://eco.tdwg.org/[Humboldt Extension for Ecological Inventories^] 
-- https://techdocs.gbif.org/en/[GBIF Technical Documents^] 
+* https://eco.tdwg.org/[Humboldt Extension for Ecological Inventories^] 
+* https://techdocs.gbif.org/en/[GBIF Technical Documents^] 
 
 Or, reach out for assistance from:
 
-- https://discourse.gbif.org[Humboldt Extension GitHub repository^]: questions about usage, issues with the vocabulary, and recommendations for new terms should be reported as an Issue.
-- https://discourse.gbif.org[GBIF community forum on Discourse^]
-- GBIF help desk 
-    - https://techdocs.gbif.org/en/[create an issue on the GitHub tech-docs project^] 
-    - mailto:helpdesk@gbif.org[send an email^] 
+* https://discourse.gbif.org[Humboldt Extension GitHub repository^]: questions about usage, issues with the vocabulary, and recommendations for new terms should be reported as an Issue.
+* https://discourse.gbif.org[GBIF community forum on Discourse^]
+* GBIF help desk 
+    ** https://techdocs.gbif.org/en/[create an issue on the GitHub tech-docs project^] 
+    ** mailto:helpdesk@gbif.org[send an email^] 
