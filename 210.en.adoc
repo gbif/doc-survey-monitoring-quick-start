@@ -2,7 +2,7 @@
 
 ===== What is survey design and sampling event hierarchy?
 
-Survey sampling design details the sampling strategy and how the survey event sites (e.g. stations, plots, transects) are laid out. The sampling event hierarchy is the translation of the survey sampling design into an event-based perspective using Darwin Core terms. 
+*Survey sampling design* details the sampling strategy and how the survey event sites (e.g. stations, plots, transects) are laid out. The *sampling event hierarchy* is the translation of the survey sampling design into an event-based perspective using Darwin Core terms. 
 
 ===== Sampling event hierarchy terms
 
