@@ -8,10 +8,10 @@
 
 term:dwc[samplingEffort] is strongly recommended to publish term:dwc[Event] datasets to GBIF, however, the Humboldt extension includes five (5) terms to more explicitly capture sampling effort information:
 
-* term:eco[isSamplingEffortReported] indicates (`TRUE` or `FALSE`) if sampling effort is reported. 
-* term:eco[samplingEffortValue] and term:eco[samplingEffortUnit] reports sampling effort value and units (e.g. 4 trap nights).
-* term:eco[samplingEffortProtocol] should contain a textual description of the sampling effort protocol (e.g. number and arrangement of people or sensors deployed, whether or not sensors were mobile or stationary, how frequently observation, measurements, or samples were taken) and/or provide a link to the protocol used.
-* term:eco[samplingPerformedBy] should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries.
+* *Is sampling effort reported?*: term:eco[isSamplingEffortReported] indicates (`TRUE` or `FALSE`) if sampling effort is reported. 
+* *Sampling effort*: term:eco[samplingEffortValue] and term:eco[samplingEffortUnit] reports sampling effort value and units (e.g. 4 trap nights).
+* *Sampling effort protocol*: term:eco[samplingEffortProtocol] should contain a textual description of the sampling effort protocol (e.g. number and arrangement of people or sensors deployed, whether or not sensors were mobile or stationary, how frequently observation, measurements, or samples were taken) and/or provide a link to the protocol used.
+* *Sampling performed by*: term:eco[samplingPerformedBy] should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries.
 
 ****
 
@@ -20,10 +20,10 @@ term:dwc[samplingEffort] is strongly recommended to publish term:dwc[Event] data
 
 Capture sampling effort information as structured data using the five (5) Humboldt extension terms:
 
-* *Is sampling effort reported?*: term:eco[isSamplingEffortReported]
-* *Sampling effort*: term:eco[samplingEffortValue] and term:eco[samplingEffortUnit]
-* *Sampling effort protocol*: term:eco[samplingEffortProtocol] 
-* *Sampling performed by*: term:eco[samplingPerformedBy]
+* term:eco[isSamplingEffortReported]
+* term:eco[samplingEffortValue] and term:eco[samplingEffortUnit]
+* term:eco[samplingEffortProtocol] 
+* term:eco[samplingPerformedBy]
 ****
 
 [[table-13]]
