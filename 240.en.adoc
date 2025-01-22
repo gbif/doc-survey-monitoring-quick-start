@@ -109,7 +109,7 @@ If the dataset or sampling event does NOT include vouchers:
 
 ==== Least specific target category quantity inclusive
 
-The term term:eco[isLeastSpecificTargetCategoryQuantityInclusive] provides a means by which to indicate to data users if an organismal occurrence record for a specific event reporting an explicit quantity of that organism via the paired terms term:dwc[organismQuantity] and term:dwc[organismQuantityType] represents the total number of that organism observed during the event. That is, it answers the question: ital _is_ _this_ _the_ _only_ _record_ _of_ _that_ _organism_ _during_ _the_ _event?_
+The term term:eco[isLeastSpecificTargetCategoryQuantityInclusive] provides a means by which to indicate to data users if an organismal occurrence record for a specific event reporting an explicit quantity of that organism via the paired terms term:dwc[organismQuantity] and term:dwc[organismQuantityType] represents the total number of that organism observed during the event. That is, it answers the question: _is_ _this_ _the_ _only_ _record_ _of_ _that_ _organism_ _during_ _the_ _event?_
 
 * If the quantity reported using these paired terms includes all the organisms of the same taxon sampled/observed in that single occurrence record, then term:eco[isLeastSpecificTargetCategoryQuantityInclusive] =`TRUE.` 
 * If the quantity reported using these paired terms does not include all organisms of the same taxon sampled/observed in that single occurrence record (e.g. there are two or more occurrence records reported for the same event), then term:eco[isLeastSpecificTargetCategoryQuantityInclusive] = `FALSE.`
