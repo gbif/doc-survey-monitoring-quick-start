@@ -2,7 +2,7 @@
 
 ===== What is sampling protocol?
 
-A *Sampling protocol* provides the details of how the sampling was conducted. Clear communication of the sampling protocol implemented is essential to ensuring the reliability, reproducibility, and reusability of a dataset as detailed knowledge of survey methods facilitates data integration and subsequent analysis. 
+A *sampling protocol* provides the details of how the sampling was conducted. Clear communication of the sampling protocol implemented is essential to ensuring the reliability, reproducibility, and reusability of a dataset as detailed knowledge of survey methods facilitates data integration and subsequent analysis. 
 
 IMPORTANT: Sampling protocol terms should be populated at every event level possible as inheritance in either direction should not be assumed or inferred between event levels. 
 
@@ -94,7 +94,7 @@ If the dataset or sampling event does not include material samples:
 
 ===== What are vouchers?
 
-A voucher is a specimen or material sample collected and accessioned into a museum collection in support of a specific project or survey effort. 
+A *voucher* is a specimen or material sample collected and accessioned into a museum collection in support of a specific project or survey effort. 
 
 ===== Reporting vouchers
 
@@ -103,15 +103,15 @@ If the dataset has vouchers:
 * term:eco[hasVouchers] =  `TRUE` at the appropriate child event level and at any relevant parent event level, and
 * a list of institutions housing them should be shared in term:eco[voucherInstitutions] for each relevant event level. 
 
-If the dataset or sampling event does not include vouchers: 
+If the dataset or sampling event does NOT include vouchers: 
 
 * term:eco[hasVouchers] = `FALSE` at all appropriate sampling event levels
 
 ==== Least specific target category quantity inclusive
 
-The term term:eco[isLeastSpecificTargetCategoryQuantityInclusive] provides a means by which to indicate to data users if an organismal occurrence record for a specific event reporting an explicit quantity of that organism via the paired terms term:dwc[organismQuantity] and term:dwc[organismQuantityType] represents the total number of that organism observed during the event. That is, it answers the question: is this the only record of that organism during the event?
+The term term:eco[isLeastSpecificTargetCategoryQuantityInclusive] provides a means by which to indicate to data users if an organismal occurrence record for a specific event reporting an explicit quantity of that organism via the paired terms term:dwc[organismQuantity] and term:dwc[organismQuantityType] represents the total number of that organism observed during the event. That is, it answers the question: ital _is_ _this_ _the_ _only_ _record_ _of_ _that_ _organism_ _during_ _the_ _event?_
 
-* If the quantity reported using these paired terms includes all the organisms of the same taxon sampled/observed in that single occurrence record, then term:eco[isLeastSpecificTargetCategoryQuantityInclusive] =`TRUE` 
+* If the quantity reported using these paired terms includes all the organisms of the same taxon sampled/observed in that single occurrence record, then term:eco[isLeastSpecificTargetCategoryQuantityInclusive] =`TRUE.` 
 * If the quantity reported using these paired terms does not include all organisms of the same taxon sampled/observed in that single occurrence record (e.g. there are two or more occurrence records reported for the same event), then term:eco[isLeastSpecificTargetCategoryQuantityInclusive] = `FALSE.`
 
 Refer to Guidelines for term:eco[isLeastSpecificTargetCategoryQuantityInclusive] for more information.
@@ -120,7 +120,7 @@ Refer to Guidelines for term:eco[isLeastSpecificTargetCategoryQuantityInclusive]
 
 Two verbatim fields are available to provide additional information about an event. 
 
-* Field notes can be copied, transcribed verbatim, or linked into temr:dwc[fieldNotes].
+* Field notes can be copied, transcribed verbatim, or linked into term:dwc[fieldNotes].
 * Additional comments about a particular Event that don’t fit in any other term can be shared using term:dwc[eventRemarks]. 
 
 Both fields can be applied to any event at any level.
