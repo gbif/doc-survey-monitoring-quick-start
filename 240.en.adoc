@@ -8,11 +8,24 @@ IMPORTANT: Sampling protocol terms should be populated at every event level poss
 
 ==== Event type
 
-The nature of each sampling event (e.g., survey, inventory, bioblitz) should be reported using term:dwc[eventType].
+The nature of each sampling event (e.g., survey, inventory, bioblitz) should be reported using term:dwc[eventType]. Event type should provide a high level overview of sampling effort type but should not be so specific as to overlap with sampling protocol. There is no single, standardized vocabulary for term:dwc[eventType]. If your organization or community has a controlled vocabulary, it is recommended to use that vocabulary. Otherwise, you can refer to the box summarizing common event types below for guidance.
 
-If term:dwc[eventType] = `inventory`, the type of search implemented (e.g., restricted search, open search, opportunistic search, trap or sample, compilation) must be reported in term:eco[inventoryTypes].
+****
 
-If term:eco[inventoryTypes] = `compilation`, the compilation type should be reported using term:eco[compilationTypes] and data sources captured using term:eco[compilationSourceTypes].
+[discrete]
+===== Common event types 
+
+* *Expedition*: An expedition is an organized information gathering venture that inherently includes multiple sampling events and event types. Expeditions may include multiple taxonomic and/organismal scopes, any number of documented sampling protocols, and varying degrees of complexity in survey design. 'Expedition' as a dwc:eventType is typically most appropriate at higher (parent) event levels in nested hierarchies.
+* *Survey*: A survey is a systematic effort to collect information about the biological organisms in a specific area at a given time. Surveys typically included at least one documented protocol and may or may not have an explicitly defined taxonomic and/or organismal scope. 'Survey' is the most general event type term and can be applied as a dwc:eventType at any event level.
+* *Inventory*: An inventory is a comprehensive survey of the taxa present in a specific area over an explicit period of time. Inventories typically have an explicit taxonomic and/or organismal scope and a well-defined protocol. 'Inventory' is typically most appropriate as a dwc:eventType at lower (child) event levels in nested hierarchies.
+* *Bioblitz*: A bioblitz is a survey event aimed at finding and identifying as many species as possible in a specific area over a (typically) short, contiguous period of time. Bioblitzes often include participants (agents) with a wide range of backgrounds and levels of expertise in biodiversity sciences including formal biologists as well as the broader, general public. 'Bioblitz' as a dwc:eventType is typically most appropriate at lower (child) event levels in nested hierarchies.
+****
+
+*Inventory event types*
+
+* If term:dwc[eventType] = `inventory`, the type of search implemented (e.g., restricted search, open search, opportunistic search, trap or sample, compilation) must be reported in term:eco[inventoryTypes].
+
+* If term:eco[inventoryTypes] = `compilation`, the compilation type should be reported using term:eco[compilationTypes] and data sources captured using term:eco[compilationSourceTypes].
 
 [[table-05]]
 .Event type terms, their recommended usage (status), and example data entries
