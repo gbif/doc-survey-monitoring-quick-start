@@ -116,6 +116,25 @@ The term term:eco[isLeastSpecificTargetCategoryQuantityInclusive] provides a mea
 
 Refer to Guidelines for term:eco[isLeastSpecificTargetCategoryQuantityInclusive] for more information.
 
+==== Data generalizations & information withheld
+
+===== Why withhold or generalize information from published biodiversity data?
+
+Although the general recommendation is to share all biodiversity data available at its highest spatio-temporal resolution, situations exist where it is necessary to do so. Refer to https://doi.org/10.15468/doc-5jp4-5g10[_Current Best Practices for Generalizing Sensitive Species Occurrence Data_] for guidance on when and how to generalize or withhold information.
+
+===== Reporting data generalizations
+
+If specific aspects of data within the dataset are generalized, a clear summary of the data generalization process should be reported at the appropriate event level using term:dwc[dataGeneralizations].
+
+For example, if the spatial resolution of locality data for an event is reduced to the nearest half degree, then term:dwc[dataGeneralizations] = ‘_Coordinates generalized from original GPS coordinates to the nearest half degree grid cell_’ for each event to which this treatment was applied. If the location information was generalized for every sampling event site in a nested hierarchy, then at the parent event level term:dwc[dataGeneralizations] = ‘_Coordinates for each event site generalized from original GPS coordinates to the nearest half degree grid cell_.’
+
+===== Reporting information withheld
+
+If specific data are not reported with the dataset, a clarifying statement should be provided at the appropriate event level using term:dwc[informationWithheld]. 
+
+For example, if sensitive species data are not purposefully excluded from the published data, term:dwc[informationWithheld] should include a statement along the lines of ‘_Sensitive species occurrence information not reported_.’
+
+
 ==== Verbatim fields
 
 Two verbatim fields are available to provide additional information about an event. 
@@ -139,12 +158,18 @@ Both fields can be applied to any event at any level.
 |term:eco[isLeastSpecificTargetCategoryQuantityInclusive]
 |`TRUE` or `FALSE`
 
-.4+|Share if available
+.6+|Share if available
 |term:eco[materialSampleTypes]
 |`wholeOrganism`, `blood`
 
 |term:eco[voucherInstitutions]
 |`AMNH`, `KUNHM`
+
+|term:dwc[dataGeneralizations]
+|`Coordinates generalized from original GPS coordinates to the nearest half degree grid cell`, `‘Coordinates for each event site generalized from original GPS coordinates to the nearest half degree grid cell`
+
+|term:dwc[informationWithheld]
+|`Sensitive species occurrence information not reported`
 
 |term:dwc[fieldNotes]
 |`Notes available in the Grinnell-Miller Library`
