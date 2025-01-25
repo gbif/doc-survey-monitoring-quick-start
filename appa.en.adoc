@@ -1,4 +1,5 @@
 [appendix]
+
 == Additional DwC Event terms
 
 While all https://eco.tdwg.org/[Humboldt extension] terms are covered in this guide, the Darwin Core Event terms included are not exhaustive. The full suite of available DwC Event terms that can be applied to a DwC-A Event dataset can be found in the https://rs.gbif.org/core/dwc_event_2024-02-19.xml[GBIF Repository of Schemas Darwin Core Event page].
