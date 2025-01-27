@@ -1,6 +1,6 @@
 // add cover image to img directory and update filename below
 ifdef::backend-html5[]
-image::img/web/photo.jpg[]
+image::img/web/photo.png[]
 endif::backend-html5[]
 
 == Colophon
@@ -35,4 +35,4 @@ v0.1, January 2025
 
 === Cover image
 
-Humboldt penguin (_Spheniscus humboldti_), observed in Peru. Photo 2024 Álvaro Alemany via https://www.gbif.org/occurrence/4909055715[iNaturalist Research-grade Observations^], licensed under http://creativecommons.org/licenses/by-nc-sa/4.0/[CC BY-NC-SA 4.0^].
+GBIF secretariat 2025
