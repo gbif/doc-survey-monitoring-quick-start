@@ -5,11 +5,11 @@
 [discrete]
 ===== Where does a term belong?
 
-- DwC Event terms (preceded by ‘dwc’, e.g. term:dwc[eventID]) should be saved to the `event` table. 
-- Humboldt extension terms (preceded by ‘eco’, e.g. term:eco[protocolNames]) should be saved to a separate `Humboldt` table.
+- DwC Event terms (preceded by ‘dwc’, e.g. term:dwc[dwc:eventID]) should be saved to the `event` table. 
+- Humboldt Extension terms (preceded by ‘eco’, e.g. term:eco[eco:protocolNames]) should be saved to a separate `Humboldt` table.
 
 *Populating terms*
 
-Each term in this document is linked with its respective term IRI alias (ex., term:eco[protocolNames]). When populating a term in the `event` or `humboldt` table, be sure to refer to the definition, comments, and examples provided in the linked documentation to ensure that you are following recommended usage guidelines.
+Each term in this document is linked with its respective term IRI alias (ex., term:eco[eco:protocolNames]). When populating a term in the `event` or `humboldt` table, be sure to refer to the definition, comments, and examples provided in the linked documentation to ensure that you are following recommended usage guidelines.
 
 ****
