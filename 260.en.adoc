@@ -6,12 +6,12 @@
 
 ===== Sampling effort terms
 
-term:dwc[samplingEffort] is strongly recommended to publish term:dwc[Event] datasets to GBIF, however, the Humboldt extension includes five (5) terms to more explicitly capture sampling effort information:
+term:dwc[samplingEffort] is strongly recommended to publish term:dwc[dwc:Event] datasets to GBIF, however, the Humboldt extension includes five (5) terms to more explicitly capture sampling effort information:
 
-* *Is sampling effort reported?*: term:eco[isSamplingEffortReported] indicates (`TRUE` or `FALSE`) if sampling effort is reported. 
-* *Sampling effort*: term:eco[samplingEffortValue] and term:eco[samplingEffortUnit] reports sampling effort value and units (e.g. 4 trap nights).
-* *Sampling effort protocol*: term:eco[samplingEffortProtocol] should contain a textual description of the sampling effort protocol (e.g. number and arrangement of people or sensors deployed, whether or not sensors were mobile or stationary, how frequently observation, measurements, or samples were taken) and/or provide a link to the protocol used.
-* *Sampling performed by*: term:eco[samplingPerformedBy] should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries.
+* *Is sampling effort reported?*: term:eco[eco:isSamplingEffortReported] indicates (`TRUE` or `FALSE`) if sampling effort is reported. 
+* *Sampling effort*: term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit] reports sampling effort value and units (e.g. 4 trap nights).
+* *Sampling effort protocol*: term:eco[eco:samplingEffortProtocol] should contain a textual description of the sampling effort protocol (e.g. number and arrangement of people or sensors deployed, whether or not sensors were mobile or stationary, how frequently observation, measurements, or samples were taken) and/or provide a link to the protocol used.
+* *Sampling performed by*: term:eco[eco:samplingPerformedBy] should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries.
 
 ****
 
@@ -20,10 +20,10 @@ term:dwc[samplingEffort] is strongly recommended to publish term:dwc[Event] data
 
 Capture sampling effort information as structured data using the five (5) Humboldt extension terms:
 
-* term:eco[isSamplingEffortReported]
-* term:eco[samplingEffortValue] and term:eco[samplingEffortUnit]
-* term:eco[samplingEffortProtocol] 
-* term:eco[samplingPerformedBy]
+* term:eco[eco:isSamplingEffortReported]
+* term:eco[eco:samplingEffortValue] and term:eco[samplingEffortUnit]
+* term:eco[eco:samplingEffortProtocol] 
+* term:eco[eco:samplingPerformedBy]
 ****
 
 [[table-13]]
@@ -32,21 +32,21 @@ Capture sampling effort information as structured data using the five (5) Humbol
 |===
 |Status |Term |Example entry
 .6+|Recommended
-|term:eco[isSamplingEffortReported]
+|term:eco[eco:isSamplingEffortReported]
 |`TRUE` or `FALSE`
 
-|term:eco[samplingEffortProtocol]
+|term:eco[eco:samplingEffortProtocol]
 |`40 box traps deployed in the afternoon even spacings along 4 parallel 100m transects placed 50m apart and visited after sunrise the next day`
 
-|term:eco[samplingEffortValue]
+|term:eco[eco:samplingEffortValue]
 |`40`
 
-|term:eco[samplingEffortUnit]
+|term:eco[eco:samplingEffortUnit]
 |`trap nights`
 
-|term:dwc[samplingEffort]
+|term:dwc[eco:samplingEffort]
 |`40 trap nights`
 
-|term:eco[samplingPerformedBy]
+|term:eco[eco:samplingPerformedBy]
 |`John Snow`
 |===
