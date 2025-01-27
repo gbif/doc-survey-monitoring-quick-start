@@ -35,4 +35,4 @@ v0.1, January 2025
 
 === Cover image
 
-Illustration by Javier Gamboa, GBIF secretariat 2025. Licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
+Illustration by Javier Gamboa, GBIF Secretariat 2025. Licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
