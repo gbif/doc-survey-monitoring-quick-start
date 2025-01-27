@@ -8,7 +8,7 @@ Scope terms can be applied at any event level and recommended best practice is t
 
 ==== Verbatim scope
 
-The full verbatim scope explicitly identifying the full suite of stated parameters defining the breadth of a sampling event should be reported using term:eco[verbatimTargetScope]. term:eco[verbatimTargetScope] is particularly useful for capturing scope conditions not covered by existing taxonomic or organismal scope terms.
+The full verbatim scope explicitly identifying the full suite of stated parameters defining the breadth of a sampling event should be reported using term:eco[eco:verbatimTargetScope]. term:eco[eco:verbatimTargetScope] is particularly useful for capturing scope conditions not covered by existing taxonomic or organismal scope terms.
 
 [[table-08]]
 .General scope terms, their recommended usage (status), and example data entries.
@@ -16,7 +16,7 @@ The full verbatim scope explicitly identifying the full suite of stated paramete
 |===
 |Status |Term |Example entry
 |Recommended
-|term:eco[verbatimTargetScope]
+|term:eco[eco:verbatimTargetScope]
 |`Adult flying insects`
 |===
 
@@ -28,12 +28,12 @@ Providing taxonomic scope enables reliable, quantitative, including statistical 
 
 ===== Taxonomic scope terms
 
-An explicitly stated targeted or intentionally excluded taxonomic scope should be reported using term:eco[targetTaxonomicScope] and term:eco[excludedTaxonomicScope].
+An explicitly stated targeted or intentionally excluded taxonomic scope should be reported using term:eco[eco:targetTaxonomicScope] and term:eco[eco:excludedTaxonomicScope].
 
-* If a specific person or persons is recorded as making the taxonomic identifications relevant to the stated survey scope(s), they should be acknowledged via term:dwc[identifiedBy]. Best practice is to use a unique identifier (e.g. ORCiD), if available.
-* If every organism included in term:eco[targetTaxonomicScope] that was observed during an event was reported, then term:eco[isTaxonomicScopeFullyReported] = `TRUE;` if not, term:eco[isTaxonomicScopeFullyReported] = `FALSE.`
+* If a specific person or persons is recorded as making the taxonomic identifications relevant to the stated survey scope(s), they should be acknowledged via term:dwc[dwc:identifiedBy]. Best practice is to use a unique identifier (e.g. ORCiD), if available.
+* If every organism included in term:eco[eco:targetTaxonomicScope] that was observed during an event was reported, then term:eco[eco:isTaxonomicScopeFullyReported] = `TRUE;` if not, term:eco[eco:isTaxonomicScopeFullyReported] = `FALSE.`
 
-If taxonomic completeness is known, term:eco[taxonCompletenessReported] should be populated as either `reportedComplete` or `reportedIncomplete` and the method used to assess completeness reported in term:eco[taxonCompletenessProtocols]. If taxonomic completeness is not reported, term:eco[taxonCompletenessReported] = `notReported.`
+If taxonomic completeness is known, term:eco[eco:taxonCompletenessReported] should be populated as either `reportedComplete` or `reportedIncomplete` and the method used to assess completeness reported in term:eco[eco:taxonCompletenessProtocols]. If taxonomic completeness is not reported, term:eco[eco:taxonCompletenessReported] = `notReported.`
 
 [[table-09]]
 .Taxonomic scope terms, their recommended usage (status), and example data entries.
@@ -41,22 +41,22 @@ If taxonomic completeness is known, term:eco[taxonCompletenessReported] should b
 |===
 |Status |Term |Example entry
 .2+|Recommended
-|term:eco[targetTaxonomicScope]
+|term:eco[eco:targetTaxonomicScope]
 |`Arthropods`
 
-|term:eco[excludedTaxonomicScope]
+|term:eco[eco:excludedTaxonomicScope]
 |`Aves`, `Mammalia`
 .4+|Share if available
-|term:dwc[identifiedBy]
+|term:dwc[dwc:identifiedBy]
 |`https://orcid.org/0000-0002-9216-2917`, `https://orcid.org/0000-0002-0786-4069`
 
-|term:eco[isTaxonomicScopeFullyReported]
+|term:eco[eco:isTaxonomicScopeFullyReported]
 |`TRUE` or `FALSE`
 
-|term:eco[taxonCompletenessReported]
+|term:eco[eco:taxonCompletenessReported]
 |`reportedComplete`, `reportedIncomplete`, or `notReported` 
 
-|term:eco[taxonCompletenessProtocols]
+|term:eco[eco:taxonCompletenessProtocols]
 |`Based on sampling effort`
 |===
 
@@ -70,11 +70,11 @@ As with taxonomic scope, providing organismal scope information when relevant en
 
 An explicitly stated target or excluded organismal scope, and clarification as to whether or not all target organisms observed were reported, should be indicated using the following terms:
 
-* *Life stage*: term:eco[targetLifeStageScope], term:eco[excludedLifeStageScope], term:eco[isLifeStageScopeFullyReported]
-* *Growth form*: term:eco[targetGrowthFormScope], term:eco[excludedGrowthFormScope], term:eco[isGrowthFormScopeFullyReported]
-* *Degree of establishment*: term:eco[targetDegreeOfEstablishmentScope], term:eco[excludedDegreeOfEstablishmentScope], term:eco[isDegreeOfEstablishmentScopeFullyReported]
+* *Life stage*: term:eco[eco:targetLifeStageScope], term:eco[eco:excludedLifeStageScope], term:eco[eco:isLifeStageScopeFullyReported]
+* *Growth form*: term:eco[eco:targetGrowthFormScope], term:eco[eco:excludedGrowthFormScope], term:eco[ecoLisGrowthFormScopeFullyReported]
+* *Degree of establishment*: term:eco[eco:targetDegreeOfEstablishmentScope], term:eco[eco:excludedDegreeOfEstablishmentScope], term:eco[eco:isDegreeOfEstablishmentScopeFullyReported]
 
-Other organismal scopes should be reported using term:eco[verbatimTargetScope].
+Other organismal scopes should be reported using term:eco[eco:verbatimTargetScope].
 
 [[table-10]]
 .Organismal scope terms, their recommended usage (status), and example data entries.
@@ -82,31 +82,31 @@ Other organismal scopes should be reported using term:eco[verbatimTargetScope].
 |===
 |Status |Term |Example entry
 .8+|Share if available
-|term:eco[targetLifeStageScope]
+|term:eco[eco:targetLifeStageScope]
 |`larva`
 
-|term:eco[excludedLifeStageScope]
+|term:eco[eco:excludedLifeStageScope]
 |`adult`, `juvenile`
 
-|term:eco[isLifeStageScopeFullyReported]
+|term:eco[eco:isLifeStageScopeFullyReported]
 |`TRUE` or `FALSE`
 
-|term:eco[targetDegreeOfEstablishmentScope]
+|term:eco[eco:targetDegreeOfEstablishmentScope]
 |`native`
 
-|term:eco[excludedDegreeOfEstablishmentScope]
+|term:eco[eco:excludedDegreeOfEstablishmentScope]
 |`invasive`
 
-|term:eco[isDegreeOfEstablishmentScopeFullyReported]
+|term:eco[eco:isDegreeOfEstablishmentScopeFullyReported]
 |`TRUE` or `FALSE`
 
-|term:eco[targetGrowthFormScope]
+|term:eco[eco:targetGrowthFormScope]
 |`tree`
 
-|term:eco[excludedGrowthFormScope]
+|term:eco[eco:excludedGrowthFormScope]
 |`shrub`
 
-|term:eco[isGrowthFormScopeFullyReported]
+|term:eco[eco:isGrowthFormScopeFullyReported]
 |`TRUE` or `FALSE`
 |===
 
@@ -122,18 +122,18 @@ Bycatch can be reported at the taxonomic and organismal levels.
 
 If *_taxonomic_* bycatch are included in the datasets: 
 
-* Populate term:eco[hasNonTargetTaxa] as `TRUE` at all relevant event levels.
-* If ALL taxonomic bycatch (eco:hasNonTargetTaxa = `TRUE`) captured/observed during an Event are reported in the dataset
-** term:eco[areNonTargetTaxaFullyReported] = `TRUE` 
-** a list of taxonomic bycatch should be provided in eco:nonTargetTaxa
+* Populate term:eco[eco:hasNonTargetTaxa] as `TRUE` at all relevant event levels.
+* If ALL taxonomic bycatch (term:eco[eco:asNonTargetTaxa] = `TRUE`) captured/observed during an Event are reported in the dataset
+** term:eco[eco:areNonTargetTaxaFullyReported] = `TRUE` 
+** a list of taxonomic bycatch should be provided in term:eco[eco:nonTargetTaxa]
 
 If *_organismal_* bycatch are included in the dataset:
 
-* Then term:eco[hasNonTargetOrganisms] = `TRUE` at all relevant event levels.
+* Then term:eco[eco:hasNonTargetOrganisms] = `TRUE` at all relevant event levels.
 
 If the dataset does NOT include taxonomic or organismal bycatch:
 
-* Populate term:eco[hasNonTargetTaxa] and term:eco[hasNonTargetOrganisms] as `FALSE` at all relevant event levels. 
+* Populate term:eco[eco:hasNonTargetTaxa] and term:eco[eco:hasNonTargetOrganisms] as `FALSE` at all relevant event levels. 
 
 [[table-11]]
 .Bycatch terms, their recommended usage (status), and example data entries
@@ -141,16 +141,16 @@ If the dataset does NOT include taxonomic or organismal bycatch:
 |===
 |Status |Term |Example entry
 .4+|Share if available
-|term:eco[hasNonTargetTaxa]
+|term:eco[eco:hasNonTargetTaxa]
 |`TRUE` or `FALSE`
 
-|term:eco[areNonTargetTaxaFullyReported]
+|term:eco[eco:areNonTargetTaxaFullyReported]
 |`TRUE` or `FALSE`
 
-|term:eco[nonTargetTaxa]
+|term:eco[eco:nonTargetTaxa]
 |`Parabuteo unicinctus`, `Geranoaetus melanoleucus; Cetoniinae`, `Aclopinae`, `Cyclocephala modesta`
 
-|term:eco[hasNonTargetOrganisms]
+|term:eco[eco:hasNonTargetOrganisms]
 |`TRUE` or `FALSE`
 |===
 
@@ -158,7 +158,7 @@ If the dataset does NOT include taxonomic or organismal bycatch:
 
 ===== Habitat scope terms
 
-An explicitly stated habitat scope should be reported using term:eco[targetHabitatScope] and term:eco[excludedHabitatScope].
+An explicitly stated habitat scope should be reported using term:eco[eco:targetHabitatScope] and term:eco[eco:excludedHabitatScope].
 
 [[table-12]]
 .Habitat scope terms, their recommended usage (status), and example data entries
@@ -166,9 +166,9 @@ An explicitly stated habitat scope should be reported using term:eco[targetHabit
 |===
 |Status |Term | Example entry
 .2+|Share if available
-|term:eco[targetHabitatScope]
+|term:eco[eco:targetHabitatScope]
 |`deciduous forest`
 
-|term:eco[excludedHabitatScope]
+|term:eco[eco:excludedHabitatScope]
 |`urban`, `grassland`
 |===
