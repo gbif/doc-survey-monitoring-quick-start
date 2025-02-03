@@ -71,7 +71,7 @@ As with taxonomic scope, providing organismal scope information when relevant en
 An explicitly stated target or excluded organismal scope, and clarification as to whether or not all target organisms observed were reported, should be indicated using the following terms:
 
 * *Life stage*: term:eco[eco:targetLifeStageScope], term:eco[eco:excludedLifeStageScope], term:eco[eco:isLifeStageScopeFullyReported]
-* *Growth form*: term:eco[eco:targetGrowthFormScope], term:eco[eco:excludedGrowthFormScope], term:eco[ecoLisGrowthFormScopeFullyReported]
+* *Growth form*: term:eco[eco:targetGrowthFormScope], term:eco[eco:excludedGrowthFormScope], term:eco[eco:isGrowthFormScopeFullyReported]
 * *Degree of establishment*: term:eco[eco:targetDegreeOfEstablishmentScope], term:eco[eco:excludedDegreeOfEstablishmentScope], term:eco[eco:isDegreeOfEstablishmentScopeFullyReported]
 
 Other organismal scopes should be reported using term:eco[eco:verbatimTargetScope].
@@ -114,26 +114,27 @@ Other organismal scopes should be reported using term:eco[eco:verbatimTargetScop
 
 ===== What is bycatch?
 
-*Bycatch* are organisms detected during a survey that were not explicitly targeted in the scope of a study.
+*Bycatch* are organisms detected during a survey that were not explicitly targeted in the scope of the survey.
 
 ===== Bycatch terms
 
 Bycatch can be reported at the taxonomic and organismal levels. 
 
-If *_taxonomic_* bycatch are included in the datasets: 
+If *_taxonomic_* bycatch information is included in the dataset: 
 
 * Populate term:eco[eco:hasNonTargetTaxa] as `TRUE` at all relevant event levels.
-* If ALL taxonomic bycatch (term:eco[eco:asNonTargetTaxa] = `TRUE`) captured/observed during an Event are reported in the dataset
-** term:eco[eco:areNonTargetTaxaFullyReported] = `TRUE` 
-** a list of taxonomic bycatch should be provided in term:eco[eco:nonTargetTaxa]
+* If ALL taxonomic bycatch (term:eco[eco:asNonTargetTaxa] = `TRUE`) captured/observed during an Event are reported in the dataset, then
+** term:eco[eco:areNonTargetTaxaFullyReported] = `TRUE` and
+** a list of taxonomic bycatch should be provided in term:eco[eco:nonTargetTaxa].
 
-If *_organismal_* bycatch are included in the dataset:
+If *_organismal_* bycatch are included in the dataset, then
 
-* Then term:eco[eco:hasNonTargetOrganisms] = `TRUE` at all relevant event levels.
+* term:eco[eco:hasNonTargetOrganisms] = `TRUE` at all relevant event levels.
 
-If the dataset does NOT include taxonomic or organismal bycatch:
+If the dataset does NOT include taxonomic or organismal bycatch, then at all relevant event levels
 
-* Populate term:eco[eco:hasNonTargetTaxa] and term:eco[eco:hasNonTargetOrganisms] as `FALSE` at all relevant event levels. 
+* term:eco[eco:hasNonTargetTaxa] = 'FALSE' and 
+* term:eco[eco:hasNonTargetOrganisms] = `FALSE`. 
 
 [[table-11]]
 .Bycatch terms, their recommended usage (status), and example data entries
