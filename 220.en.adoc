@@ -47,7 +47,7 @@ The geographic location and extent of each survey event site should be shared. H
 * *Latitude-Longitude*: The decimal latitude and longitude and geodetic datum location of the Event site should be provided in term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], and term:dwc[dwc:geodeticDatum].
     ** If geographic coordinates are not in decimal lat-long, populate the following fields instead: term:dwc[dwc:verbatimLatitude], term:dwc[dwc:verbatimLongitude], and term:dwc[dwc:verbatimCoordinateSystem].
 
-The Humboldt extension, however, includes additional terms that provide greater contextual information about the geospatial scope of a sampling event or series of events.
+These terms are still recommended. However, the Humboldt extension includes additional terms providing greater contextual information about the geospatial scope of a sampling event or series of events that should also be included if the information is available.
 
 ===== Survey site area terms
 
@@ -63,7 +63,7 @@ If the sampled unit is NOT an area (such as a filtered volume of water in a zoop
 
 ===== Additional survey site information
 
-* *Survey site geometry*: If available, the geometry of a survey site area should be shared using term:dwc[dwc:footprintWKT] and term:dwc[dwc:footprintSRS].
+* *Survey site geometry*: If available, the geometry of a survey site area should be shared using term:dwc[dwc:footprintWKT] and term:dwc[dwc:footprintSRS]. While survey site geometry can be provided at any event level, it may be most informative at the parent-most event level in a nested dataset.
 * *Verbatim site location information*: A more general text description of the site location, if available, can be shared using term:dwc[dwc:locality].
 
 [[table-03]]
@@ -122,8 +122,8 @@ If the sampled unit is NOT an area (such as a filtered volume of water in a zoop
 
 Vegetation cover at a survey event site can be reported in three ways:
 
-* *Percent vegetation cover*: simple percent vegetation cover can be recorded as structured data using the https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[extended Measurements or Facts extension^] (eMoF)
-* *Verbatim vegetation cover*: verbatim vegetation cover information can be captured in term:eco[eco:verbatimSiteDescriptions]
+* *Verbatim vegetation cover*: verbatim vegetation cover information can be captured in term:eco[eco:verbatimSiteDescriptions].
+* *Percent vegetation cover*: simple percent vegetation cover can be recorded as structured data using the https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[extended Measurements or Facts extension^] (eMoF).
 * *Vegetation plot survey*: vegetation plot survey information can be reported using the https://rs.gbif.org/extension/gbif/1.0/releve_2016-05-10.xml[Relevé extension^].
 
-If vegetation cover is reported: term:eco[eco:isVegetationCoverReported] = `TRUE`; otherwise, term:eco[eco:isVegetationCoverReported] = `FALSE`.
+If vegetation cover is reported using one or more of these methods, then term:eco[eco:isVegetationCoverReported] = `TRUE`; otherwise, term:eco[eco:isVegetationCoverReported] = `FALSE`.
