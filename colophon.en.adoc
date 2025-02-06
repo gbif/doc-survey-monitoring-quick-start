@@ -15,18 +15,18 @@ https://orcid.org/0000-0001-5942-9053[Kate Ingenloff^]
 
 === Contributors
 
-https://orcid.org/0000-0002-9216-2917[Cecilie Svenningsen^]
-https://orcid.org/0000-0002-1789-1183[Javier Gamboa^]
-https://orcid.org/0000-0002-1720-0127[Yanina V. Sica^]
-https://orcid.org/0000-0001-7087-2646[Yi Ming Gan^]
-https://orcid.org/0000-0002-0500-0339[Zachary R. Kachian^]
-https://orcid.org/0000-0001-9730-8340[Peter Brenton^]
-https://orcid.org/0000-0002-0595-7827[Wesley M. Hochachka^]
-https://orcid.org/0000-0003-1144-0290[John Wieczorek^]
-https://orcid.org/0000-0003-1617-5895[Robert D. Stevenson^]
-https://orcid.org/0000-0003-2475-132X[Anahita J.N. Kazem^]
-https://orcid.org/0000-0002-2919-1168[Dmitry Schigel^]
-https://orcid.org/0000-0003-4365-3135[Steven J. Baskauf^]
+https://orcid.org/0000-0002-9216-2917[Cecilie Svenningsen^], 
+https://orcid.org/0000-0002-1789-1183[Javier Gamboa^], 
+https://orcid.org/0000-0002-1720-0127[Yanina V. Sica^], 
+https://orcid.org/0000-0001-7087-2646[Yi Ming Gan^], 
+https://orcid.org/0000-0002-0500-0339[Zachary R. Kachian^], 
+https://orcid.org/0000-0001-9730-8340[Peter Brenton^], 
+https://orcid.org/0000-0002-0595-7827[Wesley M. Hochachka^], 
+https://orcid.org/0000-0003-1144-0290[John Wieczorek^], 
+https://orcid.org/0000-0003-1617-5895[Robert D. Stevenson^], 
+https://orcid.org/0000-0003-2475-132X[Anahita J.N. Kazem^], 
+https://orcid.org/0000-0002-2919-1168[Dmitry Schigel^], 
+https://orcid.org/0000-0003-4365-3135[Steven J. Baskauf^], 
 https://orcid.org/0000-0002-6056-5084[Paula Zermoglio^]
 
 === Licence
