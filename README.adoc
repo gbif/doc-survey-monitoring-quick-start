@@ -4,7 +4,7 @@ https://doi.org/10.35035/doc-7t3p-ve38[image:https://zenodo.org/badge/DOI/10.350
 https://creativecommons.org/licenses/by-sa/4.0/[image:https://img.shields.io/badge/License-CC%20BY%2D-SA%204.0-lightgrey.svg[CC BY-SA 4.0]]
 https://builds.gbif.org/job/doc-survey-monitoring-quick-start/lastBuild/console[image:https://builds.gbif.org/job/doc-survey-monitoring-quick-start/badge/icon[Build status]]
 
-= Survey and monitoring data quick start
+= Survey and Monitoring Data Quick Start
 
 _This is information *about* this document's source code.  It is not part of the document._
 
