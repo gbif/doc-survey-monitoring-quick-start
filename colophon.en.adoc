@@ -7,7 +7,7 @@ endif::backend-html5[]
 
 === Suggested citation
 
-Ingenloff K (2025) Survey and monitoring data quick start: A guide to updating a Darwin Core Event dataset with the Humboldt extension. GBIF Secretariat: Copenhagen. https://doi.org/10.35035/doc-7t3p-ve38
+Ingenloff K (2025) Survey and Monitoring Data Quick Start: A guide to updating a Darwin Core Event dataset with the Humboldt extension. GBIF Secretariat: Copenhagen. https://doi.org/10.35035/doc-7t3p-ve38
 
 === Authors
 
@@ -31,11 +31,11 @@ https://orcid.org/0000-0002-6056-5084[Paula Zermoglio^]
 
 === Licence
 
-The document _Survey and monitoring data quick start: A guide to updating a Darwin Core Event dataset with the Humboldt extension_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
+The document _Survey and Monitoring Data Quick Start: A guide to updating a Darwin Core Event dataset with the Humboldt extension_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
 
 === Acknowledgement
 
-_Survey and monitoring data quick start: A guide to updating a DwC Event dataset with the Humboldt extension_ was produced under https://biodt.eu[the BioDT project^], which received funding from the European Union’s Horizon Europe research and innovation programme under https://doi.org/10.3030/101057437[grant agreement No 101057437^].
+_Survey and Monitoring Data Quick Start: A guide to updating a DwC Event dataset with the Humboldt extension_ was produced under https://biodt.eu[the BioDT project^], which received funding from the European Union’s Horizon Europe research and innovation programme under https://doi.org/10.3030/101057437[grant agreement No 101057437^].
 
 === Persistent URI
 
@@ -43,7 +43,7 @@ https://doi.org/10.35035/doc-7t3p-ve38
 
 === Document control
 
-v0.1, January 2025
+v0.1, February 2025
 
 === Cover image
 
