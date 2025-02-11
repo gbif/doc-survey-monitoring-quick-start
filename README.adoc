@@ -4,10 +4,10 @@ https://doi.org/10.35035/doc-7t3p-ve38[image:https://zenodo.org/badge/DOI/10.350
 https://creativecommons.org/licenses/by-sa/4.0/[image:https://img.shields.io/badge/License-CC%20BY%2D-SA%204.0-lightgrey.svg[CC BY-SA 4.0]]
 https://builds.gbif.org/job/doc-survey-monitoring-quick-start/lastBuild/console[image:https://builds.gbif.org/job/doc-survey-monitoring-quick-start/badge/icon[Build status]]
 
-= Survey and Monitoring Data Quick Start
+= Survey and Monitoring Data Quick-Start Guide
 
 _This is information *about* this document's source code.  It is not part of the document._
 
-The document is available as HTML and PDF at https://docs.gbif-uat.org/survey-monitoring-quick-start/[Survey and monitoring data quick start].
+The document is available as HTML and PDF at https://docs.gbif.org/survey-monitoring-quick-start/[Survey and Monitoring Data Quick-Start Guide].
 
 The document is built using AsciiDoc, for guidance on how to make changes or suggestions see the https://docs.gbif.org/documentation-guidelines/[GBIF Documentation Guidelines].
