@@ -48,7 +48,7 @@ If taxonomic completeness is known, term:eco[eco:taxonCompletenessReported] shou
 |`Aves`, `Mammalia`
 .4+|Share if available
 |term:dwc[dwc:identifiedBy]
-|`https://orcid.org/0000-0002-9216-2917`, `https://orcid.org/0000-0002-0786-4069`
+|'Kevin Holston', `https://orcid.org/0000-0002-9216-2917`
 
 |term:eco[eco:isTaxonomicScopeFullyReported]
 |`TRUE` or `FALSE`
