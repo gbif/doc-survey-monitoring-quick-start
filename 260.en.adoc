@@ -11,7 +11,7 @@ term:dwc[dwc:samplingEffort] is strongly recommended to publish term:dwc[dwc:Eve
 * *Is sampling effort reported?*: term:eco[eco:isSamplingEffortReported] indicates (`TRUE` or `FALSE`) if sampling effort is reported. 
 * *Sampling effort*: term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit] report sampling effort value and units (e.g. 4 trap nights).
 * *Sampling effort protocol*: term:eco[eco:samplingEffortProtocol] should contain a textual description of the sampling effort protocol (e.g. number and arrangement of people or sensors deployed, whether or not sensors were mobile or stationary, how frequently observation, measurements, or samples were taken) and/or provide a link to the protocol used.
-* *Sampling performed by*: term:eco[eco:samplingPerformedBy] should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries.
+* *Sampling performed by*: term:eco[eco:samplingPerformedBy] should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries. Best practice is to use a unique identifier (e.g., OrcID) if available.
 
 ****
 
@@ -48,5 +48,5 @@ Capture sampling effort information as structured data using the five (5) Humbol
 |`40 trap nights`
 
 |term:eco[eco:samplingPerformedBy]
-|`John Snow`
+|`‘A. Townsend Peterson`, 'https://orcid.org/0000-0003-0243-2379'
 |===
