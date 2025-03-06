@@ -30,7 +30,7 @@ Providing taxonomic scope enables reliable, quantitative, including statistical 
 
 An explicitly stated targeted or intentionally excluded taxonomic scope should be reported using term:eco[eco:targetTaxonomicScope] and term:eco[eco:excludedTaxonomicScope].
 
-* If a specific person or persons is recorded as making the taxonomic identifications relevant to the stated survey scope(s), they should be acknowledged via term:dwc[dwc:identifiedBy]. Best practice is to use a unique identifier (e.g. ORCiD), if available.
+* If a specific person or persons is recorded as making the taxonomic identifications relevant to the stated survey scope(s), they should be acknowledged using term:dwc[dwc:identifiedBy] (for one or more names) or term:dwc[dwc:identifiedByID] (for one or more unique identifiers such as, OrcID).
 * If every organism included in term:eco[eco:targetTaxonomicScope] that was observed during an event was reported, then term:eco[eco:isTaxonomicScopeFullyReported] = `TRUE;` if not, term:eco[eco:isTaxonomicScopeFullyReported] = `FALSE.`
 
 If taxonomic completeness is known, term:eco[eco:taxonCompletenessReported] should be populated as either `reportedComplete` or `reportedIncomplete` and the method used to assess completeness reported in term:eco[eco:taxonCompletenessProtocols]. If taxonomic completeness is not reported, term:eco[eco:taxonCompletenessReported] = `notReported.`
@@ -46,9 +46,12 @@ If taxonomic completeness is known, term:eco[eco:taxonCompletenessReported] shou
 
 |term:eco[eco:excludedTaxonomicScope]
 |`Aves`, `Mammalia`
-.4+|Share if available
+.5+|Share if available
 |term:dwc[dwc:identifiedBy]
-|'Kevin Holston', `https://orcid.org/0000-0002-9216-2917`
+|‘Cecilie Svenningsen | Kevin Holston’ 
+
+|term:dwc[dwc:identifiedByID]
+|'https://orcid.org/0000-0002-9216-2917 | https://orcid.org/0000-0002-0786-4069 `
 
 |term:eco[eco:isTaxonomicScopeFullyReported]
 |`TRUE` or `FALSE`
