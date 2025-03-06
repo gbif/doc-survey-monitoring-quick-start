@@ -49,10 +49,10 @@ If taxonomic completeness is known, term:eco[eco:taxonCompletenessReported] shou
 
 .5+|Share if available
 |term:dwc[dwc:identifiedBy]
-|`Cecilie Svenningsen` | `Kevin Holston` 
+|`Cecilie Svenningsen, Kevin Holston` 
 
 |term:dwc[dwc:identifiedByID]
-|`https://orcid.org/0000-0002-9216-2917` | `https://orcid.org/0000-0002-0786-4069`
+|`https://orcid.org/0000-0002-9216-2917, https://orcid.org/0000-0002-0786-4069`
 
 |term:eco[eco:isTaxonomicScopeFullyReported]
 |`TRUE` or `FALSE`
