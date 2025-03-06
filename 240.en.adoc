@@ -102,8 +102,8 @@ Organismal *absences* are defined here as the lack of detection of organisms exp
 [[table-07]]
 .Absence and abundance terms, their recommended usage (status), and example data entries
 |===
-|Status |Term |Example entry
-.3+||Recommended
+|Status |Term | Example entry
+.3+|Recommended
 |term:eco[eco:isAbsenceReported] 
 |`TRUE`, `FALSE`
 
