@@ -87,6 +87,41 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 `https://www.google.com/url?q=https://www.protocols.io/view/nanopore-minion-kxygx3jwkg8j/v1&sa=D&source=docs&ust=1736780486391914&usg=AOvVaw3oB8oSZiV-MKw0Qf1xFZe0`
 |===
 
+
+==== Absence and abundance
+Organismal *absences* are defined here as the lack of detection of organisms explicitly stated as part of the target taxonomic scope. 
+
+* If the dataset includes absence information for one or more occurrences (to be reported in the ‘occurrence’ table as term:dwc[dwc:occurrenceStatus] = ‘ABSENT’), then term:eco[eco:isAbsenceReported] = ‘TRUE’.  
+* A list of absent taxa can be provided using term:eco[eco:absentTaxa] at all relevant levels. Absences should only be reported for taxa within the stated taxonomic and/or organismal scope of a survey. Absence cannot be asserted for bycatch.
+
+*Abundance* is the number of individuals of the same taxonomic designation in a particular area at a specific time. 
+
+* If the dataset includes abundance information, term:eco[eco:isAbundanceReported] = ‘TRUE’ for all appropriate Event levels. If there is an abundance cap, then term:eco[eco:isAbundanceCapReported] = ‘TRUE’ and the value of the cap should be reported in term:eco[eco:abundanceCap]. 
+* If there is no abundance cap, then term:eco[eco:isAbundanceCapReported] = ‘FALSE’.
+
+[[table-07]]
+.Absence and abundance terms, their recommended usage (status), and example data entries
+|===
+|Status |Term |Example entry
+.3+||Recommended
+|term:eco[eco:isAbsenceReported] 
+|`TRUE`, `FALSE`
+
+|term:eco[eco:isAbundanceReported] 
+|`TRUE`, `FALSE`
+
+|term:eco[eco:isAbundanceCapReported] 
+|`TRUE`, `FALSE`
+
+.2+|Share if available
+|term:eco[eco:absentTaxa]
+|
+
+|term:eco[eco:abundanceCap]
+|`5`
+
+|===
+
 ==== Material samples
 
 ===== What are material samples?
@@ -158,7 +193,7 @@ Two verbatim fields are available to provide additional information about an eve
 
 Both fields can be applied to any event at any level.
 
-[[table-07]]
+[[table-08]]
 .Other survey protocol information and verbatim protocol terms, their recommended usage (status), and example data entries.
 |===
 |Status |Term | Example entry
