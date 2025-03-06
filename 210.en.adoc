@@ -37,11 +37,11 @@ image::img/web/Fig-01-v1.png[]
 image::img/web/Fig-02a-v1.png[]
 
 [[fig-03]]
-.Simplified example schematic of a nested event dataset structure representing a survey (Parent Event, dark red oval) with two protocols (child-Events, medium red ovals) which are each implemented at two survey sites (four independently surveyed child-child-Events, light red ovals) wherein occurrence information is collected in four (likely quantitative) occurrences lists and related to each sampling event using the occurrence extension.
+.Simplified example schematic of a nested event dataset structure representing a survey (Parent Event, dark red oval) with two protocols (child-Events, medium red ovals) which are each implemented at two survey sites (four independently surveyed child-child-Events, light red ovals) wherein occurrence information is collected in four occurrences lists and related to each sampling event using the occurrence extension.
 image::img/web/Fig-02b-v1.png[]
 
 [[fig-04]]
-.Simplified example schematic of a nested event dataset structure representing a time series survey (Parent Event, dark red oval) with two survey sites (child-Events, medium red ovals) which are each independently sampled at two different times (four independently surveyed child-child-Events, light red ovals) wherein occurrence information is collected in four (likely quantitative) occurrences lists and related to each sampling event using the occurrence extension.
+.Simplified example schematic of a nested event dataset structure representing a time series survey (Parent Event, dark red oval) with two survey sites (child-Events, medium red ovals) which are each independently sampled at two different times (four independently surveyed child-child-Events, light red ovals) wherein occurrence information is collected in four occurrences lists and related to each sampling event using the occurrence extension.
 image::img/web/Fig-02c-v1.png[]
 
 [[table-01]]
