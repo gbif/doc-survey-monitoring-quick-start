@@ -12,6 +12,7 @@ term:dwc[dwc:samplingEffort] is strongly recommended to publish term:dwc[dwc:Eve
 * *Sampling effort*: term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit] report sampling effort value and units (e.g. 4 trap nights).
 * *Sampling effort protocol*: term:eco[eco:samplingEffortProtocol] should contain a textual description of the sampling effort protocol (e.g. number and arrangement of people or sensors deployed, whether or not sensors were mobile or stationary, how frequently observation, measurements, or samples were taken) and/or provide a link to the protocol used.
 * *Sampling performed by*: term:eco[eco:samplingPerformedBy] should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries. Best practice is to use a unique identifier (e.g., OrcID) if available.
+** NOTE: Because term:eco[eco:samplingPerformedBy] has an IRI equivalent only a single OrcID can be provided (the term cannot support a list). If more than one OrcID needs to be shared, a list of OrcID’s (using the pipe separator between values) can be supplied using the term term:dwc[dwc:recordedByID] used BUT it must be applied to each relevant occurrence and located on the `occurrence` table. 
 
 ****
 
