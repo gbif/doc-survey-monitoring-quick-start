@@ -126,4 +126,4 @@ Vegetation cover at a survey event site can be reported in three ways:
 * *Percent vegetation cover*: simple percent vegetation cover can be recorded as structured data using the https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[extended Measurements or Facts extension^] (eMoF).
 * *Vegetation plot survey*: vegetation plot survey information can be reported using the https://rs.gbif.org/extension/gbif/1.0/releve_2016-05-10.xml[Relevé extension^].
 
-If vegetation cover is reported using one or more of these methods, then term:eco[eco:isVegetationCoverReported] = `TRUE`; otherwise, term:eco[eco:isVegetationCoverReported] = `FALSE`.
+If vegetation cover is reported using one or more of these methods, then term:eco[eco:isVegetationCoverReported] = `true`; otherwise, term:eco[eco:isVegetationCoverReported] = `false`.
