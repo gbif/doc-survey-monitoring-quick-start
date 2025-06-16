@@ -31,7 +31,7 @@ Providing taxonomic scope enables reliable, quantitative, including statistical 
 An explicitly stated targeted or intentionally excluded taxonomic scope should be reported using term:eco[eco:targetTaxonomicScope] and term:eco[eco:excludedTaxonomicScope].
 
 * If a specific person(s) or organization(s) are recorded as making the taxonomic identifications relevant to the stated survey scope(s), they should be acknowledged using term:dwc[dwc:identifiedBy] (for one or more names) or term:dwc[dwc:identifiedByID] (for one or more unique identifiers such as, OrcID). Presently, however, these terms can NOT be used with the Event core. Therefore, the term(s) should be populated for each relevant occurrence and located on the `occurrence` table.
-* If every organism included in term:eco[eco:targetTaxonomicScope] that was observed during an event was reported, then term:eco[eco:isTaxonomicScopeFullyReported] = `TRUE;` if not, term:eco[eco:isTaxonomicScopeFullyReported] = `FALSE.`
+* If every organism included in term:eco[eco:targetTaxonomicScope] that was observed during an event was reported, then term:eco[eco:isTaxonomicScopeFullyReported] = `true`; if not, term:eco[eco:isTaxonomicScopeFullyReported] = `false`.
 
 If taxonomic completeness is known, term:eco[eco:taxonCompletenessReported] should be populated as either `reportedComplete` or `reportedIncomplete` and the method used to assess completeness reported in term:eco[eco:taxonCompletenessProtocols]. If taxonomic completeness is not reported, term:eco[eco:taxonCompletenessReported] = `notReported.`
 
@@ -49,7 +49,7 @@ If taxonomic completeness is known, term:eco[eco:taxonCompletenessReported] shou
 
 .3+|Share if available
 |term:eco[eco:isTaxonomicScopeFullyReported]
-|`TRUE` or `FALSE`
+|`true` or `false`
 
 |term:eco[eco:taxonCompletenessReported]
 |`reportedComplete`, `reportedIncomplete`, or `notReported` 
@@ -87,7 +87,7 @@ Other organismal scopes should be reported using term:eco[eco:verbatimTargetScop
 |`adult`, `juvenile`
 
 |term:eco[eco:isLifeStageScopeFullyReported]
-|`TRUE` or `FALSE`
+|`true` or `false`
 
 |term:eco[eco:targetDegreeOfEstablishmentScope]
 |`native`
@@ -96,7 +96,7 @@ Other organismal scopes should be reported using term:eco[eco:verbatimTargetScop
 |`invasive`
 
 |term:eco[eco:isDegreeOfEstablishmentScopeFullyReported]
-|`TRUE` or `FALSE`
+|`true` or `false`
 
 |term:eco[eco:targetGrowthFormScope]
 |`tree`
@@ -105,7 +105,7 @@ Other organismal scopes should be reported using term:eco[eco:verbatimTargetScop
 |`shrub`
 
 |term:eco[eco:isGrowthFormScopeFullyReported]
-|`TRUE` or `FALSE`
+|`true` or `false`
 |===
 
 ==== Bycatch
@@ -121,18 +121,18 @@ Bycatch can be reported at the taxonomic and organismal levels.
 If *_taxonomic_* bycatch information is included in the dataset: 
 
 * Populate term:eco[eco:hasNonTargetTaxa] as `TRUE` at all relevant event levels.
-* If ALL taxonomic bycatch (term:eco[eco:asNonTargetTaxa] = `TRUE`) captured/observed during an Event are reported in the dataset, then
-** term:eco[eco:areNonTargetTaxaFullyReported] = `TRUE` and
+* If ALL taxonomic bycatch (term:eco[eco:asNonTargetTaxa] = `true`) captured/observed during an Event are reported in the dataset, then
+** term:eco[eco:areNonTargetTaxaFullyReported] = `true` and
 ** a list of taxonomic bycatch should be provided in term:eco[eco:nonTargetTaxa].
 
 If *_organismal_* bycatch are included in the dataset, then
 
-* term:eco[eco:hasNonTargetOrganisms] = `TRUE` at all relevant event levels.
+* term:eco[eco:hasNonTargetOrganisms] = `true` at all relevant event levels.
 
 If the dataset does NOT include taxonomic or organismal bycatch, then at all relevant event levels
 
-* term:eco[eco:hasNonTargetTaxa] = 'FALSE' and 
-* term:eco[eco:hasNonTargetOrganisms] = `FALSE`. 
+* term:eco[eco:hasNonTargetTaxa] = 'false' and 
+* term:eco[eco:hasNonTargetOrganisms] = `false`. 
 
 [[table-11]]
 .Bycatch terms, their recommended usage (status), and example data entries
@@ -141,16 +141,16 @@ If the dataset does NOT include taxonomic or organismal bycatch, then at all rel
 |Status |Term |Example entry
 .4+|Share if available
 |term:eco[eco:hasNonTargetTaxa]
-|`TRUE` or `FALSE`
+|`true` or `false`
 
 |term:eco[eco:areNonTargetTaxaFullyReported]
-|`TRUE` or `FALSE`
+|`true` or `false`
 
 |term:eco[eco:nonTargetTaxa]
 |`Parabuteo unicinctus`, `Geranoaetus melanoleucus; Cetoniinae`, `Aclopinae`, `Cyclocephala modesta`
 
 |term:eco[eco:hasNonTargetOrganisms]
-|`TRUE` or `FALSE`
+|`true` or `false`
 |===
 
 ==== Habitat scope
