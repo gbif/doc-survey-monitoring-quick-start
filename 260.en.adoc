@@ -8,7 +8,7 @@
 
 term:dwc[dwc:samplingEffort] is strongly recommended to publish term:dwc[dwc:Event] datasets to GBIF, however, the Humboldt extension includes five (5) terms to more explicitly capture sampling effort information:
 
-* *Is sampling effort reported?*: term:eco[eco:isSamplingEffortReported] indicates (`TRUE` or `FALSE`) if sampling effort is reported. 
+* *Is sampling effort reported?*: term:eco[eco:isSamplingEffortReported] indicates (`true` or `false`) if sampling effort is reported. 
 * *Sampling effort*: term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit] report sampling effort value and units (e.g. 4 trap nights).
 * *Sampling effort protocol*: term:eco[eco:samplingEffortProtocol] should contain a textual description of the sampling effort protocol (e.g. number and arrangement of people or sensors deployed, whether or not sensors were mobile or stationary, how frequently observation, measurements, or samples were taken) and/or provide a link to the protocol used.
 * *Sampling performed by*: term:eco[eco:samplingPerformedBy] should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries. Best practice is to use a unique identifier (e.g., OrcID) if available.
@@ -34,7 +34,7 @@ Capture sampling effort information as structured data using the five (5) Humbol
 |Status |Term |Example entry
 .6+|Recommended
 |term:eco[eco:isSamplingEffortReported]
-|`TRUE` or `FALSE`
+|`true` or `false`
 
 |term:eco[eco:samplingEffortProtocol]
 |`40 box traps deployed in the afternoon even spacings along 4 parallel 100m transects placed 50m apart and visited after sunrise the next day`
