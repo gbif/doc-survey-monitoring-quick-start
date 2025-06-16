@@ -91,13 +91,13 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 ==== Absence and abundance
 Organismal *absences* are defined here as the lack of detection of organisms explicitly stated as part of the target taxonomic scope. 
 
-* If the dataset includes absence information for one or more occurrences (to be reported in the ‘occurrence’ table as term:dwc[dwc:occurrenceStatus] = ‘ABSENT’), then term:eco[eco:isAbsenceReported] = ‘TRUE’.  
+* If the dataset includes absence information for one or more occurrences (to be reported in the ‘occurrence’ table as term:dwc[dwc:occurrenceStatus] = ‘absent’), then term:eco[eco:isAbsenceReported] = ‘true’.  
 * A list of absent taxa can be provided using term:eco[eco:absentTaxa] at all relevant levels. Absences should only be reported for taxa within the stated taxonomic and/or organismal scope of a survey. Absence cannot be asserted for bycatch.
 
 *Abundance* is the number of individuals of the same taxonomic designation in a particular area at a specific time. 
 
-* If the dataset includes abundance information, term:eco[eco:isAbundanceReported] = ‘TRUE’ for all appropriate Event levels. If there is an abundance cap, then term:eco[eco:isAbundanceCapReported] = ‘TRUE’ and the value of the cap should be reported in term:eco[eco:abundanceCap]. 
-* If there is no abundance cap, then term:eco[eco:isAbundanceCapReported] = ‘FALSE’.
+* If the dataset includes abundance information, term:eco[eco:isAbundanceReported] = ‘TRUE’ for all appropriate Event levels. If there is an abundance cap, then term:eco[eco:isAbundanceCapReported] = ‘true’ and the value of the cap should be reported in term:eco[eco:abundanceCap]. 
+* If there is no abundance cap, then term:eco[eco:isAbundanceCapReported] = ‘false’.
 
 [[table-07]]
 .Absence and abundance terms, their recommended usage (status), and example data entries
@@ -105,13 +105,13 @@ Organismal *absences* are defined here as the lack of detection of organisms exp
 |Status |Term | Example entry
 .3+|Recommended
 |term:eco[eco:isAbsenceReported] 
-|`TRUE`, `FALSE`
+|`true` or `false`
 
 |term:eco[eco:isAbundanceReported] 
-|`TRUE`, `FALSE`
+|`true` or `false`
 
 |term:eco[eco:isAbundanceCapReported] 
-|`TRUE`, `FALSE`
+|`true` or `false`
 
 .2+|Share if available
 |term:eco[eco:absentTaxa]
@@ -132,12 +132,12 @@ A http://rs.tdwg.org/dwc/terms/MaterialSample[material sample^] is an entity "..
 
 If the dataset includes at least one material sample:
 
-* term:eco[eco:hasMaterialSamples] = `TRUE` at the appropriate child event level and at any relevant parent event level, and
+* term:eco[eco:hasMaterialSamples] = `true` at the appropriate child event level and at any relevant parent event level, and
 * the type(s) of materials collected should be listed under term:eco[eco:materialSampleTypes] for each relevant event level
 
 If the dataset or sampling event does not include material samples:
 
-* term:eco[eco:hasMaterialSamples] = `FALSE` at all appropriate sampling event levels.
+* term:eco[eco:hasMaterialSamples] = `false` at all appropriate sampling event levels.
 
 ==== Vouchers
 
@@ -149,19 +149,19 @@ A *voucher* is a specimen or material sample collected and accessioned into a mu
 
 If the dataset has vouchers:
 
-* term:eco[eco:hasVouchers] =  `TRUE` at the appropriate child event level and at any relevant parent event level, and
+* term:eco[eco:hasVouchers] = `true` at the appropriate child event level and at any relevant parent event level, and
 * a list of institutions housing them should be shared in term:eco[eco:voucherInstitutions] for each relevant event level. 
 
 If the dataset or sampling event does NOT include vouchers: 
 
-* term:eco[eco:hasVouchers] = `FALSE` at all appropriate sampling event levels
+* term:eco[eco:hasVouchers] = `false` at all appropriate sampling event levels
 
 ==== Least specific target category quantity inclusive
 
 The term term:eco[eco:isLeastSpecificTargetCategoryQuantityInclusive] provides a means by which to indicate to data users if an organismal occurrence record for a specific event reporting an explicit quantity of that organism via the paired terms term:dwc[dwc:organismQuantity] and term:dwc[dwc:organismQuantityType] represents the total number of that organism observed during the event. That is, it answers the question: _is this the only record of that organism during the event?_
 
-* If the quantity reported using these paired terms includes all the organisms of the same taxon sampled/observed in that single occurrence record, then term:eco[eco:isLeastSpecificTargetCategoryQuantityInclusive] = `TRUE.` 
-* If the quantity reported using these paired terms does not include all organisms of the same taxon sampled/observed in that single occurrence record (e.g. there are two or more occurrence records reported for the same event), then term:eco[eco:isLeastSpecificTargetCategoryQuantityInclusive] = `FALSE.`
+* If the quantity reported using these paired terms includes all the organisms of the same taxon sampled/observed in that single occurrence record, then term:eco[eco:isLeastSpecificTargetCategoryQuantityInclusive] = `true`. 
+* If the quantity reported using these paired terms does not include all organisms of the same taxon sampled/observed in that single occurrence record (e.g. there are two or more occurrence records reported for the same event), then term:eco[eco:isLeastSpecificTargetCategoryQuantityInclusive] = `false`.
 
 Refer to https://eco.tdwg.org/inclusive/[Guidelines for eco:isLeastSpecificTargetCategoryQuantityInclusive^] for more information.
 
@@ -199,13 +199,13 @@ Both fields can be applied to any event at any level.
 |Status |Term | Example entry
 .3+|Recommended
 |term:eco[eco:hasMaterialSamples]
-|`TRUE` or `FALSE`
+|`true` or `false`
 
 |term:eco[eco:hasVouchers]
-|`TRUE` or `FALSE`
+|`true` or `false`
 
 |term:eco[eco:isLeastSpecificTargetCategoryQuantityInclusive]
-|`TRUE` or `FALSE`
+|`true` or `false`
 
 .6+|Share if available
 |term:eco[eco:materialSampleTypes]
