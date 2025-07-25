@@ -4,7 +4,15 @@
 
 *Scope* relates to the biodiversity targeted (or not targeted) during a survey. *Completeness* indicates the thoroughness of a survey relative to the stated scope. Structured reporting of explicitly stated survey scopes and completeness is necessary for evaluating and reporting completeness and is critical to understanding if the data can be used to assert absences (non-detections) of taxa.
 
-Scope terms can be applied at any event level and recommended best practice is to report only the information that is explicitly available.
+Scope terms can be applied at any event level and recommended best
+practice is to report as much information as is explicitly available but
+only at the event levels for which the information is relevant
+(information should not be inferred up or down an event hierarchy).
+
+[NOTE]
+====
+The 'target' and 'excluded' scope terms (e.g., term:eco[eco:targetTaxonomicScope]) presented in this section are the only survey event terms designed to capture _intent_. That is, these terms capture the breadth of the information the biological survey _intended_ to capture. All other terms should be used to report the actuality of the survey (e.g., what protocol was in practice implemented, and what information was actually collected).
+====
 
 ==== Verbatim scope
 
@@ -30,14 +38,26 @@ Providing taxonomic scope enables reliable, quantitative, including statistical 
 
 An explicitly stated targeted or intentionally excluded taxonomic scope should be reported using term:eco[eco:targetTaxonomicScope] and term:eco[eco:excludedTaxonomicScope].
 
-* If a specific person(s) or organization(s) are recorded as making the taxonomic identifications relevant to the stated survey scope(s), they should be acknowledged using term:dwc[dwc:identifiedBy] (for one or more names) or term:dwc[dwc:identifiedByID] (for one or more unique identifiers such as, OrcID). Presently, however, these terms can NOT be used with the Event core. Therefore, the term(s) should be populated for each relevant occurrence and located on the `occurrence` table.
-* If every organism included in term:eco[eco:targetTaxonomicScope] that was observed during an event was reported, then term:eco[eco:isTaxonomicScopeFullyReported] = `true`; if not, term:eco[eco:isTaxonomicScopeFullyReported] = `false`.
+If every organism included in terms:eco[eco:targetTaxonomicScope] that was observed during an event was reported, then
+term:eco[eco:isTaxonomicScopeFullyReported] = `true`; if not, term:eco[eco:isTaxonomicScopeFullyReported] = `false`.
 
-If taxonomic completeness is known, term:eco[eco:taxonCompletenessReported] should be populated as either `reportedComplete` or `reportedIncomplete` and the method used to assess completeness reported in term:eco[eco:taxonCompletenessProtocols]. If taxonomic completeness is not reported, term:eco[eco:taxonCompletenessReported] = `notReported.`
+*Knowledge about taxonomic completeness* allows data users to determine
+how comprehensively an area was sampled. If taxonomic completeness is
+known
+term:eco[eco:taxonCompletenessReported]
+= `reportedComplete` or `reportedIncomplete` and the method used to
+assess completeness reported in
+term:eco[eco:taxonCompletenessProtocols].
+If taxonomic completeness is not reported,
+term:eco[eco:taxonCompletenessReported]
+= `notReported`.
+
+If a specific person(s) or organization(s) are recorded as making the taxonomic identifications relevant to the stated survey scope(s), they should be acknowledged using the term:dwc[dwc:identifiedBy]. A list of names can be be shared with values separated by a `|`. It is not possible to share a list of unique identifiers such as OrcID's at the Event level. 
 
 [[table-09]]
+[caption=""]
 .Taxonomic scope terms, their recommended usage (status), and example data entries.
-[cols="20,30,~"]
+[width="100%",cols="34%,33%,33%",options="header",]
 |===
 |Status |Term |Example entry
 .2+|Recommended
@@ -45,17 +65,20 @@ If taxonomic completeness is known, term:eco[eco:taxonCompletenessReported] shou
 |`Arthropods`
 
 |term:eco[eco:excludedTaxonomicScope]
-|`Aves`, `Mammalia`
+|`Aves`
 
-.3+|Share if available
+.4+|Share if available
 |term:eco[eco:isTaxonomicScopeFullyReported]
 |`true` or `false`
 
 |term:eco[eco:taxonCompletenessReported]
-|`reportedComplete`, `reportedIncomplete`, or `notReported` 
+|`reportedComplete`, `reportedIncomplete`, or `notReported`
 
 |term:eco[eco:taxonCompletenessProtocols]
 |`Based on sampling effort`
+
+|term:dwc[dwc:identifiedBy]
+|
 |===
 
 ==== Organismal scope
