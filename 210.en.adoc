@@ -1,10 +1,10 @@
 === Survey sampling design and event hierarchy 
 
-==== What is survey design and sampling event hierarchy?
+===== What is survey design and sampling event hierarchy?
 
 *Survey sampling design* details the sampling strategy and how the survey event sites (e.g. stations, plots, transects) are laid out. The *sampling event hierarchy* is the translation of the survey sampling design into an event-based perspective using Darwin Core terms. 
 
-==== Sampling event hierarchy terms
+===== Sampling event hierarchy terms
 
 Historically, only two (2) terms were available to explicitly structure and relate different levels of sampling event hierarchy in a dataset: term:dwc[dwc:eventID] and term:dwc[dwc:parentEventID]. One additional Darwin Core event term, term:dwc[dwc:fieldNumber], provided a means by which to relate a sampling event with a dataset- or project-specific field number. The Humboldt extension provides an additional two (2) terms—term:eco[eco:siteCount] and term:eco[eco:siteNestingDescription]—to better support complex or nested datasets. 
 
