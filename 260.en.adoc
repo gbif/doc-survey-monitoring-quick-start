@@ -1,10 +1,10 @@
 === Sampling Effort
 
-===== What is sampling effort?
+==== What is sampling effort?
 
 *Sampling effort* communicates sampling intensity during a sampling event. Clear reporting of sampling effort is necessary to interpret measures of completeness and calculate abundance (relative or absolute) or biomass and is critical in assessing the ability to compare information and aggregate data across studies.
 
-===== Sampling effort terms
+==== Sampling effort terms
 
 term:dwc[dwc:samplingEffort] is strongly recommended to publish term:dwc[dwc:Event] datasets to GBIF, however, the Humboldt extension includes five (5) terms to more explicitly capture sampling effort information:
 
