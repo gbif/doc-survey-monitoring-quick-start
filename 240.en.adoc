@@ -1,6 +1,6 @@
 === Sampling event protocol
 
-===== What is sampling protocol?
+==== What is sampling protocol?
 
 A *sampling protocol* provides the details of how the sampling was conducted. Clear communication of the sampling protocol implemented is essential to ensuring the reliability, reproducibility, and reusability of a dataset as detailed knowledge of survey methods facilitates data integration and subsequent analysis. 
 
