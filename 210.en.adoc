@@ -42,7 +42,7 @@ It is ideal to structure a dataset such that each implemented protocol and uniqu
 .Simplified example schematic of a nested Event dataset consisting of a series of surveys conducted at two sites (Site 1 and Site 2) with two distinct sampling protocols (Protocol a, Protocol b) represented by the blue boxes. Each protocol is implemented at each site on two different dates (Site visit t1, Site visit t2) with associated Occurrences related to the appropriate Event via the Occurrence extension (yellow boxes). 
 image::img/web/Fig2.png[]
 
-*Capturing project information*
+==== Project information
 
 Datasets that are collected as part of a larger or established network or project should report as much contextual information as possible to capture information about the project or network or specifically stated survey scope(s). Project-level information will always be shared at the highest event level. This can be achieved in one of two ways:
 
@@ -54,8 +54,7 @@ Datasets that are collected as part of a larger or established network or projec
 .Simplest nested hierarchy with an additional event level to consolidate all survey Events under the context of a project (purple box).
 image::img/web/Fig3.png[]
 
-
-*Capturing more complex survey design information*
+==== Complex survey design
 
 Although the recommendation is to keep dataset structure as simple as possible, more complex nesting may be necessary to accurately represent survey design and support data reuse. Added complexity can improve clarity when:
 
@@ -74,7 +73,7 @@ If the survey was a unique event, this simpler two Event level structure would l
 
 [[fig4]]
 [caption="Figure 4. "]
-.Three potential simple schematics for a zooplankton survey conducted at 20 stations, each sampled once during the day and once at night: non-nested (a), simple nested (b), and complex or deeply  nested (c).
+.Three potential simple schematics for a zooplankton survey conducted at 20 stations, each sampled once during the day and once at night: non-nested (a), simple nested (b), and complex or deeply nested (c).
 image::img/web/Fig4.png[]
 
 ==== Sampling Event hierarchy terms
