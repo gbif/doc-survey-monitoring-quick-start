@@ -4,7 +4,7 @@
 
 *Additional DwC Event terms*
 
-While all https://eco.tdwg.org/[Humboldt extension] terms are covered in this guide, the Darwin Core Event terms included are not exhaustive. The full suite of available DwC Event terms that can be applied to a DwC-A Event dataset can be found in the https://rs.gbif.org/core/dwc_event_2024-02-19.xml[GBIF Repository of Schemas Darwin Core Event page].
+While all https://eco.tdwg.org/[Humboldt extension^] terms are covered in this guide, the Darwin Core Event terms included are not exhaustive. The full suite of available DwC Event terms that can be applied to a DwC-A Event dataset can be found in the https://rs.gbif.org/core/dwc_event_2024-02-19.xml[GBIF Repository of Schemas Darwin Core Event page^].
 
 
 *Need more information?* 
@@ -16,8 +16,12 @@ Check out the following documentation:
 
 Or, reach out for assistance from:
 
-* https://discourse.gbif.org[Humboldt Extension GitHub repository^]: questions about usage, issues with the vocabulary, and recommendations for new terms should be reported as an Issue.
-* https://discourse.gbif.org[GBIF community forum on Discourse^]
-* GBIF help desk 
-    ** https://techdocs.gbif.org/en/[create an issue on the GitHub tech-docs project^] 
-    ** mailto:helpdesk@gbif.org[send an email^] 
+* https://github.com/tdwg/hc[Humboldt Extension GitHub repository^]: questions about usage, issues with the vocabulary, and recommendations for new terms should be reported as an Issue. +
+* The https://discourse.gbif.org/[GBIF community forum^] +
+* The GBIF Node for your country or organization
+** If your country or organization is a member of GBIF and has an established node, you can reach out directly to your node.
+*** If you’re uncertain if your country or organization is part of the GBIF network you can https://www.gbif.org/the-gbif-network[search here^]. +
+** If your country or organization is not a member of GBIF, reach out to the mailto:helpdesk@gbif.org[GBIF helpdesk]. +
+* GBIF help desk
+** Create an issue on the https://techdocs.gbif.org/en/[GitHub tech-docs project^]. +
+** Send an email to the mailto:helpdesk@gbif.org[GBIF helpdesk]. 
