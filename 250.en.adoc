@@ -1,24 +1,19 @@
 === Scope and completeness
 
-*What are survey scope and completeness?*
-
 *Survey scope* relates the organisms targeted (or not targeted) during a survey. *Completeness* indicates the thoroughness of a survey relative to the stated scope. Structured reporting of explicitly stated survey scopes and completeness is necessary for evaluating and reporting completeness and is critical to understanding if the data can be used to assert absences (non-detections) of taxa.
 
-Scope terms can be applied at any Event level and recommended best
-practice is to report as much information as is explicitly available but
-only at the Event levels for which the information is relevant
-(information should not be inferred up or down an event hierarchy).
+Scope terms can be applied at any Event level and the recommended best practice is to report as much information as is explicitly available but only at the Event levels for which the information is relevant (information should not be inferred up or down an event hierarchy).
 
 The 'target' and 'excluded' scope terms (e.g., term:eco[eco:targetTaxonomicScope]) presented in this section are the only survey event terms designed to capture _intent_. That is, these terms capture the breadth of the information the biological survey _intended_ to capture. All other terms should be used to report the actuality of the survey (e.g., what protocol was in practice implemented, and what information was actually collected).
 
-[NOTE]
-.*Implementing scope terms*
-====
+****
+[discrete]
+==== Implementing scope terms
 * Scope terms can be applied at any Event level. +
 * Recommended best practice is to populate scope terms for the highest level Event to which they apply, and all of its child Events. This information should be reported ONLY at the event levels for which the information is explicitly stated (information should not be inferred up or down an event hierarchy). +
 * Scope terms of an Event MUST be populated whenever the scope was in effect to be able to infer absence of detection within that Event, whenever the Occurrences linked to that dwc:Event do not explicitly state zero counts or when there are no Occurrence records for a given taxon that fell within the taxonomic scope(see Section 3.2.4 Principle of inference in https://eco.tdwg.org/hierarchy/#324-principle-of-inference[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]). +
 * Do NOT retrospectively infer scope terms.
-====
+****
 
 ==== Verbatim scope
 
@@ -36,11 +31,7 @@ The full verbatim scope explicitly identifying the full suite of stated paramete
 
 ==== Taxonomic scope
 
-===== Why is taxonomic scope important?
-
 Providing taxonomic scope enables reliable, quantitative, including statistical interpretation of survey and monitoring data. It is essential to interpret local non-detection as local absences.
-
-===== Taxonomic scope terms
 
 An explicitly stated targeted or intentionally excluded taxonomic scope should be reported using term:eco[eco:targetTaxonomicScope] and term:eco[eco:excludedTaxonomicScope].
 
@@ -49,7 +40,6 @@ If every organism included in terms:eco[eco:targetTaxonomicScope] that was obser
 *Knowledge about taxonomic completeness* allows data users to determine how comprehensively an area was sampled. If taxonomic completeness is known term:eco[eco:taxonCompletenessReported] = `reportedComplete` or `reportedIncomplete` and the method used to assess completeness reported in term:eco[eco:taxonCompletenessProtocols]. If taxonomic completeness is not reported, term:eco[eco:taxonCompletenessReported] = `notReported`.
 
 If a specific person(s) or organization(s) are recorded as making the taxonomic identifications relevant to the stated survey scope(s), they should be acknowledged using the term:dwc[dwc:identifiedBy]. A list of names can be be shared with values separated by a `|`. Note that it is not currently possible to share a list of unique identifiers such as OrcID´s at the Event level.
-
 
 [caption=""]
 .Taxonomic scope terms, their recommended usage (status), and example data entries.
