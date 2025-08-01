@@ -2,34 +2,32 @@
 
 ==== What is sampling effort?
 
-*Sampling effort* communicates sampling intensity during a sampling event. Clear reporting of sampling effort is necessary to interpret measures of completeness and calculate abundance (relative or absolute) or biomass and is critical in assessing the ability to compare information and aggregate data across studies.
+*Sampling effort* communicates information about the likelihood that a type of organism will be detected: greater effort = higher probability of detection. Clear reporting of sampling effort is necessary to interpret measures of completeness and calculate abundance (relative or absolute) or biomass and is critical in assessing the ability to compare information and aggregate data across studies.
 
 ==== Sampling effort terms
 
 term:dwc[dwc:samplingEffort] is strongly recommended to publish term:dwc[dwc:Event] datasets to GBIF, however, the Humboldt extension includes five (5) terms to more explicitly capture sampling effort information:
 
-* *Is sampling effort reported?*: term:eco[eco:isSamplingEffortReported] indicates (`true` or `false`) if sampling effort is reported. 
-* *Sampling effort*: term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit] report sampling effort value and units (e.g. 4 trap nights).
-* *Sampling effort protocol*: term:eco[eco:samplingEffortProtocol] should contain a textual description of the sampling effort protocol (e.g. number and arrangement of people or sensors deployed, whether or not sensors were mobile or stationary, how frequently observation, measurements, or samples were taken) and/or provide a link to the protocol used.
-* *Sampling performed by*: term:eco[eco:samplingPerformedBy] should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries. Best practice is to use a unique identifier (e.g., OrcID) if available.
-** NOTE: Because term:eco[eco:samplingPerformedBy] has an IRI equivalent only a single OrcID can be provided (the term cannot support a list). If more than one OrcID needs to be shared, a list of OrcID’s (using the pipe separator between values) can be supplied using the term term:dwc[dwc:recordedByID] used BUT it must be applied to each relevant occurrence and located on the `occurrence` table. 
+* *Is sampling effort reported?:* Indicate if sampling effort is reported using the Boolean term term:eco[eco:isSamplingEffortReported]. +
+* *Sampling effort protocol:* *term:eco[eco:samplingEffortProtocol*] should contain a textual description of the sampling effort protocol (e.g., number and arrangement of people or sensors deployed, whether or not sensors were mobile or stationary, how frequently observation, measurements, or samples were taken) and/or provide a link to the protocol used. +
+* *Sampling effort:*  report sampling effort (the total amount of time of the sampling Event) value and units (e.g., 4 trap nights) using the paired terms term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit]. +
+* *Sampling performed by:* term:eco[eco:samplingPerformedBy] should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries. Best practice is to use a unique identifier (e.g., OrcID) if available.
+** NOTE: Because term:eco[eco:samplingPerformedBy] has an IRI equivalent only a single OrcID can be provided (the term cannot support a list). If more than one OrcID needs to be shared, a list of OrcID´s (using the pipe separator between values) can be supplied using the term term:dwc[dwc:recordedByID] used BUT it must be applied to each relevant Occurrence and located on the ´occurrence´ table.
 
-****
-
-[discrete]
-===== Updated recommended best practice 
-
+[NOTE]
+.*Updated recommended best practice*
+====
 Capture sampling effort information as structured data using the five (5) Humboldt extension terms:
 
-* term:eco[eco:isSamplingEffortReported]
-* term:eco[eco:samplingEffortValue] and term:eco[samplingEffortUnit]
-* term:eco[eco:samplingEffortProtocol] 
-* term:eco[eco:samplingPerformedBy]
-****
+- term:eco[eco:isSamplingEffortReported]
+- term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit]
+- term:eco[eco:samplingEffortProtocol]
+- term:eco[eco:samplingPerformedBy]
+====
 
-[[table-13]]
-.Sampling effort terms, their recommended usage (status), and example data entries
-[cols="20,30,~"]
+[caption=""]
+.Sampling effort terms, their recommended usage (status), and example data entries.
+[width="100%",cols="34%,33%,33%",options="header",]
 |===
 |Status |Term |Example entry
 .6+|Recommended
@@ -42,12 +40,12 @@ Capture sampling effort information as structured data using the five (5) Humbol
 |term:eco[eco:samplingEffortValue]
 |`40`
 
-|term:eco[eco:samplingEffortUnit]
+|term:eco[eco:samplingEffortValue]
 |`trap nights`
 
-|term:dwc[eco:samplingEffort]
+|term:dwc[dwc:samplingEffort]
 |`40 trap nights`
 
 |term:eco[eco:samplingPerformedBy]
-|`‘A. Townsend Peterson`, 'https://orcid.org/0000-0003-0243-2379'
+|`A. Townsend Peterson`
 |===
