@@ -13,3 +13,33 @@ Each term in this document is linked with its respective term IRI alias (ex., te
 Remember to refer to the definition, comments, and examples provided in the linked documentation to ensure that you are following recommended usage guidelines.
 
 ****
+
+[IMPORTANT]
+.*Data mapping tips*
+====
+Survey event data should be saved to the DwC-A `event` table. This includes DwC Event terms (any term preceded by _'dwc'_, e.g., term:dwc[dwc:eventID]) and Humboldt extension terms (any term preceded by _'eco'_, e.g.,
+term:eco[eco:protocolNames]).
+
+Populate all terms for which information is available. 
+
+*Paired terms* must be populated together. Often these terms are designed to offer the data publisher some level of flexibility in reporting data. Paired terms are most common in terms available for reporting a variable value and associated unit of measure (for example, term:dwc[dwc:sampleSizeValue] and term:dwc[dwc:sampleSizeUnit]). 
+
+*No data, missing data, and data values of `0`*
+
+  * Cells with a value of `0` (zero) should be populated as `0`.
+  * Cells with missing data or `NULL` values should be left empty. 
+  * Terms for which there is `no data` to share at any hierarchical level can be excluded from the data table.
+
+
+*Populating terms across event levels (e.g., from parent event to child event)* 
+
+* Each event level can have its own set of attributes and measurements, which
+can be captured using the Humboldt and/or other Extension(s) and be
+unambiguously linked to the corresponding level through the appropriate
+term:dwc[dwc:eventID]s. +
+* *_Terms should contain data explicitly at every Event level in the hierarchy to which they directly apply._* 
+** A child Event MUST NOT be expected to implicitly inherit the value of any property of any of its parent Event(s). If a value is in common between an Event and its parent, the value should be included explicitly in both Event records (see Section 3.2.2 Principle of applicability in https://eco.tdwg.org/hierarchy/#322-principle-of-applicability[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]). +
+** A parent Event SHOULD NOT be populated by deriving or summarizing information from child Events; rather, fields SHOULD be populated explicitly with information directly appropriate to the nature and level of the Event itself (see Section 3.2.3 Principle of non-derivation in https://eco.tdwg.org/hierarchy/#323-principle-of-non-derivation[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]). 
+
+Refer to https://eco.tdwg.org/hierarchy/[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^] for more guidance in populating Humboldt extension terms across event levels.
+====
