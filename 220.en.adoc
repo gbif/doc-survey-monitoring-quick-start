@@ -21,7 +21,7 @@ These terms should be populated at every hierarchical Event level that is accura
 |Status |Term |Example entry
 .5+|Share if available
 |term:eco[eco:verbatimSiteNames]
-|`Trap_18\|Trap_27\|Trap_54\|Trap_96`, Annala`, `Kumpula`
+|`Trap_18\|Trap_27\|Trap_54\|Trap_96`, `Annala \| Kumpula`
 
 |term:dwc[dwc:habitat]
 |`Ephemeral wetland`
