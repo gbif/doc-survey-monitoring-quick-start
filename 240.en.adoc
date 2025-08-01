@@ -1,7 +1,5 @@
 === Sampling event protocol
 
-==== What is sampling protocol?
-
 A *sampling protocol* provides the details of how the sampling was conducted. Clear communication of the sampling protocol implemented is essential to ensuring the reliability, reproducibility, and reusability of a dataset as detailed knowledge of survey methods facilitates data integration and subsequent analysis. 
 
 [IMPORTANT]
@@ -16,7 +14,6 @@ Biological survey event data can result from a wide variety of effort types (e.g
 term:dwc[dwc:eventType] should provide a high level overview of sampling effort type but should not be so specific as to overlap with sampling protocol. There is no single, standardized vocabulary for term:dwc[dwc:eventType]. If your organization or community has a controlled vocabulary, it is recommended to apply terms from that. Otherwise, you can refer to the common event types below for guidance.
 
 ****
-
 [discrete]
 ===== Common event types 
 
@@ -80,7 +77,6 @@ most appropriate at lower Event levels in nested hierarchies.
 |term:eco[eco:compilationTypes]
 |`compilationOfExistingSourcesAndSamplingEvents`
 
-
 |term:eco[eco:compilationSourceTypes]
 |`museumSpecimens \| literature`
 |===
@@ -98,10 +94,10 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 [NOTE]
 .*Updated recommended best practice*
 ====
-- Report the name(s) of the sampling protocol with term:eco[eco:protocolNames].
-- Capture details of the methods or protocols implemented using term:eco[eco:protocolDescriptions].
-- Provide citation information for the protocol via term:eco[eco:protocolReferences].
-- Retain term:dwc[dwc:samplingProtocol] as a verbatim field of term:eco[eco:protocolNames].
+* Report the name(s) of the sampling protocol with term:eco[eco:protocolNames]. +
+* Capture details of the methods or protocols implemented using term:eco[eco:protocolDescriptions]. + 
+* Provide citation information for the protocol via term:eco[eco:protocolReferences]. +
+* Retain term:dwc[dwc:samplingProtocol] as a verbatim field of term:eco[eco:protocolNames].
 ====
 
 [caption=""]
@@ -126,6 +122,7 @@ term:dwc[samplingProtocol] is required to publish an event dataset to GBIF, howe
 
 
 ==== Absence
+
 Organismal *absences* are defined here as the lack of detection of organisms that are members of an explicitly stated as part of the target taxonomic scope. Absence information is critical to understanding species' biogeography, modeling species´ responses to climate- and human-induced environmental change, and conservation planning and resource management. 
 
 * If the dataset includes absence information for one or more occurrences (to be reported in the ´occurrence´ table as term:dwc[dwc:occurrenceStatus] = `absent`), then term:eco[eco:isAbsenceReported] = `true`. +
@@ -164,11 +161,7 @@ Organismal *absences* are defined here as the lack of detection of organisms tha
 
 ==== Material samples
 
-===== What are material samples?
-
 A *material sample* (term:dwc[dwc:MaterialSample]) is a physical entity ´... that represents an entity of interest in whole or in part.´ Essentially, material samples are specimens collected during a survey Event. They may consist of an entire organism, part of an organism, or a genetic sample.
-
-===== Reporting material samples
 
 If the dataset includes at least one specimen from which a material sample was taken:
 
@@ -181,11 +174,7 @@ If the dataset or sampling Event does _not_ include material samples:
 
 ==== Vouchers
 
-===== What are vouchers?
-
 A *voucher* is a physical specimen or material sample collected and accessioned into a museum collection in support of a specific project or survey.
-
-===== Reporting vouchers
 
 If the dataset has vouchers:
 
@@ -206,8 +195,6 @@ The term term:eco[eco:isLeastSpecificTargetCategoryQuantityInclusive] provides a
 See https://eco.tdwg.org/inclusive/[Guidelines for eco:isLeastSpecificTargetCategoryQuantityInclusive] <<tdwg2024a>> for more information.
 
 ==== Data generalizations & information withheld
-
-===== Why withhold or generalize information from published biodiversity data?
 
 Although the general recommendation is to share all biodiversity data available at its highest spatio-temporal resolution, situations exist where it is necessary to generalize data prior to sharing a dataset publicly or even withhold information completely. Refer to https://doi.org/10.15468/doc-5jp4-5g10[_Current Best Practices for Generalizing Sensitive Species Occurrence Data_] for guidance on when and how to generalize or withhold information.
 
@@ -230,7 +217,7 @@ Two verbatim fields are available to provide additional information about an Eve
 * *Field notes:*  Field notes can be copied, transcribed verbatim, or linked into term:dwc[dwc:fieldNotes]. +
 * *Event remarks*: Additional comments about a particular Event that don´t fit in any other term can be shared using term:dwc[dwc:eventRemarks].
 
-Both fields can be applied to any Event at any level.
+Both fields can be implemented at any Event at any level.
 
 [caption=""]
 .Other survey protocol information and verbatim protocol terms, their recommended usage (status), and example data entries.
@@ -263,7 +250,6 @@ Both fields can be applied to any Event at any level.
 |term:dwc[dwc:fieldNotes]
 |`Notes available in the Grinnell-Miller Library`
 
-|
 |term:dwc[dwc:eventRemarks]
 |
 |===
