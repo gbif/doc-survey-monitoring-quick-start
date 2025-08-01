@@ -234,7 +234,7 @@ Both fields can be implemented at any Event at any level.
 |term:eco[eco:isLeastSpecificTargetCategoryQuantityInclusive]
 |`true` or `false`
 
-.5+|Share if available
+.6+|Share if available
 |term:eco[eco:materialSampleTypes]
 |`wholeOrganism`, `blood`
 
@@ -250,7 +250,6 @@ Both fields can be implemented at any Event at any level.
 |term:dwc[dwc:fieldNotes]
 |`Notes available in the Grinnell-Miller Library`
 
-|
 |term:dwc[dwc:eventRemarks]
 |
 |===
