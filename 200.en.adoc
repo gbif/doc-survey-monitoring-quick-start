@@ -11,7 +11,6 @@ Event datasets can be published with DwC Event terms (any term preceded by `dwc`
 Each term in this document is linked with its respective term IRI alias (ex., term:eco[eco:protocolNames]). When populating a term in the `event` table, ensure that the term is populated at the appropriate/relevent event level(s). Refer to https://eco.tdwg.org/hierarchy/[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^] for guidance in populating Humboldt extension terms across event levels (e.g., from parent event to child event).
 
 Remember to refer to the definition, comments, and examples provided in the linked documentation to ensure that you are following recommended usage guidelines.
-
 ****
 
 ==== Data mapping tips
