@@ -1,10 +1,6 @@
 === Sampling Effort
 
-==== What is sampling effort?
-
 *Sampling effort* communicates information about the likelihood that a type of organism will be detected: greater effort = higher probability of detection. Clear reporting of sampling effort is necessary to interpret measures of completeness and calculate abundance (relative or absolute) or biomass and is critical in assessing the ability to compare information and aggregate data across studies.
-
-==== Sampling effort terms
 
 term:dwc[dwc:samplingEffort] is strongly recommended to publish term:dwc[dwc:Event] datasets to GBIF, however, the Humboldt extension includes five (5) terms to more explicitly capture sampling effort information:
 
@@ -14,7 +10,7 @@ term:dwc[dwc:samplingEffort] is strongly recommended to publish term:dwc[dwc:Eve
 * *Sampling performed by:* term:eco[eco:samplingPerformedBy] should be used to credit the people involved in the sampling eventSampling effort terms, their recommendation usage, and example data entries. Best practice is to use a unique identifier (e.g., OrcID) if available.
 ** NOTE: Because term:eco[eco:samplingPerformedBy] has an IRI equivalent only a single OrcID can be provided (the term cannot support a list). If more than one OrcID needs to be shared, a list of OrcID´s (using the pipe separator between values) can be supplied using the term term:dwc[dwc:recordedByID] used BUT it must be applied to each relevant Occurrence and located on the ´occurrence´ table.
 
-[NOTE]
+[IMPORTANT]
 .*Updated recommended best practice*
 ====
 Capture sampling effort information as structured data using the five (5) Humboldt extension terms:
