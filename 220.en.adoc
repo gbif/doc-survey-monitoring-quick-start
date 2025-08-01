@@ -1,7 +1,5 @@
 === Survey event site
 
-*Why are site terms important?*
-
 An Event *_site_* is the location at which observations are made or samples and/or measurements are taken. Sharing thorough information about a sampling event site, including description, locality, and vegetative cover provides critical context to potential data users about conditions in which a survey was conducted.
 
 ==== Site description
