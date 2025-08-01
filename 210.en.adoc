@@ -13,7 +13,7 @@ The simplest Event data structure is a non-nested dataset. *Non-nested datasets*
 
 [[fig1]]
 .A simple schematic of a non-nested Event dataset (a) consisting of a single Event with associated Occurrences related to the Event via the Occurrence extension or (b) a series of individual Events with associated Occurrences related to the appropriate Event via the Occurrence extension. 
-image::img/Fig1.png[]
+image::img/web/Fig1.png[]
 
 ==== Nested datasets
 
@@ -40,7 +40,7 @@ It is ideal to structure a dataset such that each implemented protocol and uniqu
 [[fig2]]
 [caption="Figure 2. "]
 .Simplified example schematic of a nested Event dataset consisting of a series of surveys conducted at two sites (Site 1 and Site 2) with two distinct sampling protocols (Protocol a, Protocol b) represented by the blue boxes. Each protocol is implemented at each site on two different dates (Site visit t1, Site visit t2) with associated Occurrences related to the appropriate Event via the Occurrence extension (yellow boxes). 
-image::img/Fig2.png[]
+image::img/web/Fig2.png[]
 
 *Capturing project information*
 
@@ -52,7 +52,7 @@ Datasets that are collected as part of a larger or established network or projec
 [[fig3]]
 [caption="Figure 3. "]
 .Simplest nested hierarchy with an additional event level to consolidate all survey Events under the context of a project (purple box).
-image::img/Fig3.png[]
+image::img/web/Fig3.png[]
 
 
 *Capturing more complex survey design information*
@@ -75,7 +75,7 @@ If the survey was a unique event, this simpler two Event level structure would l
 [[fig4]]
 [caption="Figure 4. "]
 .Three potential simple schematics for a zooplankton survey conducted at 20 stations, each sampled once during the day and once at night: non-nested (a), simple nested (b), and complex or deeply  nested (c).
-image::img/Fig4.png[]
+image::img/web/Fig4.png[]
 
 ==== Sampling Event hierarchy terms
 
