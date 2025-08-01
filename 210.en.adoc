@@ -21,9 +21,9 @@ More complex survey designs will require implemntation of a nested dataset struc
 
 *There is no single correct dataset structure,* and identifying the data structure most appropriate for a dataset may not always be a straightforward process. However, structure is most commonly defined as a function of sampling location, protocol, and date. 
 
-[NOTE] 
-.*In a nested dataset:*
-==== 
+****
+[discrete]
+==== In a nested dataset
 * All Events *_except those at the lowest Event level_* are considered the *parent Event* to any Event(s) beneath it. These *child Events* may represent either multiple sampling sites, protocols, or repeated sampling at the same locality using the same protocol. The top-most Event level does not have a parent Event. +
 * *_A parent Event MUST encompass its child Events spatially and temporally._* Specifically, the spatial extent and temporal interval of a parent Event MUST contain the spatial extents and temporal intervals of all of its children (see Section 3.2.1 Principle of spatiotemporal coverage  in https://eco.tdwg.org/hierarchy/#321-principle-of-spatiotemporal-coverage[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]).
 * *_Each Event level should reflect a meaningful ecological or operational unit (e.g., spatial, temporal, or ecological scale) in the survey design._* An Event level should be added if the addition of that Event level will facilitate data interpretation, downstream analysis, and/or linkage of information across datasets/data sources. *Do not create Event levels that are not necessary.* +
@@ -31,7 +31,7 @@ More complex survey designs will require implemntation of a nested dataset struc
 * Child-most Event level represents an Event that implements a single, reported sampling protocol at a single site  at a particular interval of time.
 
 Refer to https://eco.tdwg.org/hierarchy/[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^] (TDWG Humboldt Extension Task Group, 2024) for more information about creating nested data structures for Darwin Core datasets.
-====
+****
 
 Consider a survey that implements two sampling protocols at two sites with multiple site visits for each unique site-protocol combination. This dataset could be structured with two Event levels as shown in <<fig2, Figure 2>>. Here, the highest event level will have four events representing each unique site-protocol combination: Site 1–Protocol a, Site 1–Protocol b, Site 2–Protocol a, Site 2–Protocol b. Events at the lowest event level will  be site visits that occur on a particular date for each site-protocol combination. Organismal Occurrence information collected during a site visit will be linked to the relevant site visit. This two Event level structure represents the simplest possible nested dataset structure, with only a single level of nesting.
 
@@ -97,13 +97,11 @@ In addition to Event and parent Event identifiers:
 * *Site count and site nesting description:* Nested datasets should, at the parent Event level, include the total number of sites sampled in term:eco[eco:siteCount] and provide a textual description of the survey design or site sampling structure using term:eco[eco:siteNestingDescription]. +
 * *Field number:* If the survey data include a field number for each specific Event, this should be shared using term:dwc[dwc:fieldNumber].
 
-
-[[table-01]]
-.Event hierarchy terms, their recommended usage (status), and example data entries
-[cols="25,25,~"]
+[caption=]
+.Event hierarchy terms, their recommended usage (status), and example data entries.
+[width="100%",cols="34%,33%,33%",options="header",]
 |===
 |Status |Term |Example entry
-
 |Required
 |term:dwc[dwc:eventID]
 |`survey2022_a-2`
@@ -120,7 +118,7 @@ In addition to Event and parent Event identifiers:
 |`25 survey sites each with 3 1m2 quadrats`
 
 |Share if available
-|term:dwc[dwc:fieldNumber]
+|term:dwc[dwc:fieldNumber] 
 |`RV Sol 87-03-08`
 |===
 
