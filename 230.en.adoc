@@ -6,20 +6,21 @@ Complete and accurate reporting of the temporal scope of a survey is crucial to 
 
 ==== Event date and time terms
 
-* *Event date*: Each event should have a reported date or date range in term:dwc[dwc:eventDate] regardless of its hierarchical level. Nested datasets should, at the parent event level, report a date range encompassing all survey dates. 
-* *Event time and duration*: If reported, note the time and duration of each event using term:dwc[dwc:eventTime] and the paired terms term:eco[eco:eventDurationValue] and term:eco[eco:eventDurationUnit]. 
+Each Event should report date or date range in term:dwc[dwc:eventDate] regardless of its hierarchical level. *Nested datasets* should, at the parent Event level, report a date range encompassing all survey dates.
 
-Refer to https://techdocs.gbif.org/en/[GBIF’s technical documentation^] on https://techdocs.gbif.org/en/data-processing/temporal-interpretation[Date and time interpretation^] for more guidance on reporting event dates and times.
+The time and duration of each Event should be reported using term:dwc[dwc:eventTime] and the paired terms term:eco[eco:eventDurationValue] and term:eco[eco:eventDurationUnit].
 
-[[table-04]]
+Refer to GBIF’s technical documentation on https://techdocs.gbif.org/en/data-processing/temporal-interpretation[Date and time interpretation^] for more guidance on reporting event dates and
+times.
+
+[caption=""]
 .Event date and temporal scope terms, their recommended usage (status), and example data entries.
-
+[width="100%",cols="34%,33%,33%",options="header",]
 |===
 |Status |Term |Example entry
-
 |Required
 |term:dwc[dwc:eventDate]
-|`2018-08-29`, `2007-03-01/2008-05-11`
+|`2018-08-29`
 
 .3+|Recommended
 |term:dwc[dwc:eventTime]
@@ -30,5 +31,4 @@ Refer to https://techdocs.gbif.org/en/[GBIF’s technical documentation^] on htt
 
 |term:eco[eco:eventDurationUnit]
 |`hour`
-
 |===
