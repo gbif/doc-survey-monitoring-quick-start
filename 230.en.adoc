@@ -1,10 +1,6 @@
 === Survey date and time 
 
-==== Why are survey date and time terms important?
-
 Complete and accurate reporting of the temporal scope of a survey is crucial to asserting event structure and providing key contextual information about sampling conditions.
-
-==== Event date and time terms
 
 Each Event should report date or date range in term:dwc[dwc:eventDate] regardless of its hierarchical level. *Nested datasets* should, at the parent Event level, report a date range encompassing all survey dates.
 
