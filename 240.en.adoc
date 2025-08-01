@@ -250,6 +250,7 @@ Both fields can be implemented at any Event at any level.
 |term:dwc[dwc:fieldNotes]
 |`Notes available in the Grinnell-Miller Library`
 
+|
 |term:dwc[dwc:eventRemarks]
 |
 |===
