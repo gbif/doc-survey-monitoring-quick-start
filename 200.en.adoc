@@ -14,9 +14,7 @@ Remember to refer to the definition, comments, and examples provided in the link
 
 ****
 
-[IMPORTANT]
-.*Data mapping tips*
-====
+==== Data mapping tips
 Survey event data should be saved to the DwC-A `event` table. This includes DwC Event terms (any term preceded by _'dwc'_, e.g., term:dwc[dwc:eventID]) and Humboldt extension terms (any term preceded by _'eco'_, e.g.,
 term:eco[eco:protocolNames]).
 
@@ -30,7 +28,6 @@ Populate all terms for which information is available.
   * Cells with missing data or `NULL` values should be left empty. 
   * Terms for which there is `no data` to share at any hierarchical level can be excluded from the data table.
 
-
 *Populating terms across event levels (e.g., from parent event to child event)* 
 
 * Each event level can have its own set of attributes and measurements, which
@@ -42,4 +39,3 @@ term:dwc[dwc:eventID]s. +
 ** A parent Event SHOULD NOT be populated by deriving or summarizing information from child Events; rather, fields SHOULD be populated explicitly with information directly appropriate to the nature and level of the Event itself (see Section 3.2.3 Principle of non-derivation in https://eco.tdwg.org/hierarchy/#323-principle-of-non-derivation[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]). 
 
 Refer to https://eco.tdwg.org/hierarchy/[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^] for more guidance in populating Humboldt extension terms across event levels.
-====
