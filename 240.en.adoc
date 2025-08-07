@@ -85,7 +85,7 @@ Four protocol terms currently exist, however, only 1 term is required to publish
 |`Visual survey`
 
 |term:eco[eco:protocolDescriptions]
-|`For each site a total list of lichen species (lichenized fungi) was produced based on a careful examination of soil, wood, stone surfaces and bark of trees up to 2 m at three time periods: October-November 2014, February-December 2015 and March and May 2016. Specimens that were not possible to identify with certainty in the field were sampled and subsequently identified in the laboratory. For each species the substrate, e.g. phorophyte (host) species was recorded. All records were registered in www.svampeatlas.dk, and the nomenclature used is in accordance with this database.`
+|`For each site a total list of lichen species (lichenized fungi) was produced based on a careful examination of soil, wood, stone surfaces and bark of trees up to 2m at three time periods: October-November 2014, February-December 2015 and March and May 2016. Specimens that were not possible to identify with certainty in the field were sampled and subsequently identified in the laboratory. For each species the substrate, e.g. phorophyte (host) species was recorded. All records were registered in www.svampeatlas.dk, and the nomenclature used is in accordance with this database.`
 
 |term:eco[eco:protocolReferences]
 |`See Appendix B of Brunbjerg, A.K., Bruun, H.H., Brøndum, L. et al. A systematic survey of regional multi-taxon biodiversity: evaluating strategies and coverage. BMC Ecol 19, 43 (2019). https://doi.org/10.1186/s12898-019-0260-x \| https://doi.org/10.17504/protocols.io.kxygx3jwkg8j/v1`
@@ -94,10 +94,10 @@ Four protocol terms currently exist, however, only 1 term is required to publish
 
 ==== Absence
 
-Organismal *absences* are defined here as the lack of detection of organisms that are members of an explicitly stated as part of the target taxonomic scope. Absence information is critical to understanding species´ biogeography, modeling species' responses to climate- and human-induced environmental change, and conservation planning and resource management.
+*Organismal <<absence, absences>>* are defined here as the lack of detection of organisms that are members of an explicitly stated as part of the target taxonomic scope. Absence information is critical to understanding species´ biogeography, modeling species' responses to climate- and human-induced environmental change, and conservation planning and resource management.
 
-* If the dataset includes absence information for one or more occurrences (to be reported in the ´occurrence´ table as term:dwc[dwc:occurrenceStatus] = `absent`), then term:eco[eco:isAbsenceReported] = `true`. +
-* A list of absent taxa can be provided using term:eco[eco:absentTaxa] at all relevant levels. Absences should only be reported for taxa within the stated taxonomic and/or organismal scope of a survey. Absence cannot be asserted for bycatch.
+* If the dataset includes absence information for one or more occurrences (to be reported in the `occurrence` table as term:dwc[dwc:occurrenceStatus] = `absent`), then term:eco[eco:isAbsenceReported] = `true`. +
+* A list of absent taxa can be provided using term:eco[eco:absentTaxa] at all relevant levels. Absences should only be reported for taxa within the stated taxonomic and/or organismal scope of a survey and should use scientific nomenclature. Absence cannot be asserted for bycatch.
 
 ==== Abundance
 
