@@ -10,14 +10,14 @@ The 'target' and 'excluded' scope terms (e.g., term:eco[eco:targetTaxonomicScope
 [discrete]
 ==== Implementing scope terms
 * Scope terms can be applied at any Event level. +
-* Recommended best practice is to populate scope terms for the highest level Event to which they apply, and all of its child Events. This information should be reported ONLY at the event levels for which the information is explicitly stated (information should not be inferred up or down an event hierarchy). +
-* Scope terms of an Event MUST be populated whenever the scope was in effect to be able to infer absence of detection within that Event, whenever the Occurrences linked to that dwc:Event do not explicitly state zero counts or when there are no Occurrence records for a given taxon that fell within the taxonomic scope(see Section 3.2.4 Principle of inference in https://eco.tdwg.org/hierarchy/#324-principle-of-inference[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]). +
+* Recommended best practice is to populate scope terms for the highest level Event to which they apply, and all of its child Events. This information should be reported ONLY at the Event levels for which the information is explicitly stated (information should not be inferred up or down an event hierarchy). +
+* Scope terms of an Event MUST be populated whenever the scope was in effect to be able to infer absence of detection within that Event whenever the Occurrences linked to that Event do not explicitly state zero counts or when there are no Occurrence records for a given taxon that fell within the taxonomic scope (see Section 3.2.4 Principle of inference in https://eco.tdwg.org/hierarchy/#324-principle-of-inference[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]). +
 * Do NOT retrospectively infer scope terms.
 ****
 
 ==== Verbatim scope
 
-The full verbatim scope explicitly identifying the full suite of stated parameters defining the breadth of a sampling event should be reported using term:eco[eco:verbatimTargetScope]. term:eco[eco:verbatimTargetScope] is particularly useful for capturing scope conditions not covered by existing taxonomic or organismal scope terms.
+The full verbatim scope explicitly identifying the full suite of stated parameters defining the breadth of a sampling event should be reported using term:eco[eco:verbatimTargetScope]. term:eco[eco:verbatimTargetScope] is particularly useful for capturing scope conditions not covered by existing https://eco.tdwg.org/terms/#taxonomic-scope[taxonomic^] or https://eco.tdwg.org/terms/#organismal-scope[organismal^] scope terms.
 
 [caption=""]
 .General scope terms, their recommended usage (status), and example data entries.
@@ -31,13 +31,14 @@ The full verbatim scope explicitly identifying the full suite of stated paramete
 
 ==== Taxonomic scope
 
-Providing taxonomic scope enables reliable, quantitative, including statistical interpretation of survey and monitoring data. It is essential to interpret local non-detection as local absences.
+Reporting taxonomic scope enables reliable, quantitative, including statistical interpretation of survey and monitoring data. Knowledge of taxonomic scope is essential to interpret local non-detection as local absences. The *taxonomic scope*, stated either as targeted or intentionally excluded taxa, should be reported using term:eco[eco:targetTaxonomicScope] and term:eco[eco:excludedTaxonomicScope].
 
-An explicitly stated targeted or intentionally excluded taxonomic scope should be reported using term:eco[eco:targetTaxonomicScope] and term:eco[eco:excludedTaxonomicScope].
+If every organism in the stated terms:eco[eco:targetTaxonomicScope] that was observed during an Event was reported, then term:eco[eco:isTaxonomicScopeFullyReported] = `true`; if not, term:eco[eco:isTaxonomicScopeFullyReported] = `false`.
 
-If every organism included in terms:eco[eco:targetTaxonomicScope] that was observed during an event was reported, then term:eco[eco:isTaxonomicScopeFullyReported] = `true`; if not, term:eco[eco:isTaxonomicScopeFullyReported] = `false`.
+*Knowledge about taxonomic completeness* allows data users to determine how comprehensively an area was sampled. 
 
-*Knowledge about taxonomic completeness* allows data users to determine how comprehensively an area was sampled. If taxonomic completeness is known term:eco[eco:taxonCompletenessReported] = `reportedComplete` or `reportedIncomplete` and the method used to assess completeness reported in term:eco[eco:taxonCompletenessProtocols]. If taxonomic completeness is not reported, term:eco[eco:taxonCompletenessReported] = `notReported`.
+* If taxonomic completeness is reported, then term:eco[eco:taxonCompletenessReported] = `reportedComplete` or `reportedIncomplete` as appropriate and the method used to assess completeness reported in term:eco[eco:taxonCompletenessProtocols]. +
+* If taxonomic completeness is not reported: term:eco[eco:taxonCompletenessReported] = `notReported`.
 
 If a specific person(s) or organization(s) are recorded as making the taxonomic identifications relevant to the stated survey scope(s), they should be acknowledged using the term:dwc[dwc:identifiedBy]. A list of names can be be shared with values separated by a `|`. Note that it is not currently possible to share a list of unique identifiers such as OrcID´s at the Event level.
 
@@ -75,7 +76,7 @@ As with taxonomic scope, providing information about other organismal scopes whe
 
 ===== Organismal scope terms
 
-An explicitly stated target or excluded organismal scope, and clarification as to whether or not all target organisms observed were reported, should be indicated using the following terms:
+An explicitly stated target or excluded organismal scope, and clarification as to whether or not all target organisms observed were reported (`true` or `false`), should be indicated using the following terms:
 
 * *Life stage*: term:eco[eco:targetLifeStageScope], term:eco[eco:excludedLifeStageScope], term:eco[eco:isLifeStageScopeFullyReported]
 * *Growth form*: term:eco[eco:targetGrowthFormScope], term:eco[eco:excludedGrowthFormScope], term:eco[eco:isGrowthFormScopeFullyReported]
@@ -119,28 +120,23 @@ Other organismal scopes should be reported using term:eco[eco:verbatimTargetScop
 
 ==== Bycatch
 
-===== What is bycatch?
+*Bycatch* are organisms detected during a survey that were not explicitly targeted in the scope of a study. Bycatch, or a lack thereof, in a dataset can be reported at the taxonomic and organismal levels.
 
-*Bycatch* are organisms detected during a survey that were not explicitly targeted in the scope of a study.
-
-===== Reporting bycatch
-
-Bycatch can be reported at the taxonomic and organismal levels. 
-
-If *_taxonomic_* bycatch are included in the datasets: 
+If *_taxonomic_* bycatch are reported: 
 
 * Populate term:eco[eco:hasNonTargetTaxa] as `true` at all relevant Event levels. +
-* If ALL *_taxonomic_* bycatch (term:eco[eco:hasNonTargetTaxa] = `true`) captured/observed during an Event are reported in the dataset, 
+* If ALL *_taxonomic_* bycatch (term:eco[eco:hasNonTargetTaxa] = `true`) captured/observed during an Event are reported in the dataset: 
 ** term:eco[eco:areNonTargetTaxaFullyReported] = `true` +
-** and a list of taxonomic bycatch should be provided in term:eco[eco:nonTargetTaxa].
+** and a list of taxonomic bycatch should be shared in term:eco[eco:nonTargetTaxa] using scientific nomenclature. Entries in a list should be separated by a `\|`.
 
-If *_organismal_* bycatch are included in the dataset:
+If *_organismal_* bycatch are reported:
 
-* Then term:eco[eco:hasNonTargetOrganisms] = `true` at all relevant Event levels.
+* term:eco[eco:hasNonTargetOrganisms] = `true` at all relevant Event levels.
 
 If the dataset does NOT include taxonomic or organismal bycatch:
 
-* Populate term:eco[eco:hasNonTargetTaxa] and term:eco[eco:hasNonTargetOrganisms] as `false` for all relevant Events.
+* term:eco[eco:hasNonTargetTaxa] = `false` for all relevant Events and
+* term:eco[eco:hasNonTargetOrganisms] = `false` for all relevant Events.
 
 [caption=""]
 .Bycatch terms, their recommended usage (status), and example data entries.
@@ -164,9 +160,9 @@ If the dataset does NOT include taxonomic or organismal bycatch:
 
 ==== Habitat scope
 
-If the survey includes an explicitly stated targeted or excluded *habitat scope* these can be reported using the terms term:eco[eco:targetHabitatScope] and term:eco[eco:excludedHabitatScope].
+If the survey includes an explicitly stated targeted or excluded *habitat scope* these can be reported in term:eco[eco:targetHabitatScope] and term:eco[eco:excludedHabitatScope].
 
-The actual habitat observed at a survey site during a sampling event should be reported in term:dwc[dwc:habitat].
+The actual habitat observed at a survey site during an Event should be reported in term:dwc[dwc:habitat].
 
 [caption=""]
 .Habitat scope terms, their recommended usage (status), and example data entries.
