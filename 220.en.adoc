@@ -6,11 +6,11 @@ An Event *_site_* is the location at which observations are made or samples and/
 
 The following information about a survey event site should be shared for every event level that the information is available:
 
-* *Site names:* report individual sampling Event site names using term:eco[eco:verbatimSiteNames]. A concatenated list of site names can be provided at higher Event levels with values separated using a pipe separator, `|`. +
-* *Habitat:* reported habitat at a sampling Event site should be recorded in term:dwc[dwc:habitat]. A concatenated list of habitats can be provided at higher Event levels with values separated using a pipe separator, `|`. Note that a single controlled vocabulary does not exist for this term, however use of a controlled vocabulary is recommended. +
-* *Weather:* reported weather during a sampling Event should be recorded using term:eco[eco:reportedWeather]. +
-* *Extreme conditions:*  reported extreme conditions at a sampling Event site at the time of the survey Event should be recorded using term:eco[eco:reportedExtremeConditions]. +
-* *Verbatim site description:* verbatim comments (e.g., the original textual description) about a site or sites should be recorded in term:eco[eco:verbatimSiteDescriptions].
+* **Site names:** report individual sampling Event site names using term:eco[eco:verbatimSiteNames]. A concatenated list of site names can be provided at higher Event levels with values separated using a pipe separator, `|`. +
+* **Habitat:** reported habitat at a sampling Event site should be recorded in term:dwc[dwc:habitat]. A concatenated list of habitats can be provided at higher Event levels with values separated using a pipe separator, `|`. Note that a single controlled vocabulary does not exist for this term, however use of a controlled vocabulary is recommended. +
+* **Weather:** reported weather during a sampling Event should be recorded using term:eco[eco:reportedWeather]. +
+* **Extreme conditions:**  reported extreme conditions at a sampling Event site at the time of the survey Event should be recorded using term:eco[eco:reportedExtremeConditions]. +
+* **Verbatim site description:** verbatim comments (e.g., the original textual description) about a site or sites should be recorded in term:eco[eco:verbatimSiteDescriptions].
 
 These terms should be populated at every hierarchical Event level that is accurate. 
 
@@ -38,16 +38,15 @@ These terms should be populated at every hierarchical Event level that is accura
 
 ==== Site locality
 
-The geographic location and extent of each survey event site should be provided. Historically, five terms are strongly recommended for event datasets in GBIF:
+The geographic location and extent of each survey Event site should be provided. Historically, five terms are strongly recommended for Event datasets in GBIF:
 
-* *Location ID:* a unique identifier for each sampling Event site should be shared in term:dwc[dwc:locationID]. +
-* *Country code:* the ISO two letter code for the country or region in which the survey takes place should be provided in term:dwc[dwc:countryCode]. +
-* *Latitude-Longitude:* The decimal latitude and longitude and geodetic datum location of the Event site should be reported in term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude],
-and term:dwc[dwc:geodeticDatum].
+* **Location ID:** a unique identifier for each sampling Event site should be shared in term:dwc[dwc:locationID]. +
+* **Country code:** the ISO two letter code for the country or region in which the survey takes place should be provided in term:dwc[dwc:countryCode]. +
+* **Latitude-Longitude:** The decimal latitude and longitude and geodetic datum location of the Event site should be reported in term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], and term:dwc[dwc:geodeticDatum].
 ** If geographic coordinates are not in decimal latitude and decimal longitude format, use the terms term:dwc[dwc:verbatimLatitude], term:dwc[dwc:verbatimLongitude], and term:dwc[dwc:verbatimCoordinateSystem] instead. +
 ** Note that this is a minimum recommendation and does not make data fit for the maximum number of purposes. It is highly recommended to provide georeferences that follow best practices.
 
-The Humboldt extension includes additional terms that provide greater contextual information about the geospatial scope of a sampling event or series of Events.
+The Humboldt extension includes additional terms that provide greater contextual information about the geospatial scope of a sampling Event or series of Events.
 
 ===== Survey site area 
 
@@ -66,8 +65,8 @@ For example, consider the https://www.gbif.org/dataset/cd4eb3ec-0a18-42b4-bda4-1
 
 ===== Additional survey site information
 
-* *Survey site geometry:* If available, the geometry of a survey site area should be shared using term:dwc[dwc:footprintWKT] and term:dwc[dwc:footprintSRS]. +
-* *Verbatim site location information:* A more general text description of the site location, if available, can be shared using term:dwc[dwc:locality].
+* **Survey site geometry:** If available, the geometry of a survey site area should be shared using term:dwc[dwc:footprintWKT] and term:dwc[dwc:footprintSRS]. +
+* **Verbatim site location information:** A more general text description of the site location, if available, can be shared using term:dwc[dwc:locality].
 
 [caption=""]
 .Event site geographic locality and scope terms and their recommended usage (status), namespace abbreviation, and example data entries.
@@ -120,11 +119,9 @@ For example, consider the https://www.gbif.org/dataset/cd4eb3ec-0a18-42b4-bda4-1
 
 ==== Vegetation cover
 
-Vegetation cover at a survey site can be reported in three ways:
-
-* *Verbatim vegetation cover:* a verbatim description of vegetation cover can be captured in term:eco[eco:verbatimSiteDescriptions]. +
-* *Percent vegetation cover:* simple percent vegetation cover can be recorded as structured data using the https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[extended
+* **Verbatim vegetation cover:** a verbatim description of vegetation cover can be captured in term:eco[eco:verbatimSiteDescriptions]. +
+* **Percent vegetation cover:** simple percent vegetation cover can be recorded as structured data using the https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[extended
 measurement or fact extension^]. +
-* *Vegetation plot survey:* vegetation plot survey information can be reported using the https://rs.gbif.org/extension/gbif/1.0/releve_2016-05-10.xml[relevé extension^].
+* **Vegetation plot survey:** vegetation plot survey information can be reported using the https://rs.gbif.org/extension/gbif/1.0/releve_2016-05-10.xml[relevé extension^].
 
 If vegetation cover is reported, then term:eco[eco:isVegetationCoverReported] = `true`; otherwise, term:eco[eco:isVegetationCoverReported] = `false`.
