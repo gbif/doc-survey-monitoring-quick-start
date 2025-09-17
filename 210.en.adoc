@@ -8,8 +8,8 @@ Sharing biodiversity data in a way that clearly and accurately reflects the surv
 
 The simplest Event data structure is a non-nested dataset. *Non-nested datasets* reflect a simple or flat survey design structure (<<fig1, Figure 1>>). These are typically simple datasets consisting of:
 
-* a single sampling event occurring at a particular place and time and conducted using a single standardized sampling protocol that is not repeated and is not necessarily part of a spatially larger sampling schema (Figure 1a), or +
-* a series of single sampling events that are not joined by a larger parent Event (Figure 1b). A compilation dataset (combination of unrelated surveys, compiled data sources and/or literature searches, see Biological survey data section) could be a special case of non-nested dataset where there is a unique Event level that describes the compilation itself (e.g., the broad area where multiple surveys are aggregated), which results in several occurrences.
+* a single sampling Event occurring at a particular place and time and conducted using a single standardized sampling protocol that is not repeated and is not necessarily part of a spatially larger sampling schema (Figure 1a), or +
+* a series of single sampling Events that are not joined by a larger parent Event (Figure 1b). A compilation (e.g., a combination of unrelated surveys, compiled data sources and/or literature searches, see Biological survey data section) could be a special case of non-nested dataset where there is a unique Event level that describes the compilation itself (e.g., the broad area where multiple surveys are aggregated), which results in one or more Occurrences.
 
 [[fig1]]
 .A simple schematic of a non-nested Event dataset (a) consisting of a single Event (purple box) with associated Occurrences related to the Event via the Occurrence extension (blue box) and (b) a series of individual Events (purple boxes) with associated Occurrences related to the appropriate Event via the Occurrence extension (blue boxes).  
@@ -24,58 +24,60 @@ More complex survey designs will require implemntation of a nested dataset struc
 ****
 [discrete]
 ==== In a nested dataset
-* All Events *_except those at the lowest Event level_* are considered the *parent Event* to any Event(s) beneath it. These *child Events* may represent either multiple sampling sites, protocols, or repeated sampling at the same locality using the same protocol. The top-most Event level does not have a parent Event. +
-* *_A parent Event MUST encompass its child Events spatially and temporally._* Specifically, the spatial extent and temporal interval of a parent Event MUST contain the spatial extents and temporal intervals of all of its children (see Section 3.2.1 Principle of spatiotemporal coverage  in https://eco.tdwg.org/hierarchy/#321-principle-of-spatiotemporal-coverage[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]).
-* *_Each Event level should reflect a meaningful ecological or operational unit (e.g., spatial, temporal, or ecological scale) in the survey design._* An Event level should be added if the addition of that Event level will facilitate data interpretation, downstream analysis, and/or linkage of information across datasets/data sources. *Do not create Event levels that are not necessary.* +
-* Higher Event levels should include information that applies to all subsequent and lower Events. +
-* Child-most Event level represents an Event that implements a single, reported sampling protocol at a single site  at a particular interval of time.
+* All Events *_except those at the lowest Event level_* are considered the *parent Event* to any Event(s) beneath it. +
+* The top-most Event level does not have a parent Event but is a parent Event to all lower Event levels. +
+* A parent Event may be parent to multiple child Events. +
+* *_A parent Event must fully encompass its child Events spatially and temporally._* Specifically, the spatial extent and temporal interval of a parent Event must contain the spatial extents and temporal intervals of all of its children (see Section 3.2.1 Principle of spatiotemporal coverage  in https://eco.tdwg.org/hierarchy/#321-principle-of-spatiotemporal-coverage[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]). +
+* A *child Event* (an Event that is contained entirely within a single parent Event) may be a parent Event to one or more child Events. + 
+* A child Event may represent either multiple sampling sites, protocols, or repeated sampling at the same locality using the same protocol. +
+
+*_Each Event level should reflect a meaningful ecological or operational unit (e.g., spatial, temporal, or ecological) in the survey design._* An Event level should be added if the addition of that Event level will facilitate data interpretation, downstream analysis, and/or linkage of information across data sources. *Do not create Event levels that are not necessary.*
 
 Refer to https://eco.tdwg.org/hierarchy/[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^] (TDWG Humboldt Extension Task Group, 2024) for more information about creating nested data structures for Darwin Core datasets.
 ****
 
-Consider a survey that implements two sampling protocols at two sites with multiple site visits for each unique site-protocol combination. This dataset could be structured with two Event levels as shown in <<fig2, Figure 2>>. Here, the highest event level will have four events representing each unique site-protocol combination: Site 1–Protocol a, Site 1–Protocol b, Site 2–Protocol a, Site 2–Protocol b. Events at the lowest event level will  be site visits that occur on a particular date for each site-protocol combination. Organismal Occurrence information collected during a site visit will be linked to the relevant site visit. This two Event level structure represents the simplest possible nested dataset structure, with only a single level of nesting.
+Consider a survey that implements two sampling protocols at two sites with multiple site visits for each unique site-protocol combination. This survey dataset could be structured with two Event levels as shown in Figure 2. Here, the highest Event level will consist of four Events representing each unique site-protocol combination: Site 1–Protocol a, Site 1–Protocol b, Site 2–Protocol a, Site 2–Protocol b. Events at the lowest Event level represent site visits that occur on a particular date for each site-protocol combination. Organismal Occurrence information collected during each site visit will be linked to the relevant site visit Event. This two Event level structure represents the simplest possible nested dataset structure with only a single level of nesting.
 
-It is ideal to structure a dataset such that each implemented protocol and unique site location should be established as a specific Event such that it is clear what protocol was implemented where to capture the Occurrence or other information connected to the lowest Event level. However, it is not always possible to disentangle information collected using multiple protocols.
+It is ideal to structure a dataset such that each implemented protocol and unique site location is represented as a specific Event so that information from the same pool of species (i.e. location) and likelihood of detecting these species (i.e. protocol) is joined together by being part of the same Event. However, it is not always possible to disentangle information collected using multiple protocols.
 
 [[fig2]]
 [caption="Figure 2. "]
-.Simplified example schematic of a nested Event dataset consisting of a series of surveys conducted at two sites (Site 1 and Site 2) with two distinct sampling protocols (Protocol a, Protocol b) represented by the pink boxes. Each protocol is implemented at each site on two different dates (Site visit t1, Site visit t2; orange boxes) with associated Occurrences related to the appropriate Event via the Occurrence extension (blue boxes). 
+.Simplified example schematic of a nested Event dataset consisting of a series of surveys conducted at two sites (Site 1 and Site 2) with two distinct sampling protocols (Protocol a, Protocol b) represented by the pink boxes. Surveys implementing each protocol are conducted at Sites 1 and 2 on two different dates (Site visit t1, Site visit t2; orange boxes). Associated Occurrences are related to the appropriate Event via the Occurrence extension (blue boxes). 
 image::img/web/Fig2.png[]
 
 ==== Project information
 
-Datasets that are collected as part of a larger or established network or project should report as much contextual information as possible to capture information about the project or network or specifically stated survey scope(s).
-
-Project-level information will always be shared at the highest event level. This can be achieved in one of two ways:
+Surveys conducted as part of a larger or established network or project should report as much contextual information as possible to capture information about the project or network. Project-level information will always be shared at the highest Event level. This can be achieved in one of two ways:
 
 * *By embedding project-level information within the highest existing survey Event level.* With the dataset presented in <<fig2, Figure 2>>, project-level information would be included with each of the four Site–Protocol Events. +
-* *By introducing a new parent Event level above all existing Events, dedicated to capturing project-level context.* In the context of the example dataset presented in <<fig2, Figure 2>>, this would mean adding a third Event level to the dataset structure that is parent to the Site–Protocol event level. The structure with this additional top-level Event is illustrated in <<fig3, Figure 3>>. 
+* *By introducing a new parent Event level above all existing Events dedicated to capturing project-level information.* In the context of the example dataset presented in <<fig2, Figure 2>>, this would mean adding a third Event level to the dataset structure that is parent to the Site–Protocol Event level (see <<fig3, Figure 3>>). Creating an additional Event level is particularly useful option when a project will result in multiple, independent datasets. In this case, the event identifier used for the project Event level can be used in all relevant datasets providing a means of identifying related datasets. 
 
 [[fig3]]
 [caption="Figure 3. "]
-.Simple nested hierarchy as presented in Figure 2 with an additional Event level to consolidate all survey Events under the context of a project (purple box).
+.Simple nested hierarchy as presented in Figure 2 with an additional Event level to consolidate all survey Events under the context of a broader project (purple box).
 image::img/web/Fig3.png[]
 
 ==== Complex survey design
 
-Although the recommendation is to keep dataset structure as simple as possible, more complex nesting may be necessary to accurately represent survey design and support data reuse. Added complexity can improve clarity when:
+Although the recommendation is to keep dataset structure as simple as possible, more complex nesting may be necessary to accurately represent survey design and support data reuse. Added structural complexity can improve clarity when:
 
-* multiple protocols are implemented within the same survey framework, +
-* survey outputs include a mix of data types (e.g., specimen collections, field observations, observed relationships), +
-* collected material contributes to downstream products (e.g., lab measurements, voucher specimens, media representations), or +
-* relationships among datasets need to be preserved or exposed.
+* multiple protocols are implemented within the same survey design, +
+* survey outputs include a mix of data types (e.g., specimen collections, field observations, observed co-occurrences), +
+* collected material contributes to downstream products (e.g., trait data, lab measurements, voucher specimens, media representations), or +
+* relationships among datasets need to be preserved or exposed (e.g., datasets resulting from different types of surveys within the same Project and/or at the same established survey sites).
 
-Consider the dataset https://obis.org/dataset/96844ba5-08c1-4299-b778-0db31986b669[Krill along the 110°E meridian: Oceanographic influences on assemblages in the eastern Indian Ocean, RV Investigator voyage IN2019_V03 (2019)^], published by OBIS-Australia. The dataset contains information about a zooplankton survey conducted by the https://ror.org/01mae9353[CSIRO Marine National Facility^] in the eastern Indian Ocean in 2019. The survey consisted of daytime and nighttime sampling at 20 locations (stations) along an established transect. This dataset could be structured as a non-nested dataset or as nested dataset; and, as a nested dataset, the structure could be simple or more complex or more deeply nested with more than two Event levels.  
+Consider the dataset https://obis.org/dataset/96844ba5-08c1-4299-b778-0db31986b669[Krill along the 110°E meridian: Oceanographic influences on assemblages in the eastern Indian Ocean, RV Investigator voyage IN2019_V03 (2019)^], published by Ocean Biodiversity Information System (OBIS)-Australia. The dataset contains information about a zooplankton survey conducted by the https://ror.org/01mae9353[CSIRO Marine National Facility^] in the eastern Indian Ocean in 2019. The survey consisted of daytime and nighttime sampling at 20 locations (stations) along an established transect. This dataset could be structured as a non-nested dataset or as nested dataset; and, as a nested dataset, the structure could be simple or more deeply nested with more than two Event levels.  
 
-* **Non-nested dataset structure** (Figure 4a): As a non-nested dataset each sampling at a particular station at a particular date and time would be a unique Event  with no obvious link to other Events in the dataset beyond being part of the same dataset. Implementing this structure is the simplest approach to sharing data from the survey, however, without any nesting of Events, it may be difficult for data users to understand the relationships between survey Events. Associated Occurrences are related to the appropriate Event via the Occurrence extension. +
-* **Simple nested dataset structure** (Figure 4b): As a simple nested dataset, the data structure would consist of two Event levels with the highest Event level capturing information about the overall cruise or campaign and second Event level represents the daytime and nighttime sampling events at each station as a series of unique Events. Associated Occurrences are related to the appropriate Event via the Occurrence extension. +
-* **Deeply nested dataset structure** (Figure 4c):  As a more deeply nested dataset, the structure would consist of three Event levels such that the highest Event level represents the Survey (that is, the overall cruise or campaign), the middle Event level represents each of the 20 survey stations, and the lowest Event level represents the daytime and nighttime sampling events at each station. Note that the child Events of each parent Event are used to report independent replicates of the same type within the same parent Event and/or to preserve individual sampling units. Associated Occurrences are related to the appropriate Event via the Occurrence extension. 
+* **Non-nested dataset structure** (Figure 4a): As a non-nested dataset, each sampling at a given station at a particular date and time would be a unique Event  with no obvious link to other Events in the dataset beyond being part of the same dataset. Implementing this structure is the simplest approach to sharing data from the survey, however, without any nesting of Events, it may be difficult for data users to understand the relationships between survey Events. Associated Occurrences are related to the appropriate Event via the Occurrence extension. +
+* **Simple nested dataset structure** (Figure 4b): An alternative a simple nested dataset structure could consist of two Event levels. The highest Event level would capture information about the survey stations, where each of the 20 survey stations would be a unique, unrelated parent Event to the relevant daytime and nighttime sampling Events. Associated Occurrences would be related to the appropriate Event via the Occurrence extension. +
+* **Simple nested dataset structure** (Figure 4c): As a simple nested dataset, the data structure would consist of two Event levels with the highest Event level capturing information about the overall cruise or campaign and second Event level represents the daytime and nighttime sampling events at each station as a series of unique Events. Associated Occurrences are related to the appropriate Event via the Occurrence extension. +
+* **Deeply nested dataset structure** (Figure 4d):  As a more deeply nested dataset, the structure would consist of three Event levels: the highest Event level represents the Survey (that is, the overall cruise or campaign); the middle Event level represents each of the 20 survey stations; and, the lowest Event level represents the daytime and nighttime sampling Events at each station. Note that the child Events of each parent Event are used to report independent replicates of the same type within the same parent Event and/or to preserve individual sampling units. Associated Occurrences are related to the appropriate Event via the Occurrence extension. 
 
-If the survey was a unique event, this simpler two Event level structure would likely suffice. However, the stations sampled during the survey are standard sampling locations used in other survey efforts. To make it easier to link information from this dataset to data from other surveys conducted at the same localities, a more complex nested structure was deemed appropriate.
+If the survey was a unique Event, the simpler two Event level structure would likely suffice. However, the stations sampled during the survey are standard sampling locations used in other survey efforts not covered by this dataset. To make it easier to link information from this dataset to data from other surveys conducted at the same localities, a more complex nested structure was chosen by the data publisher.  
 
 [[fig4]]
 [caption="Figure 4. "]
-.Three potential simple schematics for a zooplankton survey conducted at 20 stations, each sampled once during the day and once at night: non-nested structure (a), simple nested structure (b), and complex or deeply  nested structure (c).
+.Three potential dataset structures for a zooplankton survey conducted at 20 stations, each sampled once during the day and once at night: non-nested structure (a), simple nested structure (b and c), and complex or deeply nested structure (d). 
 image::img/web/Fig4.png[]
 
 ==== Sampling Event hierarchy terms
