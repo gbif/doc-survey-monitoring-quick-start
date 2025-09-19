@@ -1,14 +1,12 @@
 === Survey date and time 
 
-Complete and accurate reporting of the temporal scope of a survey is crucial to asserting event structure and providing key contextual information about sampling conditions.
+Complete and accurate reporting of the temporal scope of a survey is crucial to asserting Event structure and providing key contextual information about sampling conditions.
 
-*Event date, time, and duration*
+Each Event should include a date or date range in term:dwc[dwc:eventDate]. *Nested datasets* should, at the parent Event level, report a date range encompassing the dates of all relevant child Events.
 
-Each Event should report date or date range in term:dwc[dwc:eventDate] regardless of its hierarchical level. *Nested datasets* should, at the parent Event level, report a date range encompassing all survey dates.
+The time and duration of each Event should be reported using term:dwc[dwc:eventTime] and the paired terms term:eco[eco:eventDurationValue] and term:eco[eco:eventDurationUnit] respectively.
 
-The time and duration of each Event should be reported using term:dwc[dwc:eventTime] and the paired terms term:eco[eco:eventDurationValue] and term:eco[eco:eventDurationUnit].
-
-Refer to GBIF’s technical documentation on https://techdocs.gbif.org/en/data-processing/temporal-interpretation[Date and time interpretation^] for more guidance on reporting event dates and times.
+Refer to GBIF’s technical documentation on https://techdocs.gbif.org/en/data-processing/temporal-interpretation[date and time interpretation^] for more guidance on reporting Event dates and times.
 
 [caption=""]
 .Event date and temporal scope terms, their recommended usage (status), and example data entries.
@@ -29,3 +27,5 @@ Refer to GBIF’s technical documentation on https://techdocs.gbif.org/en/data-p
 |term:eco[eco:eventDurationUnit]
 |`hour`
 |===
+
+<<<
