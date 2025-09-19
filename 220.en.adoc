@@ -1,3 +1,32 @@
+=== Project information
+
+If the survey(s) being reported were part of a larger Project, four terms are available to capture the project name(s) and funding institution(s).
+
+* Project title: The official name(s) of the project(s) that contributed to the creation of the dataset should be shared as a concatenated list with values separated using a pipe separator `|` in term:dwc[dwc:projectTitle].
+* Project ID: A list, concatenated and separated using a pipe separator `|`, of the globally unique identifiers for the project(s) that contributed to the creation of the dataset should be reported in term:dwc[dwc:projectID].
+* Funding attribution: The official name(s) of the funding body or bodies that provided funding for the survey(s) resulting in the creation of the dataset should be shared as a concatenated list with values separated using a pipe separator `|` in term:dwc[dwc:fundingAttribution].
+* Funding attribution ID: A list, concatenated and separated using a pipe separator `|`, of the globally unique identifiers for the funding organizations or agencies that supported the project can be provided in term:dwc[dwc:fundingAttributionID].
+
+[caption=]
+.Project terms, their recommended usage (status), and example data entries
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Status |Term |Example entry
+.4+|Share if available
+|term:dwc[dwc:projectTitle]
+|`Scalidophora i Noreg`, `Biowide`
+
+|term:dwc[dwc:projectID]
+|`RCN276730 | Artsproject_7-24`, `https://arvenetternansen.com/`
+
+|term:dwc[dwc:fundingAttribution]
+|`Norges forskningsråd`
+
+|term:dwc[dwc:fundingAttributionID]
+|`https://ror.org/00epmv149 | https://ror.org/04jnzhb65`
+|===
+
+
 === Survey event site
 
 An Event *_site_* is the location at which observations are made or samples and/or measurements are taken. Sharing thorough information about a sampling Event site, including description, locality, and vegetative cover provides critical context to potential data users about conditions in which a survey was conducted. Information about the location of each survey site such best-practice georeferences, site description (locality name, habitat type, microhabitat), and environmental data (e.g., physical parameters, vegetarian, water quality) should be populated at for each Event for which the information is available.
