@@ -1,4 +1,4 @@
-=== Sampling event protocol
+=== Sampling Event protocol
 
 *Sampling protocols* provide the details of how a survey was conducted. Protocol information should be a detailed, step-wise description outlining all the details about the data collection process necessary to ensure repeatibility of the implemented methodology. Clear communication of a sampling protocol or the method(s) implemented during a survey or monitoring effort guarantees consistency, accuracy, and reliability in the data collected. This information further ensures reproducibility and reusability of a dataset, and facilitates data aggregation, integration, and subsequent analysis.
 
