@@ -5,9 +5,9 @@ The process of updating your Darwin Core Archive (DwC-A) Event dataset with the 
 
 Before you get started, we recommend that you prepare by taking the following steps:
 
-. Review the information already published in your DwC-A for the Event dataset, focusing specifically on the Event, metadata, and extended measurement or facts tables, noting where key information about survey design, sampling protocol, scope, and effort are available.
-. Identify additional dataset resources that can be referred to including supplementary documentation, publications, websites, and dataset contacts and people involved in the data collection or oversight of the project or survey.
-. Review the reported data structure to determine if the existing event hierarchy accurately reflect the data and the level of complexity desired. Make necessary changes.
+* Review the information already published in your DwC-A for the Event dataset, focusing specifically on the Event, metadata, and extended measurement or facts tables, noting where key information about survey design, sampling protocol, scope, and effort are available.
+* Identify additional dataset resources that can be referred to including supplementary documentation, publications, websites, and dataset contacts and people involved in the data collection or oversight of the project or survey.
+* Review the reported data structure to determine if the existing event hierarchy accurately reflect the data and the level of complexity desired. Make necessary changes.
 
 Now, you’re ready to capture survey design data using the Humboldt extension following the recommendations below.
 
@@ -26,43 +26,24 @@ A basic biodiversity survey data template is available to facilitate mapping of 
 |===
 |*Table* |*Description*
 |event a|
-Terms in the event tab should be used to capture survey event information (i.e. information that applies to the observations of all taxa) including survey design, protocol(s), scopes, and effort. Terms from both the https://rs.gbif.org/core/dwc_event_2024-02-19.xml[Darwin Core Event class] and the https://rs.gbif.org/extension/eco/Humboldt_2024-04-16.xml[Humboldt extension] are included.
+Terms in the `event` table are used to capture survey Event information (i.e. information that applies to the observations of all taxa) including survey design, protocol(s), scopes, and effort. Terms from the https://rs.gbif.org/core/dwc_event_2024-02-19.xml[Darwin Core Event class] and the https://rs.gbif.org/extension/eco/Humboldt_2024-04-16.xml[Humboldt extension] are included.
 
-Column heads are populated with the DwC Event core and Humboldt
-extension terms referenced in this guide. In the rows beneath each term,
-the term definition, comments, recommended usage for publication in
-GBIF, and additional comments or usage guidance.
+Column heads are populated with the DwC Event core and Humboldt extension terms referenced in this guide. The rows beneath each term include term definitions, comments, recommended usage for publication in GBIF, and additional comments or usage guidance.
 
 |occurrence a|
-Terms in the occurrence tab should be used to capture information about the occurrence of a single taxon with terms from the https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Darwin Core Occurrence extension].
+Terms in the `occurrence` table should be used to capture information about the occurrence of a single taxon with terms from the https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Darwin Core Occurrence extension].
 
-Column heads are populated with the DwC occurrence extension terms
-referenced in this guide. In the rows beneath each term, the term
-definition, comments, and recommended usage for publication in GBIF.
-Additional terms from the extension should be added to your own data
-table as appropriate for your dataset.
+Column heads are populated with the DwC Occurrence extension terms referenced in this guide. The rows beneath each term include term definitions, comments, and recommended usage for publication in GBIF. Additional Occurrence extension terms should be added to your own data `occurrence` table as appropriate for your dataset.
 
-|README |The README table provides additional information about the
-structure and information included in each data tab.
+|README |The README table provides additional information about the structure and information included in each data table.
 |===
 
 === Example datasets
 
-The GBIF datasets listed below implement at least some Humboldt extension terms and may serve as useful references on event dataset structure and term usage.
-
-* Faveyts W, Cooleman S (2025). Bird census counts at the Zwin Nature
-Park. Version 1.5. Belgian Biodiversity Platform. Sampling event dataset
+* Faveyts W and Cooleman S (2025). Bird census counts at the Zwin Nature Park. Version 1.5. Belgian Biodiversity Platform. Sampling event dataset
 https://doi.org/10.15468/saesvn[+++https://doi.org/10.15468/saesvn+++].
-* Palpurina S (2025). Vegetation plots collected in dry grasslands
-throughout Bulgaria and Romanian Dobrudzha. Version 1.12. Masaryk
-University, Department of Botany and Zoology. Sampling event dataset
-https://doi.org/10.15468/pkx4tg[+++https://doi.org/10.15468/pkx4tg+++].
-* Piesschaert F, Vermeersch G, Brosens D, Westra T, Desmet P, Feys S, Van
-de Poel S, Pollet M, Cooleman S (2025). ABV - Common breeding birds in
-Flanders, Belgium (post 2016). Version 1.14. Research Institute for
-Nature and Forest (INBO). Sampling event dataset
-https://doi.org/10.15468/pj2v6h[+++https://doi.org/10.15468/pj2v6h+++].
-* van Klink R, Gerrits G (2025). Biological Station Wijster standard
-trapping program: Sampling event data for ground beetles (Coleoptera:
-Carabidae). Version 1.3. WBBS foundation. Sampling event dataset
-https://doi.org/10.15468/3mcqja[+++https://doi.org/10.15468/3mcqja+++].
+* Palpurina S (2025). Vegetation plots collected in dry grasslands throughout Bulgaria and Romanian Dobrudzha. Version 1.12. Masaryk University, Department of Botany and Zoology. Sampling event dataset https://doi.org/10.15468/pkx4tg[+++https://doi.org/10.15468/pkx4tg+++].
+* Piesschaert F, Vermeersch G, Brosens D, Westra T, Desmet P, Feys S, Van de Poel S, Pollet M, and Cooleman S (2025). ABV - Common breeding birds in Flanders, Belgium (post 2016). Version 1.14. Research Institute for Nature and Forest (INBO). Sampling event dataset https://doi.org/10.15468/pj2v6h[+++https://doi.org/10.15468/pj2v6h+++].
+* van Klink R and Gerrits G (2025). Biological Station Wijster standard trapping program: Sampling event data for ground beetles (Coleoptera: Carabidae). Version 1.3. WBBS foundation. Sampling event dataset https://doi.org/10.15468/3mcqja[+++https://doi.org/10.15468/3mcqja+++].
+
+<<<
