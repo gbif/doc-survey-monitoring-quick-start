@@ -1,18 +1,20 @@
 === Survey event site
 
-An Event *_site_* is the location at which observations are made or samples and/or measurements are taken. Sharing thorough information about a sampling event site, including description, locality, and vegetative cover provides critical context to potential data users about conditions in which a survey was conducted.
+An Event *_site_* is the location at which observations are made or samples and/or measurements are taken. Sharing thorough information about a sampling Event site, including description, locality, and vegetative cover provides critical context to potential data users about conditions in which a survey was conducted. Information about the location of each survey site such best-practice georeferences, site description (locality name, habitat type, microhabitat), and environmental data (e.g., physical parameters, vegetarian, water quality) should be populated at for each Event for which the information is available.
+
+NOTE: The Darwin Core site terms listed in this section are not comprehensive. Explore all http://purl.org/dc/terms/Location[Darwin Core Location class terms^] and the https://eco.tdwg.org/terms/#site[Humboldt Extension site terms^].
 
 ==== Site description
 
-The following information about a survey event site should be shared for every event level that the information is available:
+Additional context about a survey site can be reported through myriad terms for every Event that the information is available, including:
 
-* *Site names:* report individual sampling Event site names using term:eco[eco:verbatimSiteNames]. A concatenated list of site names can be provided at higher Event levels with values separated using a pipe separator, `|`. +
-* *Habitat:* reported habitat at a sampling Event site should be recorded in term:dwc[dwc:habitat]. A concatenated list of habitats can be provided at higher Event levels with values separated using a pipe separator, `|`. Note that a single controlled vocabulary does not exist for this term, however use of a controlled vocabulary is recommended. +
-* *Weather:* reported weather during a sampling Event should be recorded using term:eco[eco:reportedWeather]. +
-* *Extreme conditions:*  reported extreme conditions at a sampling Event site at the time of the survey Event should be recorded using term:eco[eco:reportedExtremeConditions]. +
+* *Site names:* survey site names can be reported using term:eco[eco:verbatimSiteNames]. A concatenated list of site names can be provided at higher Event levels with values separated using a pipe separator, `|`.  +
+* *Habitat:* reported habitat at a survey site should be recorded in term:dwc[dwc:habitat]. A concatenated list of habitats can be provided at higher Event levels with values separated using a pipe separator, `|`. Use of a controlled vocabulary is recommended. Note that a single controlled vocabulary does not exist for this term yet but attempts to classify habitat have been and continue to be made (for example, see <<Keith2020>> or <<Campbell2021>>).  +
+* *Weather:* reported weather during a survey Event should be reported using term:eco[eco:reportedWeather]. If you have detailed weather data (e.g., weather station or data logger produced data) archived elsewhere, you may provide a link here. +
+* *Extreme conditions:* reported extreme conditions at a site at the time of the survey should be recorded in term:eco[eco:reportedExtremeConditions]. +
 * *Verbatim site description:* verbatim comments (e.g., the original textual description) about a site or sites should be recorded in term:eco[eco:verbatimSiteDescriptions].
 
-These terms should be populated at every hierarchical Event level that is accurate. 
+These terms should be populated for each individual Event for which the information is accurate. 
 
 [caption=]
 .General event site terms, their recommended usage (status), and example data entries
@@ -38,35 +40,46 @@ These terms should be populated at every hierarchical Event level that is accura
 
 ==== Site locality
 
-The geographic location and extent of each survey Event site should be provided. Historically, five terms are strongly recommended for Event datasets in GBIF:
+The geographic location and extent of each survey site should be reported. Five terms are currently recommended for Event datasets:
 
-* *Location ID:* a unique identifier for each sampling Event site should be shared in term:dwc[dwc:locationID]. +
-* *Country code:* the ISO two letter code for the country or region in which the survey takes place should be provided in term:dwc[dwc:countryCode]. +
-* *Latitude-Longitude:* The decimal latitude and longitude and geodetic datum location of the Event site should be reported in term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], and term:dwc[dwc:geodeticDatum].
-** If geographic coordinates are not in decimal latitude and decimal longitude format, use the terms term:dwc[dwc:verbatimLatitude], term:dwc[dwc:verbatimLongitude], and term:dwc[dwc:verbatimCoordinateSystem] instead. +
-** Note that this is a minimum recommendation and does not make data fit for the maximum number of purposes. It is highly recommended to provide georeferences that follow best practices.
-
-The Humboldt extension includes additional terms that provide greater contextual information about the geospatial scope of a sampling Event or series of Events.
+* *Location ID:* a unique identifier for each survey site should be shared in term:dwc[dwc:locationID]. If a site is visited repeated (as in long-term monitoring and other repeated survey efforts), term:dwc[dwc:locationID] should be consistent across Events within a dataset and across datasets in situations where the same survey sites are visited in other datasets. +
+* *Country code:* the ISO two letter code for the country, region, or economy in which a survey takes place should be provided in term:dwc[dwc:countryCode]. +
+* *Latitude-longitude:* The decimal latitude and longitude and geodetic datum location of each survey site should be reported in term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], and term:dwc[dwc:geodeticDatum]. All three terms should be populated together.
+** If the geographic coordinates of your dataset are not in decimal latitude and decimal longitude format, use the terms term:dwc[dwc:verbatimLatitude], term:dwc[dwc:verbatimLongitude], and term:dwc[dwc:verbatimCoordinateSystem] to report geographic location instead. +
+** Note that this is a minimum recommendation and does not make data fit for the maximum number of purposes. It is highly recommended to provide georeference information that follow best practices.
 
 ===== Survey site area 
 
-It is highly recommended to report additional information on the targeted area and the area actually sampled to understand the geospatial scope of the survey. Two sets of paired terms are available to report the area of an Event or survey site: _geospatial scope_ terms and _total area sampled_ terms. 
+Reporting additional information about the areas targeted for sampling and the area(s) actually sampled during a survey is recommended to provide greater context about the geospatial scope of a survey. The Humboldt extension includes two sets of paired terms to report the survey area of an Event: _geospatial scope_ terms and _total area sampled_ terms. 
 
-*_Geospatial scope_* terms (term:eco[eco:geospatialScopeAreaValue] and term:eco[eco:geospatialScopeAreaUnit]) define the geospatial scope or extent of a survey or sampling Event.
+* *_Geospatial scope_* terms (term:eco[eco:geospatialScopeAreaValue] and term:eco[eco:geospatialScopeAreaUnit]) define the geospatial scope or extent of a survey or sampling Event. Geospatial scope terms can be applied at any Event level and should report the entire area considered for the survey.
 
-*_Total area sampled_* terms (term:eco[eco:totalAreaSampledValue] and term:eco[eco:totalAreaSampledUnit]) report the total area sampled during an Event.
+* *_Total area sampled_* terms (term:eco[eco:totalAreaSampledValue] and term:eco[eco:totalAreaSampledUnit]) report the area actually sampled during an Event. Total area sampled terms can be populated at any Event level but are most commonly applied at lower Event levels to, for example, capture the survey extent of a single plot or (at higher Event levels) the cummulative area surveyed in a series of plots within a site. 
 
-* For *non-nested event datasets*, term:eco[eco:geospatialScopeAreaValue] and term:eco[eco:geospatialScopeAreaUnit], and term:eco[eco:totalAreaSampledValue] and term:eco[eco:totalAreaSampledUnit] may contain the same values. +
-* In *nested datasets*, term:eco[eco:geospatialScopeAreaValue] and term:eco[eco:geospatialScopeAreaUnit] should be used to report the full study extent at the parent Event level (the total area surveyed in a series of survey Events) and term:eco[eco:totalAreaSampledValue] and term:eco[eco:totalAreaSampledUnit] should be used to relate the area of child Event sites (e.g., individual survey sites). Geospatial scope value(s) should always be greater than or equal to that of total area sampled.
+In *non-nested event datasets*, geospatial scope terms and total area sampled terms may contain the same values. 
 
-For example, consider the https://www.gbif.org/dataset/cd4eb3ec-0a18-42b4-bda4-155716ddd7b1[Biowide project^] which surveyed 130 40×40m plots across Denmark. Here, the project-level parent Event would report the full geographic extent of Denmark: term:eco[eco:geospatialScopeAreaValue] = `42934` and term:eco[eco:geospatialScopeAreaUnit] = `km²` and the sum of sampled areas: term:eco[eco:totalAreaSampledValue] = `208000` and term:eco[eco:totalAreaSampledUnit] = `m²`. For the 130 associated child Events representing the individual plots, term:eco[eco:geospatialScopeAreaValue] and term:eco[eco:geospatialScopeAreaUnit] would be left empty because geospatialScope was a characteristic of the higher-level survey design not the individual survey site visits. For the plots, the area of the site would be term:eco[eco:totalAreaSampledValue] = `1600` and term:eco[eco:totalAreaSampledUnit] = `m²`.
+In *nested datasets*, geospatial scope terms will be equal to or greater than the area values shared in total area sampled terms. See Box 2 for an example.
 
-*_If the sampled unit is not an area_* (e.g., `km²` or `m²`), term:dwc[dwc:sampleSizeValue] and term:dwc[dwc:sampleSizeUnit] should be used instead. Examples include volumetric measures (such as a filtered volume of water in a zooplankton haul) and distances (such as transect lengths).
+*_If the surveyed unit is not an area_* (e.g., `km²` or `m²`), term:dwc[dwc:sampleSizeValue] and term:dwc[dwc:sampleSizeUnit] should be used instead. Examples include:
+
+* point locations (such as a sensor or trap), +
+* distances (such as transect lengths), and +
+* volumetric measures (such as a filtered volume of water in a zooplankton haul).
+
+****
+[discrete]
+==== Box 1. Biowide project example
+Consider the https://www.gbif.org/dataset/cd4eb3ec-0a18-42b4-bda4-155716ddd7b1[Biowide project^] which surveyed 130 40×40m plots across Denmark. 
+
+Here, the project-level parent Event would report the full geographic extent of Denmark: term:eco[eco:geospatialScopeAreaValue] = `42934` and term:eco[eco:geospatialScopeAreaUnit] = `km²` and the sum of sampled areas: term:eco[eco:totalAreaSampledValue] = `208000` and term:eco[eco:totalAreaSampledUnit] = `m²`. 
+
+For each of the 130 associated child Events representing the individual plots, term:eco[eco:geospatialScopeAreaValue] and term:eco[eco:geospatialScopeAreaUnit] would be left empty because geospatialScope was a characteristic of the higher-level survey design not the individual survey site visits. For the plots, the area of the site would be term:eco[eco:totalAreaSampledValue] = `1600` and term:eco[eco:totalAreaSampledUnit] = `m²`.
+****
 
 ===== Additional survey site information
 
-* *Survey site geometry:* If available, the geometry of a survey site area should be shared using term:dwc[dwc:footprintWKT] and term:dwc[dwc:footprintSRS]. +
-* *Verbatim site location information:* A more general text description of the site location, if available, can be shared using term:dwc[dwc:locality].
+* **Survey site geometry:** If available, the geometry of a survey site area should be shared using term:dwc[dwc:footprintWKT] and term:dwc[dwc:footprintSRS]. +
+* **Verbatim site location information:** A more general text description of the site location, if available, can be shared using term:dwc[dwc:locality].
 
 [caption=""]
 .Event site geographic locality and scope terms and their recommended usage (status), namespace abbreviation, and example data entries.
@@ -114,14 +127,21 @@ For example, consider the https://www.gbif.org/dataset/cd4eb3ec-0a18-42b4-bda4-1
 |term:dwc[dwc:footprintSRS]
 |`epsg:4326`
 
-|term:dwc[dwc:locality] |`Agriculture site, Kongskilde Friluftsgård, Zealand`
+|term:dwc[dwc:locality] 
+|`Agriculture site, Kongskilde Friluftsgård, Zealand`
 |===
 
 ==== Vegetation cover
 
-* *Verbatim vegetation cover:* a verbatim description of vegetation cover can be captured in term:eco[eco:verbatimSiteDescriptions]. +
-* *Percent vegetation cover:* simple percent vegetation cover can be recorded as structured data using the https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[extended
-measurement or fact extension^]. +
-* *Vegetation plot survey:* vegetation plot survey information can be reported using the https://rs.gbif.org/extension/gbif/1.0/releve_2016-05-10.xml[relevé extension^].
+If vegetation cover data are available for a site (for example, if a relevé was conducted or if a textual site description was provided), it can be reported in three ways:
 
-If vegetation cover is reported, then term:eco[eco:isVegetationCoverReported] = `true`; otherwise, term:eco[eco:isVegetationCoverReported] = `false`.
+* *Verbatim vegetation cover:* a verbatim or textual description of vegetation cover can be captured using term:eco[eco:verbatimSiteDescriptions]. +
+* *Percent vegetation cover:* simple percent vegetation cover can be recorded as structured data using the https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[extended
+measurement or fact extension^]. Data reported using emof should be linked to the appropriate Event using term:dwc:[dwc:eventID]. See the 'link:#extended-measurement-or-fact-emof-extension[Extended measurement or fact (eMoF) extension]' section for details on using the extension. +
+* *Vegetation plot survey:* vegetation plot survey information (that is, data collected during a relevé) can be reported using the https://rs.gbif.org/extension/gbif/1.0/releve_2016-05-10.xml[relevé extension^]. Data from individual relevé's should be linked to the appropriate Event using term:dwc:[dwc:eventID]. See the 'link:#relevé-extension[Relevé extension]' section for details on using the extension.
+
+There is no single best method of reporting vegetation cover information for a site, although it is recommended to choose the most explicit method possible based on the type of information avilable. 
+
+If vegetation cover is reported using one of the three methods described above, then term:eco[eco:isVegetationCoverReported] = `true`; otherwise, term:eco[eco:isVegetationCoverReported] = `false`.
+
+<<<
