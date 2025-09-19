@@ -16,10 +16,10 @@ Now, you’re ready to capture survey design data using the Humboldt extension f
 
 A basic biodiversity survey data template is available to facilitate mapping of survey data and preparation for formatting of a DwC-A. The template can be accessed as a single .xlsx file or as three separate .csv files.
 
-* data/event_template_wHE.xlsx[+++Survey data template+++] (.xlsx)
-* data/event_template_wHE_event-table.csv[+++Survey event table template+++] (.csv)
-* data/event_template_wHE_occurrence-table.csv[+++Survey occurrence table template+++] (.csv)
-* data/event_template_wHE_README.csv[+++Survey template README+++] (.csv)
+* https://github.com/gbif/doc-guide-publishing-survey-data/tree/1.1_postCommReview/data/event_template_wHE.xlsx[+++Survey data template+++^] (.xlsx)
+* https://github.com/gbif/doc-guide-publishing-survey-data/tree/1.1_postCommReview/data/event_template_wHE_event-table.csv[+++Survey event table template+++^] (.csv)
+* https://github.com/gbif/doc-guide-publishing-survey-data/tree/1.1_postCommReview/data/event_template_wHE_occurrence-table.csv[+++Survey occurrence table template+++^] (.csv)
+* https://github.com/gbif/doc-guide-publishing-survey-data/tree/1.1_postCommReview/data/event_template_wHE_README.csv[+++Survey template README+++^] (.csv)
 
 
 [width="100%",cols="20%,80%",options="header",]
