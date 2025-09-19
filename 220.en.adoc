@@ -17,13 +17,13 @@ If the survey(s) being reported were part of a larger Project, four terms are av
 |`Scalidophora i Noreg`, `Biowide`
 
 |term:dwc[dwc:projectID]
-|`RCN276730 | Artsproject_7-24`, `https://arvenetternansen.com/`
+|`RCN276730 \| Artsproject_7-24`, `https://arvenetternansen.com/`
 
 |term:dwc[dwc:fundingAttribution]
 |`Norges forskningsråd`
 
 |term:dwc[dwc:fundingAttributionID]
-|`https://ror.org/00epmv149 | https://ror.org/04jnzhb65`
+|`https://ror.org/00epmv149 \| https://ror.org/04jnzhb65`
 |===
 
 
