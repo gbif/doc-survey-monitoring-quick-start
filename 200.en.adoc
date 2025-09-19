@@ -1,40 +1,48 @@
 == Updating your DwC Event dataset with the Humboldt extension
 
-****
+[IMPORTANT] 
+====
+The contextual information about survey Events should be saved to the DwC-A `event` table.
+====
 
+This section will guide you through the process of mapping Event-level data specifically related to survey structure, location, protocols, scopes, and effort. 
+
+[NOTE] 
+.About DwC terms in this document
+==== 
+
+Each term in this document is linked with its respective term https://www.w3.org/International/O-URL-and-ident.html[internationalized resource identifier (IRI)] alias (ex., term:eco[eco:protocolNames]). Always use these links to refer to the definition, comments, and examples provided when populating a term. 
+
+The terms to be used to describe Event-level information are a combination of Darwin Core Event class and Humboldt Extension terms:
+
+* A comprehensive list of Darwin Core Event class terms is available on the https://rs.gbif.org/core/dwc_event_2024-02-19.xml[Darwin Core Event] page in the GBIF Registry of Schemas. +
+* The full suite of Humboldt extension terms is available on the https://rs.gbif.org/extension/eco/Humboldt_2024-04-16.xml[Humboldt Ecological Inventories^] page in the GBIF Registry of Schemas and the https://eco.tdwg.org/terms/[Humboldt Extension Quick Reference Guide].
+====
+
+
+****
 [discrete]
-===== Where does a term belong?
-Event datasets can be published with DwC Event terms (any term preceded by `dwc`, e.g., term:dwc[dwc:eventID]) and Humboldt extension terms (any term preceded by  `eco`, e.g., term:eco[eco:protocolNames]) in the same `event` table. 
-
-*Populating terms*
-
-Each term in this document is linked with its respective term IRI alias (ex., term:eco[eco:protocolNames]). When populating a term in the `event` table, ensure that the term is populated at the appropriate/relevent event level(s). Refer to https://eco.tdwg.org/hierarchy/[Properties of hierarchical events^] for guidance in populating Humboldt extension terms across event levels (e.g., from parent event to child event).
-****
-
 ==== Data mapping tips
-Survey event data should be saved to the DwC-A `event` table. This includes DwC Event terms (any term preceded by _'dwc'_, e.g., term:dwc[dwc:eventID]) and Humboldt extension terms (any term preceded by _'eco'_, e.g.,
-term:eco[eco:protocolNames]).
+
+Survey Event data should be saved to the DwC-A `event` table. This includes DwC Event terms (any term preceded by `dwc`, e.g., term:dwc[dwc:eventID]) and Humboldt extension terms (any term preceded by `eco`, e.g., term:eco[eco:protocolNames]).
 
 Populate all terms for which information is available. 
 
-*Paired terms* must be populated together. Often these terms are designed to offer the data publisher some level of flexibility in reporting data. Paired terms are most common in terms available for reporting a variable value and associated unit of measure (for example, term:dwc[dwc:sampleSizeValue] and term:dwc[dwc:sampleSizeUnit]). 
+<<pairedTerms, *Paired terms*>> must be populated together. These terms are designed to offer data publishers some level of flexibility in reporting data. Paired terms are most common in terms available for reporting a variable value and associated unit of measure (for example, term:dwc[dwc:sampleSizeValue] and term:dwc[dwc:sampleSizeUnit]). 
 
 *No data, missing data, and data values of `0`*
 
-  * Cells with a value of `0` (zero) should be populated as `0`.
+  * Cells with a value of `0` (zero) should be explicitly populated as `0`.
   * Cells with missing data or `NULL` values should be left empty. 
   * Terms for which there is `no data` to share at any hierarchical level can be excluded from the data table.
 
-*Populating terms across event levels (e.g., from parent event to child event)* 
+*Populating terms across Event levels (e.g., from parent Event to child Event)* 
 
-* Each event level can have its own set of attributes and measurements, which
-can be captured using the Humboldt and/or other Extension(s) and be
-unambiguously linked to the corresponding level through the appropriate
-term:dwc[dwc:eventID]s. +
-* *_Terms should contain data explicitly at every Event level in the hierarchy to which they directly apply._* 
-** A child Event MUST NOT be expected to implicitly inherit the value of any property of any of its parent Event(s). If a value is in common between an Event and its parent, the value should be included explicitly in both Event records (see Section 3.2.2 Principle of applicability in https://eco.tdwg.org/hierarchy/#322-principle-of-applicability[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]). +
-** A parent Event SHOULD NOT be populated by deriving or summarizing information from child Events; rather, fields SHOULD be populated explicitly with information directly appropriate to the nature and level of the Event itself (see Section 3.2.3 Principle of non-derivation in https://eco.tdwg.org/hierarchy/#323-principle-of-non-derivation[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]). 
+* Each Event can have its own set of attributes and measurements which can be captured using the Humboldt and/or other extension(s) and be unambiguously linked to the corresponding Event through the appropriate term:dwc[dwc:eventID]s. +
+* *_Terms should contain data clearly (explicitly) reported at every Event level in the hierarchy to which they directly apply._* This means that when publishing a data export, +
+** a child Event must *not* be assumed to be inherit the value of any property of any of its parent Event(s). If a value is in common between a child Event and its parent Event, the value should be reported explicitly in both Event records (see Section 3.2.2 Principle of applicability in https://eco.tdwg.org/hierarchy/#322-principle-of-applicability[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]). +
+** a parent Event should *not* be populated by deriving or summarizing information from child Events; rather, fields should be explicitly populated with information directly appropriate to the nature and level of the Event itself (see Section 3.2.3 Principle of non-derivation in https://eco.tdwg.org/hierarchy/#323-principle-of-non-derivation[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^]). 
 
-Refer to https://eco.tdwg.org/hierarchy/[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^] for more guidance in populating Humboldt extension terms across event levels.
+Refer to https://eco.tdwg.org/hierarchy/[Properties of hierarchical events in the Humboldt Extension for Ecological Inventories^] for more guidance in populating Humboldt extension terms across Event levels.
+****
 
-Remember to refer to the definition, comments, and examples provided in the linked documentation to ensure that you are following recommended usage guidelines.
