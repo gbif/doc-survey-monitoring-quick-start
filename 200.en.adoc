@@ -28,7 +28,7 @@ Survey Event data should be saved to the DwC-A `event` table. This includes DwC 
 
 Populate all terms for which information is available. 
 
-<<pairedTerms, *Paired terms*>> must be populated together. These terms are designed to offer data publishers some level of flexibility in reporting data. Paired terms are most common in terms available for reporting a variable value and associated unit of measure (for example, term:dwc[dwc:sampleSizeValue] and term:dwc[dwc:sampleSizeUnit]). 
+*Paired terms* must be populated together. These terms are designed to offer data publishers some level of flexibility in reporting data. Paired terms are most common in terms available for reporting a variable value and associated unit of measure (for example, term:dwc[dwc:sampleSizeValue] and term:dwc[dwc:sampleSizeUnit]). 
 
 *No data, missing data, and data values of `0`*
 
