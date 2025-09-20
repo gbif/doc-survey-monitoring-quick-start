@@ -36,7 +36,7 @@ The DwC Event term term:dwc[dwc:samplingEffort] is currently a recommended field
 |term:eco[eco:samplingEffortValue]
 |`40`,  `5`
 
-|term:eco[eco:samplingEffortValue]
+|term:eco[eco:samplingEffortUnit]
 |`trap nights`, `person hours`
 
 |term:dwc[dwc:samplingEffort]
